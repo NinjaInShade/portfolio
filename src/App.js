@@ -1,7 +1,27 @@
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Unmatched from "./components/Unmatched";
+import Homepage from "./components/Homepage.js";
 
 function App() {
-  return <h1>Test</h1>;
+  return (
+    <Router>
+      <Navbar />
+      <Switch>
+        {/* Homepage */}
+        <Route path="/" exact>
+          <Homepage />
+        </Route>
+        <Route>
+          <Unmatched />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;

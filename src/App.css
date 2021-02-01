@@ -1,0 +1,19 @@
+body {
+  background: rgb(7, 32, 63);
+  background: linear-gradient(180deg, rgba(7, 32, 63, 1) 0%, rgba(4, 14, 26, 1) 100%);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Every section add this, as if only on #root it will stretch it too much */
+#root {
+  background: url("./assets/stars.png");
+  background-position: 100% 100%;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
