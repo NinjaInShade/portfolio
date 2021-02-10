@@ -24,7 +24,7 @@ export default function Homepage() {
 
         <div className="homepage-find-out-more">
           <p>Check more out</p>
-          <i class="fas fa-chevron-down"></i>
+          <i className="fas fa-chevron-down"></i>
         </div>
       </section>
       <section className="homepage-test"></section>

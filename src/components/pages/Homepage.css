@@ -94,3 +94,23 @@
     margin: 1.8rem 0 1rem 0;
   }
 }
+
+@media (max-width: 300px) {
+  .homepage h1,
+  .homepage span {
+    font-size: 2rem;
+  }
+
+  .homepage-role {
+    font-size: 1rem;
+  }
+
+  .homepage img {
+    max-width: 200px;
+  }
+
+  .homepage button {
+    min-width: 200px;
+    margin: 1.8rem 0 1rem 0;
+  }
+}
