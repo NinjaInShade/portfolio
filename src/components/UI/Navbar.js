@@ -40,7 +40,7 @@ export default function Navbar() {
         </li>
         <li>
           <Button>
-            <Link to="/contact">Contact me</Link>
+            <Link to="/#contact">Contact me</Link>
           </Button>
         </li>
       </ul>
@@ -49,31 +49,31 @@ export default function Navbar() {
       </button>
       <div className="sidebar" style={openSidebar ? { transform: "translateX(-250px)" } : { transform: "translateX(0)" }}>
         <button onClick={open_sidebar}>
-          <i class="fas fa-times"></i>
+          <i className="fas fa-times"></i>
         </button>
         <ul>
           <li>
-            <NavLink to="/" exact activeClassName="nav-link-active" className="nav-link">
+            <NavLink to="/" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" exact activeClassName="nav-link-active" className="nav-link">
+            <NavLink to="/about" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/skills" exact activeClassName="nav-link-active" className="nav-link">
+            <NavLink to="/skills" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
               Skills
             </NavLink>
           </li>
           <li>
-            <NavLink to="/projects" exact activeClassName="nav-link-active" className="nav-link">
+            <NavLink to="/projects" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" exact activeClassName="nav-link-active" className="nav-link">
+            <NavLink to="/#contact" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
               Contact me
             </NavLink>
           </li>

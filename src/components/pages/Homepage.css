@@ -1,0 +1,67 @@
+.homepage {
+  min-height: calc(100vh - 110.77px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.homepage h1,
+.homepage span {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.homepage h1 {
+  color: #fff;
+}
+
+.homepage span {
+  color: #442eba;
+}
+
+.homepage-role {
+  color: #a5a5a5;
+  font-size: 1.5rem;
+}
+
+.homepage img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.homepage button {
+  min-width: 280px;
+  margin: 1.8rem 0 1rem 0;
+}
+
+.homepage-cv {
+  color: #a5a5a5;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #442eba;
+  padding-bottom: 3px;
+}
+
+.homepage-find-out-more {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.homepage-find-out-more p,
+.homepage-find-out-more svg {
+  color: #a5a5a5;
+  font-size: 1.25rem;
+}
+
+.homepage-find-out-more svg {
+  font-size: 1.4rem;
+}
