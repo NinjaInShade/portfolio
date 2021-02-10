@@ -1,5 +1,6 @@
 .homepage {
-  min-height: calc(100vh - 110.77px);
+  min-height: calc(100vh - 115px);
+  padding: 25px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,10 +8,18 @@
   position: relative;
 }
 
+.homepage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 115px;
+}
+
 .homepage h1,
 .homepage span {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .homepage h1 {
@@ -23,17 +32,17 @@
 
 .homepage-role {
   color: #a5a5a5;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .homepage img {
-  max-width: 300px;
+  max-width: 350px;
   width: 100%;
   height: auto;
 }
 
 .homepage button {
-  min-width: 280px;
+  min-width: 300px;
   margin: 1.8rem 0 1rem 0;
 }
 
@@ -47,7 +56,7 @@
 .homepage-find-out-more {
   position: absolute;
   left: 50%;
-  bottom: 15px;
+  bottom: 1.5vh;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
@@ -64,4 +73,24 @@
 
 .homepage-find-out-more svg {
   font-size: 1.4rem;
+}
+
+@media (max-width: 500px) {
+  .homepage h1,
+  .homepage span {
+    font-size: 3rem;
+  }
+
+  .homepage-role {
+    font-size: 1.3rem;
+  }
+
+  .homepage img {
+    max-width: 280px;
+  }
+
+  .homepage button {
+    min-width: 280px;
+    margin: 1.8rem 0 1rem 0;
+  }
 }
