@@ -1,14 +1,15 @@
 import React from "react";
 
-import "./Homepage.css";
-import avatar from "../../assets/avatar.png";
-import Button from "../../components/UI/Button";
+import "../Homepage/Homepage.css";
+import "../Homepage/HomepageProjects.css";
+import avatar from "../../../assets/avatar.png";
+import Button from "../../UI/Button";
 
 export default function Homepage() {
   return (
     <>
       <section className="homepage">
-        <div class="homepage-header">
+        <div className="homepage-header">
           <h1>
             Hi, I'm <span>Leon</span>
           </h1>
@@ -22,12 +23,12 @@ export default function Homepage() {
           </a>
         </div>
 
-        <div className="homepage-find-out-more">
+        <a href="/#homepage-projects" className="homepage-find-out-more">
           <p>Check more out</p>
           <i className="fas fa-chevron-down"></i>
-        </div>
+        </a>
       </section>
-      <section className="homepage-test"></section>
+      <section className="homepage-projects" id="homepage-projects"></section>
     </>
   );
 }

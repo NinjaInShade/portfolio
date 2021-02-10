@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/UI/Navbar";
 import Footer from "./components/UI/Footer";
 import Unmatched from "./components/pages/Unmatched";
-import Homepage from "./components/pages/Homepage.js";
+import Homepage from "./components/pages/Homepage/Homepage.js";
 
 function App() {
   return (

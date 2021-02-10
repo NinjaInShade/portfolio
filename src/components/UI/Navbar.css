@@ -4,6 +4,7 @@ nav {
   position: relative;
   padding: 25px 50px;
   height: 115px;
+  background-position: top;
 }
 
 nav img {

@@ -72,9 +72,6 @@
   font-size: 1.4rem;
 }
 
-.homepage-test {
-}
-
 @media (max-width: 500px) {
   .homepage h1,
   .homepage span {
