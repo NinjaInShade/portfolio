@@ -5,7 +5,8 @@ html {
   min-height: 100vh;
 }
 
-#root {
+#root,
+.homepage-test {
   background: url("./assets/stars.png");
   background-position: 100% 100%;
   background-size: cover;
