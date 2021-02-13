@@ -1,6 +1,6 @@
 .homepage {
   min-height: calc(100vh - 115px);
-  padding: 25px 50px;
+  padding: 15px 25px;
   position: relative;
   display: flex;
   flex-direction: column;

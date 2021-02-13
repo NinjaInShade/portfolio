@@ -73,9 +73,9 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/#contact" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
+            <a href="/#contact" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
               Contact me
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
