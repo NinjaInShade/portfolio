@@ -28,3 +28,13 @@
 .home-projects-text button {
   width: 100%;
 }
+
+@media (max-width: 450px) {
+  .home-projects-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .home-projects-text p {
+    font-size: 1.2rem;
+  }
+}

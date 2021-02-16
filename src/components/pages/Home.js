@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Astronaught from "../../assets/images/astronaught.svg";
 import Button from "../UI/Button";
 import ProjectCard from "../UI/ProjectCard";
+import FlashcardsThumbnail from "../../assets/thumbnails/FlashcardsThumbnail.png";
 
 import "./Home.css";
 import "./Home-projects.css";
@@ -33,7 +34,13 @@ export default function Home() {
           </Button>
         </div>
 
-        <ProjectCard />
+        <ProjectCard
+          img={FlashcardsThumbnail}
+          title="Flashcards app"
+          description="This app is designed to help with revision by letting you make flashcards which you can flip to reveal the answer. You can group flashcard into a collection and even test yourself."
+          live_URL="/"
+          github_URL="https://github.com/NinjaInShade/flashcards"
+        />
       </section>
     </>
   );
