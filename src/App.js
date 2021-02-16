@@ -4,16 +4,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/UI/Navbar";
 import Footer from "./components/UI/Footer";
 import Unmatched from "./components/pages/Unmatched";
-import Homepage from "./components/pages/Homepage/Homepage.js";
+import Home from "./components/pages/Home.js";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
-        {/* Homepage */}
         <Route path="/" exact>
-          <Homepage />
+          <Home />
         </Route>
         <Route>
           <Unmatched />

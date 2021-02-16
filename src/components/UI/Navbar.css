@@ -1,10 +1,15 @@
 nav {
+  position: relative;
+  padding: 25px;
+  height: 115px;
+  z-index: 3;
+}
+
+.navbar-container {
   display: flex;
   align-items: center;
-  position: relative;
-  padding: 25px 50px;
-  height: 115px;
-  background-position: top;
+  max-width: 1200px;
+  margin: auto;
 }
 
 nav img {
