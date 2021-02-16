@@ -38,12 +38,12 @@
   width: 100%;
   border-radius: 8px;
   z-index: 3;
-  margin-right: 2rem;
+  margin: 0 1rem;
 }
 
 .project-card-text {
   flex-direction: column;
-  margin-left: 2rem;
+  margin: 0 1rem;
   z-index: 5;
 }
 
