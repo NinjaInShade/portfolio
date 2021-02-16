@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Astronaught from "../../assets/images/astronaught.svg";
 import Button from "../UI/Button";
+import ProjectCard from "../UI/ProjectCard";
 
 import "./Home.css";
 import "./Home-projects.css";
@@ -23,7 +24,17 @@ export default function Home() {
         <div className="home-wave"></div>
         <div className="home-pattern"></div>
       </header>
-      <section className="home-projects"></section>
+      <section className="home-projects">
+        <div className="home-projects-text">
+          <h1>My projects</h1>
+          <p>Most of my projects are full-stack as i feel you learn the most from them, and are more exciting to create.</p>
+          <Button>
+            <Link to="/projects">View all projects</Link>
+          </Button>
+        </div>
+
+        <ProjectCard />
+      </section>
     </>
   );
 }

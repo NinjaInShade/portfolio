@@ -2,3 +2,29 @@
   min-height: 100vh;
   background: #fff;
 }
+
+.home-projects-text {
+  padding: 25px;
+  width: fit-content;
+  margin: 0 auto 3rem auto;
+}
+
+.home-projects-text h1 {
+  color: #2e1b6f;
+  font-weight: bold;
+  font-size: 4.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-projects-text p {
+  font-weight: 600;
+  max-width: 500px;
+  margin: auto;
+  color: #6655b0;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-projects-text button {
+  width: 100%;
+}
