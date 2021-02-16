@@ -92,16 +92,7 @@
 }
 
 @media (max-width: 550px) {
-  .project-card-text-title svg {
-    margin-bottom: 0;
-  }
-
   .project-card-text {
-    align-items: flex-start !important;
-  }
-
-  .project-card-text-title {
-    flex-direction: column;
     align-items: flex-start !important;
   }
 
