@@ -2,7 +2,7 @@ nav {
   position: relative;
   padding: 25px;
   height: 115px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .navbar-container {
