@@ -47,9 +47,19 @@ export default function ContactForm() {
 
   function submitForm(e) {
     e.preventDefault();
+    const sanitized_data = sanitizeData([name, email, message]);
+    // Empty checks
+    updated_errors.name = minMaxLength(sanitized_data[0], 1, undefined);
+    updated_errors.email = minMaxLength(sanitized_data[1], 1, undefined);
+    updated_errors.message = minMaxLength(sanitized_data[2], 1, undefined);
+
+    setErrors(updated_errors);
 
     if (errors.name === "default" && errors.email === "default" && errors.message === "default") {
       if (name !== "" && email !== "" && message !== "") {
+        setName("");
+        setEmail("");
+        setMessage("");
         return console.log("Valid");
       } else {
         return;
