@@ -10,6 +10,7 @@ import HubThumbnail from "../../assets/thumbnails/HubThumbnail.png";
 
 import "./Home.css";
 import "./Home-projects.css";
+import "./Home-contact.css";
 
 export default function Home() {
   return (
@@ -69,6 +70,9 @@ export default function Home() {
           reversed
           white
         />
+      </section>
+      <section className="home-contact">
+        <div className="home-contact-wave"></div>
       </section>
     </>
   );

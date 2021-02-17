@@ -48,12 +48,12 @@
   width: 100%;
   border-radius: 8px;
   z-index: 3;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
 .project-card-text {
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 0 2rem;
   z-index: 5;
 }
 
@@ -63,6 +63,7 @@
 
 .project-card-text-title h2,
 .project-card-text-title svg {
+  text-align: left;
   color: #fff;
   font-size: 3rem;
   padding-right: 1rem;
@@ -103,7 +104,7 @@
   }
 
   .project-card-text {
-    margin-left: 0;
+    margin: 0;
   }
 }
 
@@ -113,7 +114,6 @@
   }
 
   .project-card-text-title h2 {
-    text-align: left;
     font-size: 1.6rem;
   }
 
