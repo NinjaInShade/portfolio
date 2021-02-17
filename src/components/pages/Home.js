@@ -73,16 +73,18 @@ export default function Home() {
       </section>
       <section className="home-contact flex">
         <div className="home-contact-container flex">
-          <div className="home-contact-text">
-            <h2>Get in touch</h2>
-            <p>You can contact me for a project proposition or for any questions</p>
-            <div className="home-contact-media flex">
-              <i className="fas fa-phone-alt"></i>
-              <p>07498 610586</p>
-            </div>
-            <div className="home-contact-media flex">
-              <i className="fas fa-envelope"></i>
-              <p>leonmichalak6@gmail.com</p>
+          <div className="home-contact-text flex">
+            <h2 className="home-contact-header">Get in touch</h2>
+            <p className="home-contact-lead">You can contact me for a project proposition or for any questions</p>
+            <div className="home-contact-media-container">
+              <div className="home-contact-media flex">
+                <i className="fas fa-phone-alt"></i>
+                <p>07498 610586</p>
+              </div>
+              <div className="home-contact-media flex">
+                <i className="fas fa-envelope"></i>
+                <p>leonmichalak6@gmail.com</p>
+              </div>
             </div>
           </div>
           <form className="home-contact-form">
