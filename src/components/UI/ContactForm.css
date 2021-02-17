@@ -129,6 +129,10 @@
 }
 
 @media (max-width: 1200px) {
+  .home-contact {
+    padding: 75px 0;
+  }
+
   .home-contact-container {
     flex-direction: column;
   }
