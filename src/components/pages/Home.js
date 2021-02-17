@@ -18,7 +18,7 @@ export default function Home() {
             <h1>Hi, I'm Leon</h1>
             <p>I’m a UK based web developer developing complete full-stack applications</p>
             <Button>
-              <Link to="/#contact">Contact me</Link>
+              <a href="/#contact">Contact me</a>
             </Button>
           </div>
           <img src={Astronaught} alt="Floating astronaught" />
