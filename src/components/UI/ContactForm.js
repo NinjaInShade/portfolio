@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import { sanitizeData, minMaxLength, isEmail } from "../../util/validation";
 
 import "./ContactForm.css";
 
@@ -8,8 +9,54 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const [errors, setErrors] = useState({
+    name: "default",
+    email: "default",
+    message: "default",
+  });
+
+  const updated_errors = { ...errors };
+
+  function validateName(e) {
+    setName(e.target.value);
+
+    const sanitized_data = sanitizeData([e.target.value]);
+    updated_errors.name = minMaxLength(sanitized_data[0], 1, 15);
+
+    setErrors(updated_errors);
+  }
+
+  function validateEmail(e) {
+    setEmail(e.target.value);
+
+    const sanitized_data = sanitizeData([e.target.value]);
+    updated_errors.email = minMaxLength(sanitized_data[0], 1, undefined);
+    updated_errors.email = isEmail(sanitized_data[0]);
+
+    setErrors(updated_errors);
+  }
+
+  function validateMessage(e) {
+    setMessage(e.target.value);
+
+    const sanitized_data = sanitizeData([e.target.value]);
+    updated_errors.message = minMaxLength(sanitized_data[0], 1, 120);
+
+    setErrors(updated_errors);
+  }
+
   function submitForm(e) {
     e.preventDefault();
+
+    if (errors.name === "default" && errors.email === "default" && errors.message === "default") {
+      if (name !== "" && email !== "" && message !== "") {
+        return console.log("Valid");
+      } else {
+        return;
+      }
+    } else {
+      return;
+    }
   }
 
   return (
@@ -33,7 +80,19 @@ export default function ContactForm() {
           <div className="home-contact-form-top flex">
             <div className="home-contact-input-wrapper flex">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" required placeholder="John Doe" value={name} onChange={(e) => setName(e.target.value)} />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="John Doe"
+                value={name}
+                onChange={(e) => validateName(e)}
+                style={errors.name !== "default" ? { borderBottom: "2px solid #FF0001" } : {}}
+              />
+              <p className="error-text" style={errors.name === "default" ? { visibility: "hidden" } : {}}>
+                {errors.name}
+              </p>
             </div>
             <div className="home-contact-input-wrapper flex">
               <label htmlFor="email">Email</label>
@@ -44,8 +103,12 @@ export default function ContactForm() {
                 required
                 placeholder="Example@email.com"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => validateEmail(e)}
+                style={errors.email !== "default" ? { borderBottom: "2px solid #FF0001" } : {}}
               />
+              <p className="error-text" style={errors.email === "default" ? { visibility: "hidden" } : {}}>
+                {errors.email}
+              </p>
             </div>
           </div>
           <div className="home-contact-input-wrapper flex">
@@ -57,8 +120,12 @@ export default function ContactForm() {
               required
               placeholder="Hi there..."
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={(e) => validateMessage(e)}
+              style={errors.message !== "default" ? { borderBottom: "2px solid #FF0001" } : {}}
             />
+            <p className="error-text" style={errors.message === "default" ? { visibility: "hidden" } : {}}>
+              {errors.message}
+            </p>
           </div>
           <Button className="flex" type="submit" onClick={(e) => submitForm(e)}>
             {/* <i className="fas fa-phone-alt"></i> */}

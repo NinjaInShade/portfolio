@@ -4,7 +4,7 @@ import Astronaught from "../../assets/images/astronaught.svg";
 import Button from "../UI/Button";
 import ProjectCard from "../UI/ProjectCard";
 import ContactForm from "../UI/ContactForm";
-import projects from "../../data/projects";
+import projects from "../../util/projects";
 
 import "./Home.css";
 import "./Home-projects.css";

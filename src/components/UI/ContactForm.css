@@ -128,6 +128,13 @@
   align-items: flex-start !important;
 }
 
+.error-text {
+  color: #ff0001;
+  text-align: left;
+  font-weight: 600;
+  padding-top: 6px;
+}
+
 @media (max-width: 1200px) {
   .home-contact {
     padding: 75px 0;
