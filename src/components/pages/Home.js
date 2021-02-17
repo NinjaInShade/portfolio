@@ -3,14 +3,11 @@ import { Link } from "react-router-dom";
 import Astronaught from "../../assets/images/astronaught.svg";
 import Button from "../UI/Button";
 import ProjectCard from "../UI/ProjectCard";
-import FlashcardsThumbnail from "../../assets/thumbnails/FlashcardsThumbnail.png";
-import SiteBuilderThumbnail from "../../assets/thumbnails/SiteBuilderThumbnail.png";
-import TodoThumbnail from "../../assets/thumbnails/TodoThumbnail.png";
-import HubThumbnail from "../../assets/thumbnails/HubThumbnail.png";
+import ContactForm from "../UI/ContactForm";
+import projects from "../../data/projects";
 
 import "./Home.css";
 import "./Home-projects.css";
-import "./Home-contact.css";
 
 export default function Home() {
   return (
@@ -38,79 +35,22 @@ export default function Home() {
           </Button>
         </div>
 
-        <ProjectCard
-          img={FlashcardsThumbnail}
-          title="Flashcards app"
-          description="This app is designed to help with revision by letting you make flashcards which you can flip to reveal the answer. You can group flashcard into a collection and even test yourself."
-          live_URL="https://leonsflashcards.web.app/"
-          github_URL="https://github.com/NinjaInShade/flashcards"
-        />
-        <ProjectCard
-          img={SiteBuilderThumbnail}
-          title="Site builder app"
-          description="This app’s idea is to help people with making a polished website through providing the user with resources, tips and things that should be included to provide a good user experience with strong UI."
-          live_URL="https://sitebuilder-66d12.web.app/"
-          github_URL="https://github.com/NinjaInShade/site-builder"
-          reversed
-          white
-        />
-        <ProjectCard
-          img={TodoThumbnail}
-          title="Todo app"
-          description="Most web developers have made this project as it encorporates key but simple concepts for a beginner developer to learn. I decided to add a dark/light theme to it to make it a bit less bland."
-          live_URL="https://todoapp-48ccc.web.app/"
-          github_URL="https://github.com/NinjaInShade/todo-app"
-        />
-        <ProjectCard
-          img={HubThumbnail}
-          title="Personal hub app"
-          description="I made this for myself and included some useful tools like links to my site builder app and todo app, code docs and experimented with a settings page where you can customize bits of the app."
-          live_URL="https://leonshub-ec26e.web.app/"
-          github_URL="https://github.com/NinjaInShade/leons_hub"
-          reversed
-          white
-        />
+        {projects.map((project, index) => {
+          return (
+            <ProjectCard
+              key={index}
+              img={project.img}
+              title={project.title}
+              description={project.description}
+              live_URL={project.live_URL}
+              github_URL={project.github_URL}
+              reversed={project.reversed}
+              white={project.white}
+            />
+          );
+        })}
       </section>
-      <section className="home-contact flex">
-        <div className="home-contact-container flex">
-          <div className="home-contact-text flex">
-            <h2 className="home-contact-header">Get in touch</h2>
-            <p className="home-contact-lead">You can contact me for a project proposition or for any questions</p>
-            <div className="home-contact-media-container">
-              <div className="home-contact-media flex">
-                <i className="fas fa-phone-alt"></i>
-                <p>07498 610586</p>
-              </div>
-              <div className="home-contact-media flex">
-                <i className="fas fa-envelope"></i>
-                <p>leonmichalak6@gmail.com</p>
-              </div>
-            </div>
-          </div>
-          <form className="home-contact-form">
-            <div className="home-contact-form-top flex">
-              <div className="home-contact-input-wrapper flex">
-                <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="name" required placeholder="John Doe" />
-              </div>
-              <div className="home-contact-input-wrapper flex">
-                <label htmlFor="email">Email</label>
-                <input type="email" name="email" id="email" required placeholder="Example@email.com" />
-              </div>
-            </div>
-            <div className="home-contact-input-wrapper flex">
-              <label htmlFor="message">Message</label>
-              <input type="text" name="message" id="message" required placeholder="Hi there..." />
-            </div>
-            <Button className="flex" type="submit">
-              <i className="fas fa-phone-alt"></i>
-              <p>Send mail</p>
-            </Button>
-          </form>
-        </div>
-        <div className="home-contact-bg"></div>
-        <div className="home-contact-wave"></div>
-      </section>
+      <ContactForm />
     </>
   );
 }
