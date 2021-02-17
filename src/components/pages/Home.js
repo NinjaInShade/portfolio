@@ -87,17 +87,17 @@ export default function Home() {
           </div>
           <form className="home-contact-form">
             <div className="home-contact-form-top flex">
-              <div>
-                <label for="name">Name</label>
+              <div className="home-contact-input-wrapper flex">
+                <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="name" required placeholder="John Doe" />
               </div>
-              <div>
-                <label for="email">Email</label>
+              <div className="home-contact-input-wrapper flex">
+                <label htmlFor="email">Email</label>
                 <input type="email" name="email" id="email" required placeholder="Example@email.com" />
               </div>
             </div>
-            <div>
-              <label for="message">Message</label>
+            <div className="home-contact-input-wrapper flex">
+              <label htmlFor="message">Message</label>
               <input type="text" name="message" id="message" required placeholder="Hi there..." />
             </div>
             <Button className="flex" type="submit">
