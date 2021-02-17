@@ -19,7 +19,7 @@ export default function Home() {
         <div className="home-text-container flex">
           <div className="home-text flex">
             <h1>Hi, I'm Leon</h1>
-            <p>I’m a UK based web developer developing creative full-stack applications</p>
+            <p>I’m a UK based web developer developing complete full-stack applications</p>
             <Button>
               <Link to="/#contact">Contact me</Link>
             </Button>
@@ -71,7 +71,42 @@ export default function Home() {
           white
         />
       </section>
-      <section className="home-contact">
+      <section className="home-contact flex">
+        <div className="home-contact-container flex">
+          <div className="home-contact-text">
+            <h2>Get in touch</h2>
+            <p>You can contact me for a project proposition or for any questions</p>
+            <div className="home-contact-media flex">
+              <i className="fas fa-phone-alt"></i>
+              <p>07498 610586</p>
+            </div>
+            <div className="home-contact-media flex">
+              <i className="fas fa-envelope"></i>
+              <p>leonmichalak6@gmail.com</p>
+            </div>
+          </div>
+          <form className="home-contact-form">
+            <div className="home-contact-form-top flex">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required placeholder="John Doe" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Example@email.com" />
+              </div>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <input type="text" name="message" id="message" required placeholder="Hi there..." />
+            </div>
+            <Button className="flex" type="submit">
+              <i className="fas fa-phone-alt"></i>
+              <p>Send mail</p>
+            </Button>
+          </form>
+        </div>
+        <div className="home-contact-bg"></div>
         <div className="home-contact-wave"></div>
       </section>
     </>

@@ -76,6 +76,7 @@
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: left;
+  margin-right: auto;
 }
 
 .project-card-text button {
