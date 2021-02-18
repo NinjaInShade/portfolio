@@ -12,34 +12,6 @@ export default function Navbar() {
     setOpenSidebar(!openSidebar);
   }
 
-  (function () {
-    scrollTo();
-  })();
-
-  function scrollTo() {
-    const links = document.querySelectorAll(".scroll");
-    links.forEach((each) => (each.onclick = scrollAnchors));
-  }
-
-  function scrollAnchors(e, respond = null) {
-    const distanceToTop = (el) => Math.floor(el.getBoundingClientRect().top);
-    e.preventDefault();
-    var targetID = respond ? respond.getAttribute("href") : this.getAttribute("href");
-    const targetAnchor = document.querySelector(targetID);
-    if (!targetAnchor) return;
-    const originalTop = distanceToTop(targetAnchor);
-    window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
-    const checkIfDone = setInterval(function () {
-      const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-      if (distanceToTop(targetAnchor) === 0 || atBottom) {
-        targetAnchor.tabIndex = "-1";
-        targetAnchor.focus();
-        window.history.pushState("", "", targetID);
-        clearInterval(checkIfDone);
-      }
-    }, 100);
-  }
-
   return (
     <nav>
       <div className="navbar-container">
@@ -78,7 +50,7 @@ export default function Navbar() {
         <button className="hamburger" onClick={open_sidebar}>
           <i className="fas fa-bars"></i>
         </button>
-        <div className="sidebar-overlay" style={openSidebar ? { opacity: "100", zIndex: "2", display: "initial" } : {}}></div>
+        <div className="sidebar-overlay" style={openSidebar ? { opacity: "100", zIndex: "2", right: "0" } : {}}></div>
         <div className="sidebar" style={openSidebar ? { transform: "translateX(-250px)" } : { transform: "translateX(0)" }}>
           <button onClick={open_sidebar}>
             <i className="fas fa-times"></i>
