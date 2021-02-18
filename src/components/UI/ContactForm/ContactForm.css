@@ -7,7 +7,7 @@
 }
 
 .home-contact-bg {
-  background: url("../../assets/images/bg.svg");
+  background: url("../../../assets/images/bg.svg");
   top: 0;
   left: 0;
   width: 100%;
@@ -16,7 +16,7 @@
 }
 
 .home-contact-wave {
-  background: url("../../assets/images/project-wave-top.svg") no-repeat;
+  background: url("../../../assets/images/project-wave-top.svg") no-repeat;
   position: absolute;
   height: 90px;
   top: -25px;
@@ -197,7 +197,7 @@
 
 @media (max-width: 1400px) {
   .home-contact-wave {
-    background: url("../../assets/images/project-wave-top-2.svg") no-repeat;
+    background: url("../../../assets/images/project-wave-top-2.svg") no-repeat;
     top: -20px;
   }
 }

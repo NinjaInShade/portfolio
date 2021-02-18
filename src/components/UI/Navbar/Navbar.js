@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
-import Logo from "../../assets/brand/logo.png";
-import Button from "./Button";
+import Logo from "../../../assets/brand/logo.png";
+import Button from "../Button/Button";
 
 export default function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -50,7 +50,7 @@ export default function Navbar() {
         <button className="hamburger" onClick={open_sidebar}>
           <i className="fas fa-bars"></i>
         </button>
-        <div className="sidebar-overlay" style={openSidebar ? { opacity: "100", zIndex: "2", right: "0" } : {}}></div>
+        <div className="sidebar-overlay" style={openSidebar ? { opacity: "100", zIndex: "2", right: "0" } : {}} onClick={open_sidebar}></div>
         <div className="sidebar" style={openSidebar ? { transform: "translateX(-250px)" } : { transform: "translateX(0)" }}>
           <button onClick={open_sidebar}>
             <i className="fas fa-times"></i>

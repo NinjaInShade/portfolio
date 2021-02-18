@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Button from "./Button";
-import { sanitizeData, minMaxLength, isEmail } from "../../util/validation";
+import Button from "../Button/Button";
+import { sanitizeData, minMaxLength, isEmail } from "../../../util/validation";
 
 import "./ContactForm.css";
 

@@ -25,17 +25,17 @@
 
 .project-card-wave {
   top: -1px;
-  background: url("../../assets/images/project-wave-top.svg") no-repeat;
+  background: url("../../../assets/images/project-wave-top.svg") no-repeat;
 }
 
 .project-card-wave-2 {
   bottom: 0px;
-  background: url("../../assets/images/project-wave-bottom.svg") no-repeat;
+  background: url("../../../assets/images/project-wave-bottom.svg") no-repeat;
   transform: rotateY(180deg);
 }
 
 .project-card-bg {
-  background: url("../../assets/images/bg.svg");
+  background: url("../../../assets/images/bg.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -86,11 +86,11 @@
 
 @media (max-width: 1400px) {
   .project-card-wave {
-    background: url("../../assets/images/project-wave-top-2.svg") no-repeat;
+    background: url("../../../assets/images/project-wave-top-2.svg") no-repeat;
   }
 
   .project-card-wave-2 {
-    background: url("../../assets/images/project-wave-bottom-2.svg") no-repeat;
+    background: url("../../../assets/images/project-wave-bottom-2.svg") no-repeat;
   }
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Astronaught from "../../assets/images/astronaught.svg";
-import Button from "../UI/Button";
-import ProjectCard from "../UI/ProjectCard";
-import ContactForm from "../UI/ContactForm";
-import projects from "../../util/projects";
+import Astronaught from "../../../assets/images/astronaught.svg";
+import Button from "../../UI/Button/Button";
+import ProjectCard from "../../UI/ProjectCard/ProjectCard";
+import ContactForm from "../../UI/ContactForm/ContactForm";
+import projects from "../../../util/projects";
 
 import "./Home.css";
 import "./Home-projects.css";

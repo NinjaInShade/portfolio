@@ -13,7 +13,7 @@
 }
 
 .home-pattern {
-  background: url("../../assets/images/bg.svg");
+  background: url("../../../assets/images/bg.svg");
   left: 0;
   top: -115px;
   height: 105%;
@@ -21,7 +21,7 @@
 }
 
 .home-wave {
-  background: url("../../assets/images/wave.svg") no-repeat bottom;
+  background: url("../../../assets/images/wave.svg") no-repeat bottom;
   bottom: 0;
   height: 60vh;
   z-index: 2;
@@ -74,7 +74,7 @@
 
 @media (max-width: 1050px) {
   .home-wave {
-    background: url("../../assets/images/wave_2.svg") no-repeat bottom;
+    background: url("../../../assets/images/wave_2.svg") no-repeat bottom;
   }
 
   .home-text {
