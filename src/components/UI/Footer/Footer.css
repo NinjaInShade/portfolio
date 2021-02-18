@@ -1,0 +1,45 @@
+footer {
+  background: #342079;
+  width: 100%;
+  position: relative;
+}
+
+footer .container {
+  max-width: 1200px;
+  padding: 25px;
+  margin: auto;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+footer .bg {
+  background: url("../../../assets/images/bg.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+footer h3,
+footer li {
+  text-align: left;
+}
+
+footer h3 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+footer li,
+footer svg {
+  color: #a092de;
+  font-size: 1.2rem;
+}
+
+footer li {
+  margin: 1rem 0;
+}
