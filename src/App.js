@@ -7,8 +7,8 @@ import Home from "./components/pages/Home.js";
 import "./App.css";
 
 // TODO: Refactor contact form. The html/css may be excessive and could be a lot cleaner and smaller.
-// TODO: Change sidebar bg colour and darken rest of the screen, or consider different approach.
-// TODO: Make a page which after you send an email informs if email was send correctly.
+// TODO: Make a page which after you send an email informs if email was send correctly (and make API for sending the email and server side validation).
+// TODO: Make download cv button on navbar work by reaching to API and using PDFKit perhaps to make the pdf on the fly, or have a pdf made beforehand and make it download that.
 
 function App() {
   return (
