@@ -32,12 +32,19 @@ nav img {
   font-size: 1.4rem;
 }
 
-.nav-link:hover {
+.sidebar .nav-link {
+  color: #6655b0;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:active {
   color: #fff;
 }
 
-.nav-link-active {
-  color: #fff;
+.sidebar .nav-link:hover,
+.sidebar .nav-link:active {
+  color: #8674d6;
 }
 
 .hamburger {
@@ -52,19 +59,35 @@ nav img {
   cursor: pointer;
 }
 
+.sidebar button svg {
+  color: #2e1b6f;
+}
+
 .sidebar {
   position: absolute;
   top: 0;
   right: -250px;
   width: 250px;
   height: 100vh;
-  background: #2a3f59;
+  background: #fff;
   transition: transform 0.3s ease-in-out;
-  padding: 25px 50px 25px 0;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  z-index: 2;
+  z-index: 3;
+}
+
+.sidebar-overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .sidebar button {
@@ -76,7 +99,7 @@ nav img {
   margin: 15px 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .nav-links {
     display: none;
   }

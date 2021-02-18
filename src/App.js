@@ -8,7 +8,6 @@ import "./App.css";
 
 // TODO: Refactor contact form. The html/css may be excessive and could be a lot cleaner and smaller.
 // TODO: Change sidebar bg colour and darken rest of the screen, or consider different approach.
-// TODO: Place download cv in a convient place
 // TODO: Make a page which after you send an email informs if email was send correctly.
 
 function App() {

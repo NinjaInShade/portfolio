@@ -40,7 +40,7 @@ export default function ContactForm() {
     setMessage(e.target.value);
 
     const sanitized_data = sanitizeData([e.target.value]);
-    updated_errors.message = minMaxLength(sanitized_data[0], 1, 120);
+    updated_errors.message = minMaxLength(sanitized_data[0], 1, 500);
 
     setErrors(updated_errors);
   }

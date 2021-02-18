@@ -35,3 +35,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+.underline {
+  text-decoration: underline;
+}
