@@ -80,3 +80,14 @@ footer .media .flex {
 footer .media svg {
   font-size: 2.2rem;
 }
+
+@media (max-width: 500px) {
+  footer .media .flex {
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  footer .media svg {
+    margin-right: 1rem;
+  }
+}
