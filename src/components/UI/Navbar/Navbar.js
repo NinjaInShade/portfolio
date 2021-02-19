@@ -50,7 +50,11 @@ export default function Navbar() {
         <button className="hamburger" onClick={open_sidebar}>
           <i className="fas fa-bars"></i>
         </button>
-        <div className="sidebar-overlay" style={openSidebar ? { opacity: "100", zIndex: "2" } : {}} onClick={open_sidebar}></div>
+        <div
+          className="sidebar-overlay"
+          style={openSidebar ? { opacity: "100", zIndex: "2", pointerEvents: "all" } : {}}
+          onClick={open_sidebar}
+        ></div>
         <div className="sidebar" style={openSidebar ? { transform: "translateX(-250px)" } : { transform: "translateX(0)" }}>
           <button onClick={open_sidebar}>
             <i className="fas fa-times"></i>
