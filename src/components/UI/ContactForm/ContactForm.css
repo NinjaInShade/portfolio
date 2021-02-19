@@ -3,7 +3,7 @@
   background: linear-gradient(180deg, rgba(19, 9, 69, 1) 0%, rgba(52, 32, 121, 1) 100%);
   width: 100%;
   position: relative;
-  padding: 150px 0;
+  padding: 150px 0 75px 0;
 }
 
 .home-contact-bg {
@@ -137,7 +137,7 @@
 
 @media (max-width: 1200px) {
   .home-contact {
-    padding: 75px 0;
+    padding: 75px 0 0 0;
   }
 
   .home-contact-container {
