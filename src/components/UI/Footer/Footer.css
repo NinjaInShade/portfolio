@@ -38,9 +38,12 @@ footer h3 {
 
 footer li,
 footer svg,
-footer a {
+footer a,
+footer p {
   color: #a092de;
   font-size: 1.2rem;
+  text-align: left;
+  word-break: break-all;
 }
 
 footer a:hover,
