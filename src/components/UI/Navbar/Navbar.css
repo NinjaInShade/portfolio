@@ -64,7 +64,7 @@ nav img {
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -250px;
   width: 250px;
@@ -81,7 +81,7 @@ nav img {
 .sidebar-overlay {
   pointer-events: none;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100vw;

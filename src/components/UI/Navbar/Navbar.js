@@ -9,6 +9,7 @@ export default function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
 
   function open_sidebar() {
+    document.body.style.position = openSidebar ? "initial" : "fixed";
     setOpenSidebar(!openSidebar);
   }
 
