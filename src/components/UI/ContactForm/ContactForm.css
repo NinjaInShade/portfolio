@@ -68,12 +68,14 @@
 }
 
 .home-contact-media p,
-.home-contact-media svg {
+.home-contact-media svg,
+.home-contact-media a {
   color: #fff;
   font-size: 1.4rem;
 }
 
-.home-contact-media p {
+.home-contact-media p,
+.home-contact-media a {
   margin-left: 1.6rem;
 }
 
@@ -135,6 +137,10 @@
   padding-top: 6px;
 }
 
+.home-contact-media a:hover {
+  color: rgb(216, 216, 216);
+}
+
 @media (max-width: 1200px) {
   .home-contact {
     padding: 75px 0 0 0;
@@ -189,7 +195,8 @@
     margin: 0 auto 0.5rem auto;
   }
 
-  .home-contact-media p {
+  .home-contact-media p,
+  .home-contact-media a {
     margin-left: 0.8rem;
     word-break: break-all;
   }
@@ -212,7 +219,8 @@
   }
 
   .home-contact-media p,
-  .home-contact-media svg {
+  .home-contact-media svg,
+  .home-contact-media a {
     font-size: 1.2rem;
   }
 }

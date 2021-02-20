@@ -34,7 +34,7 @@ export default function Footer() {
             <li>
               <div className="flex">
                 <i className="fas fa-envelope"></i>
-                <p>leonmichalak6@gmail.com</p>
+                <a href="mailto:leonmichalak6@gmail.com">leonmichalak6@gmail.com</a>
               </div>
             </li>
             <li>

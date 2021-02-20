@@ -82,7 +82,7 @@ export default function ContactForm() {
             </div>
             <div className="home-contact-media flex">
               <i className="fas fa-envelope"></i>
-              <p>leonmichalak6@gmail.com</p>
+              <a href="mailto:leonmichalak6@gmail.com">leonmichalak6@gmail.com</a>
             </div>
           </div>
         </div>
