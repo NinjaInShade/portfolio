@@ -9,7 +9,11 @@ export default function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
 
   function open_sidebar() {
-    document.body.style.position = openSidebar ? "initial" : "fixed";
+    // Use if want to disable scrolling when opening sidebar
+    // Prefer to not as it hides the vertical scrollbar which means the page gets shorter and disrupts the smoothness of the animation.
+
+    // document.body.style.overflow = openSidebar ? "initial" : "hidden";
+    // document.body.style.height = openSidebar ? "initial" : "100vh";
     setOpenSidebar(!openSidebar);
   }
 
