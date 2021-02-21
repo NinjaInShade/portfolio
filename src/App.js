@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/UI/Navbar/Navbar";
 import Footer from "./components/UI/Footer/Footer";
 import Unmatched from "./components/pages/Unmatched/Unmatched";
+import Construction from "./components/pages/Construction/Construction";
 import Home from "./components/pages/Home/Home.js";
 
 import "./App.css";
@@ -18,6 +19,12 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home />
+        </Route>
+        <Route path="/about" exact>
+          <Construction />
+        </Route>
+        <Route path="/projects" exact>
+          <Construction />
         </Route>
         <Route>
           <Unmatched />

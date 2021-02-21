@@ -1,0 +1,113 @@
+.construction-header {
+  position: relative;
+  min-height: calc(100vh - 115px);
+  background: rgb(19, 9, 69);
+  background: linear-gradient(180deg, rgba(19, 9, 69, 1) 0%, rgba(52, 32, 121, 1) 100%);
+}
+
+.construction-text-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 3;
+  padding: 25px 25px 25vh 25px;
+  max-width: 1200px;
+}
+
+.construction-text span {
+  background: -webkit-linear-gradient(135deg, rgba(114, 57, 219, 1) 0%, rgba(140, 73, 231, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.construction-text .flex {
+  max-width: 960px;
+  align-items: stretch;
+}
+
+.construction-text .flex > div {
+  flex-grow: 1;
+}
+
+.construction-text .flex .flex {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.construction-text h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 4.6rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  text-align: center;
+}
+
+.construction-text p {
+  color: #a5a5a5;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.construction-redirect {
+  color: #fff !important;
+}
+
+.construction-redirect a {
+  color: #a092de;
+}
+
+.construction-redirect a:hover {
+  color: #8173c2;
+}
+
+.construction-text img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1050px) {
+  .construction-text .flex {
+    flex-direction: column;
+  }
+
+  .construction-text img {
+    max-width: 500px;
+    width: 100%;
+    margin: 4rem auto;
+  }
+
+  .construction-text-container {
+    padding: 25px 25px 15vh 25px;
+  }
+
+  .construction-redirect {
+    margin-top: 2rem;
+  }
+
+  .construction-text h1 {
+    font-size: 3.4rem;
+    margin: 0 auto 1rem auto;
+  }
+
+  .construction-redirect,
+  .construction-text p {
+    text-align: center;
+  }
+
+  .construction-text .flex .flex {
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .construction-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .construction-text p {
+    font-size: 1.4rem;
+  }
+}
