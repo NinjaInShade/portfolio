@@ -62,6 +62,7 @@ export default function ContactForm() {
       setEmail("");
       setMessage("");
 
+      // Send fetch req to backend
       fetch(`${process.env.REACT_APP_SEND_EMAIL_DOMAIN}`, {
         method: "POST",
         headers: {
