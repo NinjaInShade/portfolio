@@ -15,55 +15,73 @@ export default function ContactForm() {
     message: "default",
   });
 
-  const updated_errors = { ...errors };
+  function validateName(value) {
+    setName(value);
 
-  function validateName(e) {
-    setName(e.target.value);
+    const sanitized_data = sanitizeData([value]);
 
-    const sanitized_data = sanitizeData([e.target.value]);
-    updated_errors.name = minMaxLength(sanitized_data[0], 1, 15);
-
-    setErrors(updated_errors);
+    setErrors((prevState) => ({ ...prevState, name: minMaxLength(sanitized_data[0], 1, 15) }));
   }
 
-  function validateEmail(e) {
-    setEmail(e.target.value);
+  function validateEmail(value) {
+    setEmail(value);
 
-    const sanitized_data = sanitizeData([e.target.value]);
-    updated_errors.email = minMaxLength(sanitized_data[0], 1, undefined);
-    updated_errors.email = isEmail(sanitized_data[0]);
+    const errors = [];
 
-    setErrors(updated_errors);
+    const sanitized_data = sanitizeData([value]);
+
+    errors.push(minMaxLength(sanitized_data[0], 1, undefined));
+    errors.push(isEmail(sanitized_data[0]));
+
+    for (let i = 0; i < errors.length; i++) {
+      if (errors[i] !== "default") {
+        return setErrors((prevState) => ({ ...prevState, email: errors[i] }));
+      }
+    }
+
+    return setErrors((prevState) => ({ ...prevState, email: "default" }));
   }
 
-  function validateMessage(e) {
-    setMessage(e.target.value);
+  function validateMessage(value) {
+    setMessage(value);
 
-    const sanitized_data = sanitizeData([e.target.value]);
-    updated_errors.message = minMaxLength(sanitized_data[0], 1, 500);
+    const sanitized_data = sanitizeData([value]);
 
-    setErrors(updated_errors);
+    setErrors((prevState) => ({ ...prevState, message: minMaxLength(sanitized_data[0], 1, 500) }));
   }
 
   function submitForm(e) {
     e.preventDefault();
-    const sanitized_data = sanitizeData([name, email, message]);
-    // Empty checks
-    updated_errors.name = minMaxLength(sanitized_data[0], 1, undefined);
-    updated_errors.email = minMaxLength(sanitized_data[1], 1, undefined);
-    updated_errors.message = minMaxLength(sanitized_data[2], 1, undefined);
 
-    setErrors(updated_errors);
+    validateName(name);
+    validateEmail(email);
+    validateMessage(message);
 
     if (errors.name === "default" && errors.email === "default" && errors.message === "default") {
-      if (name !== "" && email !== "" && message !== "") {
-        setName("");
-        setEmail("");
-        setMessage("");
-        return console.log("Valid");
-      } else {
-        return;
-      }
+      setName("");
+      setEmail("");
+      setMessage("");
+
+      fetch(`${process.env.REACT_APP_SEND_EMAIL_DOMAIN}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Successfully sent email");
+          return;
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
     } else {
       return;
     }
@@ -97,7 +115,7 @@ export default function ContactForm() {
                 required
                 placeholder="John Doe"
                 value={name}
-                onChange={(e) => validateName(e)}
+                onChange={(e) => validateName(e.target.value)}
                 style={errors.name !== "default" ? { borderBottom: "2px solid #FF0001" } : {}}
               />
               <p className="error-text" style={errors.name === "default" ? { visibility: "hidden" } : {}}>
@@ -113,7 +131,7 @@ export default function ContactForm() {
                 required
                 placeholder="Example@email.com"
                 value={email}
-                onChange={(e) => validateEmail(e)}
+                onChange={(e) => validateEmail(e.target.value)}
                 style={errors.email !== "default" ? { borderBottom: "2px solid #FF0001" } : {}}
               />
               <p className="error-text" style={errors.email === "default" ? { visibility: "hidden" } : {}}>
@@ -130,7 +148,7 @@ export default function ContactForm() {
               required
               placeholder="Hi there..."
               value={message}
-              onChange={(e) => validateMessage(e)}
+              onChange={(e) => validateMessage(e.target.value)}
               style={errors.message !== "default" ? { borderBottom: "2px solid #FF0001" } : {}}
             />
             <p className="error-text" style={errors.message === "default" ? { visibility: "hidden" } : {}}>

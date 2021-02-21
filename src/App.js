@@ -10,7 +10,10 @@ import "./App.css";
 // TODO: Refactor contact form. The html/css may be excessive and could be a lot cleaner and smaller.
 // TODO: Make a page which after you send an email informs if email was send correctly (and make API for sending the email and server side validation).
 // TODO: Make download cv button on navbar work by reaching to API and using PDFKit perhaps to make the pdf on the fly, or have a pdf made beforehand and make it download that.
+// TODO: 404 error page
 // TODO: Go through and make sure all of the sites components and such include semantic html.
+// TODO: Make astronaught on home page come shooting up from near bottom right corner into place on page load.
+// TODO: Experiment with animations -> such as sections load in as you scroll with maybe a fade animation?
 
 function App() {
   return (

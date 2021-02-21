@@ -27,23 +27,33 @@ nav img {
   margin-left: 70px;
 }
 
-.nav-link {
+.nav-link,
+nav button {
   color: #a5a5a5;
   font-size: 1.4rem;
 }
 
-.sidebar .nav-link {
+.download-cv,
+.download-cv-nav {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sidebar .nav-link,
+.download-cv {
   color: #6655b0;
   font-weight: 600;
 }
 
 .nav-link:hover,
-.nav-link:active {
+.nav-link:active,
+nav button:hover {
   color: #fff;
 }
 
 .sidebar .nav-link:hover,
-.sidebar .nav-link:active {
+.sidebar .nav-link:active,
+.download-cv:hover {
   color: #8674d6;
 }
 
@@ -91,7 +101,7 @@ nav img {
   transition: opacity 0.3s ease-in-out;
 }
 
-.sidebar button {
+.sidebar button :first-child {
   margin-bottom: 1rem;
 }
 

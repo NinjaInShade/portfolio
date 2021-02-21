@@ -17,6 +17,11 @@ export default function Navbar() {
     setOpenSidebar(!openSidebar);
   }
 
+  // Sends request to backend to download cv
+  function downloadCV() {
+    console.log("Downloaded");
+  }
+
   return (
     <nav>
       <div className="navbar-container">
@@ -40,9 +45,9 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/download_cv" exact activeClassName="nav-link-active" className="nav-link underline">
+            <button onClick={downloadCV} className="download-cv-nav">
               Download cv
-            </NavLink>
+            </button>
           </li>
           <li>
             <Button>
@@ -81,9 +86,15 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/download_cv" exact activeClassName="nav-link-active" className="nav-link underline">
+              <button
+                onClick={() => {
+                  setOpenSidebar(!openSidebar);
+                  downloadCV();
+                }}
+                className="download-cv"
+              >
                 Download cv
-              </NavLink>
+              </button>
             </li>
             <li>
               <a href="/#contact" className="nav-link" onClick={open_sidebar}>
