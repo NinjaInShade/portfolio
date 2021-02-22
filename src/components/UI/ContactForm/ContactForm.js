@@ -124,7 +124,9 @@ export default function ContactForm() {
           <form className="home-contact-form">
             <div className="home-contact-form-top flex">
               <div className="home-contact-input-wrapper flex">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name" style={errors.name !== "default" ? { fontStyle: "italic" } : {}}>
+                  Name
+                </label>
                 <input
                   type="text"
                   name="name"
@@ -140,7 +142,9 @@ export default function ContactForm() {
                 </p>
               </div>
               <div className="home-contact-input-wrapper flex">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email" style={errors.email !== "default" ? { fontStyle: "italic" } : {}}>
+                  Email
+                </label>
                 <input
                   type="email"
                   name="email"
@@ -157,7 +161,9 @@ export default function ContactForm() {
               </div>
             </div>
             <div className="home-contact-input-wrapper flex">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message" style={errors.message !== "default" ? { fontStyle: "italic" } : {}}>
+                Message
+              </label>
               <input
                 type="text"
                 name="message"
