@@ -78,10 +78,10 @@ export default function ContactForm() {
         }),
       })
         .then((response) => {
-          console.log(response.status);
           response.json();
         })
         .then((data) => {
+          console.log("send successfully");
           return setEmailSent({ sent: true, successfull: true });
         })
         .catch((error) => {
