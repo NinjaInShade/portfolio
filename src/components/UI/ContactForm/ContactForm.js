@@ -108,14 +108,7 @@ export default function ContactForm() {
       <section className="home-contact flex" id="contact">
         <div className="home-contact-container flex">
           <div className="home-contact-text flex">
-            <h2
-              className="home-contact-header"
-              onClick={() => {
-                setEmailStatus({ recieved_response: false });
-              }}
-            >
-              Get in touch
-            </h2>
+            <h2 className="home-contact-header">Get in touch</h2>
             <p className="home-contact-lead">You can contact me for a project proposition or for any questions</p>
             <div className="home-contact-media-container">
               <div className="home-contact-media flex">
