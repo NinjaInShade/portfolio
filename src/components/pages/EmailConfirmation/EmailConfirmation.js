@@ -1,6 +1,8 @@
 import React from "react";
 import { useLocation, Redirect } from "react-router-dom";
 
+import "./EmailConfirmation.css";
+
 export default function EmailConfirmation(props) {
   let location = useLocation();
 
@@ -10,8 +12,11 @@ export default function EmailConfirmation(props) {
   console.log(location.state);
 
   return (
-    <div>
-      <h1>EMAIL CONFIRMATION</h1>
-    </div>
+    <section className="email flex">
+      <div>
+        <h1>Email {location.state.successfull ? "successfully" : "unsuccessfully"} sent.</h1>
+        <h2>This is a temporary page whilst the later page is being designed.</h2>
+      </div>
+    </section>
   );
 }
