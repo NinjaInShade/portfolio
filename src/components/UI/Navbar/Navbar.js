@@ -25,6 +25,7 @@ export default function Navbar() {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
+      mode: "no-cors",
     })
       .then((response) => {
         console.log(response.status);
