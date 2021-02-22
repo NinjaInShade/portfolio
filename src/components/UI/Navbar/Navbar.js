@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import axios from "axios";
 import "./Navbar.css";
 
 import Logo from "../../../assets/brand/logo.png";
 import Button from "../Button/Button";
+const FileDownload = require("js-file-download");
 
 export default function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -19,21 +21,13 @@ export default function Navbar() {
 
   // Sends request to backend to download cv
   function downloadCV() {
-    // Send fetch req to backend
-    fetch(`${process.env.REACT_APP_DOWNLOAD_DOMAIN}CV.pdf`, {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((response) => {
-        console.log(response);
-
-        console.log("Successfully downloaded CV");
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+    axios({
+      url: `${process.env.REACT_APP_DOWNLOAD_DOMAIN}CV.pdf`,
+      method: "GET",
+      responseType: "blob",
+    }).then((response) => {
+      FileDownload(response.data, "CV.pdf");
+    });
   }
 
   return (
