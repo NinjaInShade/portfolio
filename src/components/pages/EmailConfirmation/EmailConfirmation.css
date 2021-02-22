@@ -1,8 +1,0 @@
-.email {
-  min-height: calc(100vh - 115px - 254px);
-}
-
-.email h1,
-.email h2 {
-  color: #fff;
-}
