@@ -16,11 +16,18 @@ export default function ContactForm() {
     message: "default",
   });
 
+  let SyncErrors = {
+    name: "default",
+    email: "default",
+    message: "default",
+  };
+
   function validateName(value) {
     setName(value);
 
     const sanitized_data = sanitizeData([value]);
 
+    SyncErrors = { ...SyncErrors, name: minMaxLength(sanitized_data[0], 1, 15) };
     setErrors((prevState) => ({ ...prevState, name: minMaxLength(sanitized_data[0], 1, 15) }));
   }
 
@@ -36,6 +43,7 @@ export default function ContactForm() {
 
     for (let i = 0; i < errors.length; i++) {
       if (errors[i] !== "default") {
+        SyncErrors = { ...SyncErrors, email: errors[i] };
         return setErrors((prevState) => ({ ...prevState, email: errors[i] }));
       }
     }
@@ -48,7 +56,8 @@ export default function ContactForm() {
 
     const sanitized_data = sanitizeData([value]);
 
-    setErrors((prevState) => ({ ...prevState, message: minMaxLength(sanitized_data[0], 1, 500) }));
+    SyncErrors = { ...SyncErrors, message: minMaxLength(sanitized_data[0], 1, 500) };
+    return setErrors((prevState) => ({ ...prevState, message: minMaxLength(sanitized_data[0], 1, 500) }));
   }
 
   function submitForm(e) {
@@ -58,7 +67,7 @@ export default function ContactForm() {
     validateEmail(email);
     validateMessage(message);
 
-    if (errors.name === "default" && errors.email === "default" && errors.message === "default") {
+    if (SyncErrors.name === "default" && SyncErrors.email === "default" && SyncErrors.message === "default") {
       setName("");
       setEmail("");
       setMessage("");
