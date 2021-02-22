@@ -176,13 +176,13 @@ export default function ContactForm() {
                 />
               </svg>
 
-              <p>
-                {emailStatus.recieved_response === undefined
-                  ? "Send mail"
-                  : emailStatus.recieved_response === false
-                  ? "Sending mail..."
-                  : "Email recieved"}
-              </p>
+              {emailStatus.recieved_response === undefined ? (
+                <p>Send mail</p>
+              ) : emailStatus.recieved_response === false ? (
+                <p className="loading">Sending mail</p>
+              ) : (
+                <p>Email recieved</p>
+              )}
             </Button>
           </form>
         </div>
