@@ -75,7 +75,10 @@ export default function ContactForm() {
           message,
         }),
       })
-        .then((response) => response.json())
+        .then((response) => {
+          console.log(response.status);
+          response.json();
+        })
         .then((data) => {
           console.log("Successfully sent email");
           return;
