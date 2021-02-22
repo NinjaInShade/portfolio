@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 import Button from "../Button/Button";
 import { sanitizeData, minMaxLength, isEmail } from "../../../util/validation";
 
 import "./ContactForm.css";
 
 export default function ContactForm() {
+  const [emailSent, setEmailSent] = useState({ successfull: undefined, sent: false });
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -80,22 +82,41 @@ export default function ContactForm() {
           response.json();
         })
         .then((data) => {
-          console.log("Successfully sent email");
-          return;
+          return setEmailSent({ sent: true, successfull: true });
         })
         .catch((error) => {
           console.error("Error:", error);
+
+          return setEmailSent({ sent: true, successfull: false });
         });
     } else {
       return;
     }
   }
 
+  if (emailSent.sent) {
+    return (
+      <Redirect
+        to={{
+          pathname: "/email",
+          state: { status: { successfull: emailSent.successfull } },
+        }}
+      />
+    );
+  }
+
   return (
     <section className="home-contact flex" id="contact">
       <div className="home-contact-container flex">
         <div className="home-contact-text flex">
-          <h2 className="home-contact-header">Get in touch</h2>
+          <h2
+            className="home-contact-header"
+            onClick={() => {
+              setEmailSent({ sent: true, successfull: true });
+            }}
+          >
+            Get in touch
+          </h2>
           <p className="home-contact-lead">You can contact me for a project proposition or for any questions</p>
           <div className="home-contact-media-container">
             <div className="home-contact-media flex">
