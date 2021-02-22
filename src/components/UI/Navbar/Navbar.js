@@ -20,16 +20,16 @@ export default function Navbar() {
   // Sends request to backend to download cv
   function downloadCV() {
     // Send fetch req to backend
-    fetch(`${process.env.REACT_APP_DOWNLOAD_DOMAIN}CV.pdf`)
+    fetch(`${process.env.REACT_APP_DOWNLOAD_DOMAIN}CV.pdf`, {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
       .then((response) => {
-        console.log(response.status);
+        console.log(response);
 
-        response.json();
-      })
-      .then((data) => {
         console.log("Successfully downloaded CV");
-
-        return;
       })
       .catch((error) => {
         console.error("Error:", error);
