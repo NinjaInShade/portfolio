@@ -1,4 +1,5 @@
 import React from "react";
+import { useSpring, animated, config } from "react-spring";
 import { Link } from "react-router-dom";
 import Astronaught from "../../../assets/images/astronaught.svg";
 import Button from "../../UI/Button/Button";
@@ -8,20 +9,48 @@ import projects from "../../../util/projects";
 
 import "./Home.css";
 import "./Home-projects.css";
+import "../../UI/Button/Button.css";
 
 export default function Home() {
+  const astronaught = useSpring({
+    to: [{ left: "0", top: "0" }],
+    from: { top: "50vh", left: "50vw" },
+    delay: "100",
+    config: config.slow,
+  });
+
+  const header = useSpring({
+    to: { right: "0" },
+    from: { right: "100vw" },
+    config: config.gentle,
+  });
+
+  const paragraph = useSpring({
+    to: { right: "0" },
+    from: { right: "100vw" },
+    delay: "500",
+    config: config.gentle,
+  });
+
+  const btn = useSpring({
+    to: { right: "0" },
+    from: { right: "100vw" },
+    delay: "1000",
+    config: config.gentle,
+  });
+
   return (
     <>
       <header className="home-header flex">
         <div className="home-text-container flex">
           <div className="home-text flex">
-            <h1>Hi, I'm Leon</h1>
-            <p>I’m a UK based web developer developing complete full-stack applications</p>
-            <Button>
+            <animated.h1 style={header}>Hi, I'm Leon</animated.h1>
+            <animated.p style={paragraph}>I’m a UK based web developer developing complete full-stack applications</animated.p>
+            <animated.button className="btn" style={btn}>
               <a href="/#contact">Contact me</a>
-            </Button>
+            </animated.button>
           </div>
-          <img src={Astronaught} alt="Floating astronaught" />
+          <animated.img src={Astronaught} alt="Floating astronaught" style={astronaught} />
         </div>
         <div className="home-wave"></div>
         <div className="home-pattern"></div>

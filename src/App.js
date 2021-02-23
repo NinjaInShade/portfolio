@@ -13,6 +13,7 @@ import "./App.css";
 // TODO: Go through and make sure all of the sites components and such include semantic html.
 // TODO: Make astronaught on home page come shooting up from near bottom right corner into place on page load.
 // TODO: Experiment with animations -> such as sections load in as you scroll with maybe a fade animation?
+// TODO: use localstorage to add a timer between download/email reqs
 
 function App() {
   return (
