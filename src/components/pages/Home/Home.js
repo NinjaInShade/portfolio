@@ -1,11 +1,12 @@
 import React from "react";
-import { useSpring, animated, config } from "react-spring";
-import { Link } from "react-router-dom";
+import Zoom from "react-reveal/Fade";
 import Astronaught from "../../../assets/images/astronaught.svg";
 import Button from "../../UI/Button/Button";
 import ProjectCard from "../../UI/ProjectCard/ProjectCard";
 import ContactForm from "../../UI/ContactForm/ContactForm";
 import projects from "../../../util/projects";
+import { useSpring, animated, config } from "react-spring";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 import "./Home-projects.css";
@@ -56,26 +57,30 @@ export default function Home() {
         <div className="home-pattern"></div>
       </header>
       <section className="home-projects">
-        <div className="home-projects-text">
-          <h1>My projects</h1>
-          <p>Most of my projects are full-stack as i feel you learn the most from them, and are more exciting to create.</p>
-          <Button>
-            <Link to="/projects">View all projects</Link>
-          </Button>
-        </div>
+        <Zoom>
+          <div className="home-projects-text">
+            <h1>My projects</h1>
+            <p>Most of my projects are full-stack as i feel you learn the most from them, and are more exciting to create.</p>
+            <Button>
+              <Link to="/projects">View all projects</Link>
+            </Button>
+          </div>
+        </Zoom>
 
         {projects.map((project, index) => {
           return (
-            <ProjectCard
-              key={index}
-              img={project.img}
-              title={project.title}
-              description={project.description}
-              live_URL={project.live_URL}
-              github_URL={project.github_URL}
-              reversed={project.reversed}
-              white={project.white}
-            />
+            <Zoom>
+              <ProjectCard
+                key={index}
+                img={project.img}
+                title={project.title}
+                description={project.description}
+                live_URL={project.live_URL}
+                github_URL={project.github_URL}
+                reversed={project.reversed}
+                white={project.white}
+              />
+            </Zoom>
           );
         })}
       </section>
