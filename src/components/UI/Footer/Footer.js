@@ -6,8 +6,8 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer>
-      <Zoom>
-        <div className="container flex">
+      <div className="container flex">
+        <Zoom>
           <div className="credit flex">
             <h3>Credit</h3>
             <ul>
@@ -24,6 +24,8 @@ export default function Footer() {
               <li>© Leon Michalak 2021</li>
             </ul>
           </div>
+        </Zoom>
+        <Zoom>
           <div className="contact flex">
             <h3>Contact</h3>
             <ul>
@@ -47,6 +49,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </Zoom>
+        <Zoom>
           <div className="media flex">
             <h3>Media</h3>
             <div className="flex">
@@ -61,8 +65,8 @@ export default function Footer() {
               </a>
             </div>
           </div>
-        </div>
-      </Zoom>
+        </Zoom>
+      </div>
       <div className="bg"></div>
     </footer>
   );

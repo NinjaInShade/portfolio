@@ -107,8 +107,8 @@ export default function ContactForm() {
   return (
     <>
       <section className="home-contact flex" id="contact">
-        <Zoom>
-          <div className="home-contact-container flex">
+        <div className="home-contact-container flex">
+          <Zoom>
             <div className="home-contact-text flex">
               <h2 className="home-contact-header">Get in touch</h2>
               <p className="home-contact-lead">You can contact me for a project proposition or for any questions</p>
@@ -123,6 +123,8 @@ export default function ContactForm() {
                 </div>
               </div>
             </div>
+          </Zoom>
+          <Zoom>
             <form className="home-contact-form">
               <div className="home-contact-form-top flex">
                 <div className="home-contact-input-wrapper flex">
@@ -202,8 +204,8 @@ export default function ContactForm() {
                 )}
               </Button>
             </form>
-          </div>
-        </Zoom>
+          </Zoom>
+        </div>
         <div className="home-contact-bg"></div>
         <div className="home-contact-wave"></div>
       </section>
