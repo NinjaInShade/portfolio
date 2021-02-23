@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
 import axios from "axios";
 import "./Navbar.css";
 
@@ -9,6 +10,11 @@ const FileDownload = require("js-file-download");
 
 export default function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
+
+  const opacity = useSpring({
+    opacity: 100,
+    from: { opacity: 0 },
+  });
 
   function open_sidebar() {
     // Use if want to disable scrolling when opening sidebar
@@ -32,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="navbar-container">
+      <animated.div className="navbar-container" style={opacity}>
         <Link to="/">
           <img src={Logo} alt="Brand logo" />
         </Link>
@@ -111,7 +117,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      </div>
+      </animated.div>
     </nav>
   );
 }
