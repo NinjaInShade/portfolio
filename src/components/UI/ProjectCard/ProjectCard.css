@@ -1,14 +1,7 @@
-.project-card,
-.project-card-white {
-  padding: 150px 25px;
-  position: relative;
-  width: 100%;
-}
-
 .project-card {
-  margin-bottom: -1px;
-  background: rgb(19, 9, 69);
-  background: linear-gradient(180deg, rgba(19, 9, 69, 1) 0%, rgba(52, 32, 121, 1) 100%);
+  position: relative;
+  background: var(--card-gradient, rgb(19, 9, 69));
+  padding: 150px 25px;
 }
 
 .project-card-white {
@@ -16,25 +9,70 @@
   padding: 75px 25px;
 }
 
-.project-card-wave,
-.project-card-wave-2 {
+.project-card .container {
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.project-card img {
+  max-width: 550px;
+  border-radius: 8px;
+  z-index: 1;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.project-card .text-container {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.project-card .title,
+.project-card .github-icon {
+  text-align: left;
+  color: var(--neutral-100);
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.heading-container {
+  margin-bottom: 1rem;
+}
+
+.project-card .description {
+  color: var(--purple-200);
+  max-width: 450px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.project-card button {
+  width: 100%;
+}
+
+.project-card .wave,
+.project-card .wave-2 {
   position: absolute;
   height: 90px;
   width: 100%;
 }
 
-.project-card-wave {
+.project-card .wave {
   top: -1px;
   background: url("../../../assets/images/project-wave-top.svg") no-repeat;
 }
 
-.project-card-wave-2 {
-  bottom: 0px;
+.project-card .wave-2 {
+  bottom: -1px;
   background: url("../../../assets/images/project-wave-bottom.svg") no-repeat;
   transform: rotateY(180deg);
 }
 
-.project-card-bg {
+.project-card .bg {
   background: url("../../../assets/images/bg.svg");
   position: absolute;
   top: 0;
@@ -43,90 +81,35 @@
   height: 100%;
 }
 
-.project-card img,
-.project-card-white img {
-  max-width: 550px;
-  width: 100%;
-  border-radius: 8px;
-  z-index: 3;
-  padding: 0 1rem;
-}
-
-.project-card-text {
-  flex-direction: column;
-  padding: 0 1rem;
-  z-index: 5;
-}
-
-.project-card-text-title {
-  margin-right: auto;
-}
-
-.project-card-text-title h2,
-.project-card-text-title svg {
-  text-align: left;
-  color: #fff;
-  font-size: 3rem;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
-}
-
-.project-card-text p {
-  max-width: 450px;
-  color: #a092de;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  text-align: left;
-  margin-right: auto;
-}
-
-.project-card-text button {
-  width: 100%;
-}
-
-.project-card-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
-}
-
 @media (max-width: 1400px) {
-  .project-card-wave {
+  /* Switch over to svgs with no aspect ratio preservation so they won't scale at smaller screens. */
+  .project-card .wave {
     background: url("../../../assets/images/project-wave-top-2.svg") no-repeat;
   }
 
-  .project-card-wave-2 {
+  .project-card .wave-2 {
     background: url("../../../assets/images/project-wave-bottom-2.svg") no-repeat;
   }
 }
 
 @media (max-width: 1050px) {
-  .project-card-container {
+  .project-card .container {
     flex-direction: column !important;
     align-items: center;
   }
 
-  .project-card img,
-  .project-card-white img {
-    margin: 0 0 1rem 0;
-  }
-
-  .project-card-text {
-    margin: 0;
+  .project-card img {
+    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 550px) {
-  .project-card-text {
-    align-items: flex-start !important;
-  }
-
-  .project-card-text-title h2 {
+  .project-card .title,
+  .project-card .github-icon {
     font-size: 1.6rem;
   }
 
-  .project-card-text p {
+  .project-card .description {
     font-size: 1rem;
   }
 }

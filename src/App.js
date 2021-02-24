@@ -9,8 +9,6 @@ import "./App.css";
 
 // TODO: Refactor contact form. The html/css may be excessive and could be a lot cleaner and smaller.
 // TODO: 404 error page
-// TODO: Make astronaught on home page come shooting up from near bottom right corner into place on page load.
-// TODO: Experiment with animations -> such as sections load in as you scroll with maybe a fade animation?
 // TODO: use localstorage to add a timer between download/email reqs
 // TODO: Refactor every component and it's css if there is room for improvement. Items that need looking over => Construction, Home, Unmatched,  ContactForm, ProjectCard
 // TODO: Setup custom CSS vars for colours and gradients and such

@@ -20,6 +20,7 @@ body {
   /* Gradients */
   --btn-gradient: linear-gradient(135deg, rgba(68, 46, 186, 1) 0%, rgba(116, 46, 186, 1) 100%);
   --btn-hover-gradient: linear-gradient(135deg, rgb(58, 40, 161) 0%, rgb(103, 41, 165) 100%);
+  --card-gradient: linear-gradient(180deg, rgba(19, 9, 69, 1) 0%, rgba(52, 32, 121, 1) 100%);
 
   /* Purples */
   --purple-800: #2e1b6f;
