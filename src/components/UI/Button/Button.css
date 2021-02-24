@@ -1,16 +1,14 @@
 .btn {
-  background: rgb(68, 46, 186);
-  background: linear-gradient(135deg, rgba(68, 46, 186, 1) 0%, rgba(116, 46, 186, 1) 100%);
+  background: var(--btn-gradient, rgb(68, 46, 186));
   border-radius: 8px;
   padding: 8px;
   min-width: 200px;
-  cursor: pointer;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .btn:hover {
-  background: rgb(57, 39, 160);
-  background: linear-gradient(135deg, rgb(58, 40, 161) 0%, rgb(103, 41, 165) 100%);
+  background: var(--btn-hover-gradient, rgb(57, 39, 160));
 }
 
 .btn,
