@@ -14,7 +14,7 @@ import "./App.css";
 // TODO: Make astronaught on home page come shooting up from near bottom right corner into place on page load.
 // TODO: Experiment with animations -> such as sections load in as you scroll with maybe a fade animation?
 // TODO: use localstorage to add a timer between download/email reqs
-// TODO: Refactor every component and it's css if there is room for improvement. Items that need looking over => Construction, Home, Unmatched, Button, ContactForm, Footer, Navbar, ProjectCard
+// TODO: Refactor every component and it's css if there is room for improvement. Items that need looking over => Construction, Home, Unmatched,  ContactForm, Footer, ProjectCard
 // TODO: Setup custom CSS vars for colours and gradients and such
 // TODO: React-reveal not up to date, change to https://markoskon.com/scroll-reveal-animations-with-react-spring/ asap.
 

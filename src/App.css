@@ -21,6 +21,11 @@ body {
   --btn-gradient: linear-gradient(135deg, rgba(68, 46, 186, 1) 0%, rgba(116, 46, 186, 1) 100%);
   --btn-hover-gradient: linear-gradient(135deg, rgb(58, 40, 161) 0%, rgb(103, 41, 165) 100%);
 
+  /* Purples */
+  --purple-800: #2e1b6f;
+  --purple-400: #6655b0;
+  --purple-300: #8674d6;
+
   /* Neutrals */
   --neutral-500: #a5a5a5;
   --neutral-100: #fff;

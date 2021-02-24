@@ -1,27 +1,18 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { useSpring, animated } from "react-spring";
-import axios from "axios";
-import "./Navbar.css";
 
+import NavLinks from "../../../util/NavLinks";
+import axios from "axios";
+import FileDownload from "js-file-download";
 import Logo from "../../../assets/brand/logo.png";
 import Button from "../Button/Button";
-const FileDownload = require("js-file-download");
+
+import "./Navbar.css";
 
 export default function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
 
-  const opacity = useSpring({
-    opacity: 100,
-    from: { opacity: 0 },
-  });
-
   function open_sidebar() {
-    // Use if want to disable scrolling when opening sidebar
-    // Prefer to not as it hides the vertical scrollbar which means the page gets shorter and disrupts the smoothness of the animation.
-
-    // document.body.style.overflow = openSidebar ? "initial" : "hidden";
-    // document.body.style.height = openSidebar ? "initial" : "100vh";
     setOpenSidebar(!openSidebar);
   }
 
@@ -38,39 +29,33 @@ export default function Navbar() {
 
   return (
     <nav>
-      <animated.div className="navbar-container" style={opacity}>
+      <div className="navbar-container flex">
+        {/* Normal navbar */}
         <Link to="/">
-          <img src={Logo} alt="Brand logo" />
+          <img src={Logo} alt="Brand logo" width="75px" />
         </Link>
         <ul className="nav-links">
+          {NavLinks.map((navItem, index) => {
+            return (
+              <li key={index}>
+                <NavLink to={navItem.to} exact activeClassName="nav-link-active" className="nav-link">
+                  {navItem.title}
+                </NavLink>
+              </li>
+            );
+          })}
           <li>
-            <NavLink to="/" exact activeClassName="nav-link-active" className="nav-link">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" exact activeClassName="nav-link-active" className="nav-link">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects" exact activeClassName="nav-link-active" className="nav-link">
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <button onClick={downloadCV} className="download-cv-nav">
+            <button onClick={downloadCV} className="download-cv nav-link">
               Download cv
             </button>
           </li>
           <li>
-            <Button>
-              <a href="/#contact" className="scroll">
-                Contact me
-              </a>
+            <Button className="nav-link">
+              <a href="/#contact">Contact me</a>
             </Button>
           </li>
         </ul>
+        {/* Sidebar stuff */}
         <button className="hamburger" onClick={open_sidebar}>
           <i className="fas fa-bars"></i>
         </button>
@@ -80,32 +65,26 @@ export default function Navbar() {
           onClick={open_sidebar}
         ></div>
         <div className="sidebar" style={openSidebar ? { transform: "translateX(-250px)" } : { transform: "translateX(0)" }}>
-          <button onClick={open_sidebar}>
+          <button onClick={open_sidebar} className="sidebar-hamburger">
             <i className="fas fa-times"></i>
           </button>
           <ul>
-            <li>
-              <NavLink to="/" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects" exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
-                Projects
-              </NavLink>
-            </li>
+            {NavLinks.map((navItem, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={navItem.to} exact activeClassName="nav-link-active" className="nav-link" onClick={open_sidebar}>
+                    {navItem.title}
+                  </NavLink>
+                </li>
+              );
+            })}
             <li>
               <button
                 onClick={() => {
                   setOpenSidebar(!openSidebar);
                   downloadCV();
                 }}
-                className="download-cv"
+                className="download-cv nav-link"
               >
                 Download cv
               </button>
@@ -117,7 +96,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      </animated.div>
+      </div>
     </nav>
   );
 }
