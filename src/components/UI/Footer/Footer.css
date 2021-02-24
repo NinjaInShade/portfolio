@@ -1,66 +1,25 @@
 footer {
-  background: #342079;
-  width: 100%;
+  background: var(--purple-700);
   position: relative;
 }
 
 footer .container {
   max-width: 1200px;
-  padding: 25px;
+  padding: 25px 0;
   margin: auto;
   justify-content: space-between;
   align-items: stretch;
-  z-index: 5;
   flex-wrap: wrap;
 }
 
 footer .bg {
-  background: url("../../../assets/images/bg.svg");
   position: absolute;
+  pointer-events: none;
+  background: url("../../../assets/images/bg.svg");
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
-}
-
-footer h3,
-footer li {
-  text-align: left;
-}
-
-footer h3 {
-  font-weight: 400;
-  font-size: 1.4rem;
-  color: #fff;
-  margin-bottom: 0.4rem;
-}
-
-footer li,
-footer svg,
-footer a,
-footer p {
-  color: #a092de;
-  font-size: 1.2rem;
-  text-align: left;
-  word-break: break-all;
-}
-
-footer a:hover,
-footer .media svg:hover {
-  color: #8674d6;
-}
-
-footer li {
-  margin-top: 1rem;
-}
-
-footer .contact .flex {
-  justify-content: flex-start;
-}
-
-footer .contact svg {
-  margin-right: 0.8rem;
 }
 
 footer .credit,
@@ -69,7 +28,40 @@ footer .media {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 25px 10px;
+  padding: 25px;
+}
+
+footer .header {
+  color: var(--neutral-100);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+footer .lead {
+  font-size: 1.2rem;
+  color: var(--purple-200);
+  text-align: left;
+  word-break: break-all;
+}
+
+footer a:hover,
+footer .media-icon:hover {
+  color: var(--purple-300);
+}
+
+/* Every list item should be left aligned and have some margin, apart from the media icons which i want closely bunched up */
+footer li:not(footer .media li) {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+footer .contact .flex {
+  justify-content: flex-start;
+}
+
+footer .contact-icon {
+  margin-right: 1rem;
 }
 
 footer .media .flex {

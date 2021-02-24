@@ -23,8 +23,10 @@ body {
 
   /* Purples */
   --purple-800: #2e1b6f;
+  --purple-700: #342079;
   --purple-400: #6655b0;
   --purple-300: #8674d6;
+  --purple-200: #a092de;
 
   /* Neutrals */
   --neutral-500: #a5a5a5;
