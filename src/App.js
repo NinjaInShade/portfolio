@@ -10,9 +10,10 @@ import "./App.css";
 // TODO: Refactor contact form. The html/css may be excessive and could be a lot cleaner and smaller.
 // TODO: 404 error page
 // TODO: use localstorage to add a timer between download/email reqs
-// TODO: Refactor every component and it's css if there is room for improvement. Items that need looking over => Construction, Home, Unmatched,  ContactForm, ProjectCard
+// TODO: Refactor every component and it's css if there is room for improvement. Items that need looking over => Construction, Home, Unmatched, ContactForm
 // TODO: Setup custom CSS vars for colours and gradients and such
 // TODO: React-reveal not up to date, change to https://markoskon.com/scroll-reveal-animations-with-react-spring/ asap.
+// TODO: Change sidebar to react portal approach
 
 function App() {
   return (

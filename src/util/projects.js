@@ -1,16 +1,16 @@
 import FlashcardsThumbnail from "../assets/thumbnails/FlashcardsThumbnail.png";
 import SiteBuilderThumbnail from "../assets/thumbnails/SiteBuilderThumbnail.png";
-import TodoThumbnail from "../assets/thumbnails/TodoThumbnail.png";
+import OnlineShopThumbnail from "../assets/thumbnails/OnlineShopThumbnail.png";
 import HubThumbnail from "../assets/thumbnails/HubThumbnail.png";
 
 const projects = [
   {
-    img: FlashcardsThumbnail,
-    title: "Flashcards app",
+    img: OnlineShopThumbnail,
+    title: "Online shop app",
     description:
-      "This app is designed to help with revision by letting you make flashcards which you can flip to reveal the answer. You can group flashcard into a collection and even test yourself.",
-    live_URL: "https://leonsflashcards.web.app/",
-    github_URL: "https://github.com/NinjaInShade/flashcards",
+      "I made this app to incorporate as many features that showcase what I'm capable of making. Auth system included, you can view products, add to cart, fake pay, check orders etc. Admin user's can add/edit/delete products too.",
+    live_URL: "https://onlineshop-430be.web.app/",
+    github_URL: "https://github.com/NinjaInShade/online-shop",
     reversed: false,
     white: false,
   },
@@ -25,12 +25,12 @@ const projects = [
     white: true,
   },
   {
-    img: TodoThumbnail,
-    title: "Todo app",
+    img: FlashcardsThumbnail,
+    title: "Flashcards app",
     description:
-      "Most web developers have made this project as it encorporates key but simple concepts for a beginner developer to learn. I decided to add a dark/light theme to it to make it a bit less bland.",
-    live_URL: "https://todoapp-48ccc.web.app/",
-    github_URL: "https://github.com/NinjaInShade/todo-app",
+      "This app is designed to help with revision by letting you make flashcards which you can flip to reveal the answer. You can group flashcard into a collection and even test yourself.",
+    live_URL: "https://leonsflashcards.web.app/",
+    github_URL: "https://github.com/NinjaInShade/flashcards",
     reversed: false,
     white: false,
   },
