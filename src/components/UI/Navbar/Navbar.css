@@ -24,7 +24,8 @@ nav {
   font-size: 1.4rem;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link-active {
   color: var(--neutral-100);
 }
 
