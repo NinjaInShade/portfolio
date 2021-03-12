@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 import NavLinks from "../../../util/NavLinks";
 import axios from "axios";
 import FileDownload from "js-file-download";
-import Logo from "../../../assets/brand/logo.png";
+import Logo from "../../../assets/brand/Logo.svg";
 import Button from "../Button/Button";
 
 import "./Navbar.css";
