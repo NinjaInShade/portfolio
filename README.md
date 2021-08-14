@@ -1,54 +1,43 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Portfolio website
 
-## 🚀 Quick start
+## Table of contents
 
-1.  **Create a Gatsby site.**
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Overview
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+This is the repo for my portfolio site.
 
-2.  **Start developing.**
+### Screenshot
 
-    Navigate into your new site’s directory and start it up.
+<!-- ![](./screenshots/Desktop_solution.png) -->
+<!-- ![](./screenshots/Mobile_solution.png) -->
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+### Links
 
-3.  **Open the code and start customizing!**
+- Live Site URL: (https://leonmichalak.dev/)
 
-    Your site is now running at http://localhost:8000!
+## My process
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Built with
 
-4.  **Learn more**
+- Semantic HTML5 markup
+- CSS custom properties/vars
+- Desktop-first workflow
+- Gatsby SSG
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### What I learned
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Not coded yet :)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Author
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- Website - [Leon Michalak](https://www.leonmichalak.dev)
+- Frontend Mentor - [@NinjaInShade](https://www.frontendmentor.io/profile/NinjaInShade)
+- Instagram - [@lmdeveloper](https://www.instagram.com/lmdeveloper/)
