@@ -1,7 +1,23 @@
 .header {
-  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
   background: no-repeat url('../assets/header\ image.png') center / cover;
   padding: 125px 30px 180px 30px;
+}
+
+.header::before {
+  position: absolute;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.header .container {
+  position: relative;
+  z-index: 2;
 }
 
 .header-title,
