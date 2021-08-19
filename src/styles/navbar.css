@@ -1,0 +1,56 @@
+.navbar {
+  padding: 30px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: var(--primary-dark);
+}
+
+.logo-img {
+  height: auto;
+  max-width: 27px;
+  margin-right: 8px;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-list-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.navbar-link {
+  color: var(--black);
+}
+
+.navbar-link-active {
+  font-weight: 700;
+}
+
+.navbar-download-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+}
+
+.navbar-download-icon {
+  margin-right: 8px;
+}

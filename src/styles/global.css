@@ -55,6 +55,11 @@ h1 {
   font-size: var(--small);
 }
 
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
 @media (max-width: 375px) {
   :root {
     --h1: 3rem;

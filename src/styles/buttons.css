@@ -1,0 +1,22 @@
+.btn {
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-primary {
+  border: 1.5px solid transparent;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 13px 30px;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  border: 1.5px solid var(--primary-dark);
+  color: var(--primary-dark);
+  transition: all 0.2s ease-in-out;
+  background-color: unset;
+}
