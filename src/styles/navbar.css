@@ -54,3 +54,29 @@
 .navbar-download-icon {
   margin-right: 8px;
 }
+
+.hamburger-btn {
+  outline: none;
+  background: none;
+  border: none;
+  display: none;
+  height: 44px;
+  width: 44px;
+}
+
+@media (max-width: 850px) {
+  .btn-navbar,
+  .navbar-list {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo-img {
+    max-width: 23px;
+  }
+}
