@@ -64,6 +64,10 @@
   width: 44px;
 }
 
+.hamburger-btn:focus {
+  outline: 2px solid black;
+}
+
 @media (max-width: 850px) {
   .btn-navbar,
   .navbar-list {
