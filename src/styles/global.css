@@ -62,7 +62,8 @@ h1 {
 
 @media (max-width: 450px) {
   :root {
-    --h1: 2.2rem;
+    --h1: 2rem;
+    --h1-line-height: 38px;
 
     --body: 1rem;
 
