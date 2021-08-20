@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Filter from '../components/Filter';
 import '../styles/header.css';
 
 export default function Homepage() {
@@ -15,6 +16,7 @@ export default function Homepage() {
           </p>
         </div>
       </header>
+      <Filter />
     </Layout>
   );
 }
