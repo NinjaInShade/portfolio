@@ -3,10 +3,11 @@ import LogoFavicon from '../assets/favicon.ico';
 import Navbar from '../components/Navbar';
 import { Helmet } from 'react-helmet';
 
-export default function Layout({ pageTitle, children }) {
+export default function Layout({ pageTitle, pageDescription, children }) {
   return (
     <>
       <Helmet>
+        <html lang='en' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='true' />
         <link
@@ -15,6 +16,7 @@ export default function Layout({ pageTitle, children }) {
         />
         <link rel='icon' href={LogoFavicon}></link>
         <title>{pageTitle}</title>
+        <meta name='description' content={pageDescription}></meta>
       </Helmet>
       <Navbar />
       {children}
