@@ -61,7 +61,7 @@ export default function Navbar() {
           className='hamburger-btn'
           onClick={toggleSidebar}
           aria-haspopup='true'
-          aria-labelledby='Hamburger menu button to open mobile navigation'
+          aria-label='Hamburger menu button to open mobile navigation'
         >
           <svg className={`ham hamRotate ham8 ${sidebar && 'active'}`} viewBox='0 0 100 100' width='44'>
             <path

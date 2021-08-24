@@ -56,7 +56,7 @@ export default function Homepage() {
                       href='https://github.com/NinjaInShade'
                       target='_blank_'
                       rel='noreferrer'
-                      aria-labelledby='Github social link'
+                      aria-label='Github social link'
                     >
                       <svg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                         <path
@@ -71,7 +71,7 @@ export default function Homepage() {
                       href='https://www.instagram.com/thefrontendguy/'
                       target='_blank_'
                       rel='noreferrer'
-                      aria-labelledby='Instagram social link'
+                      aria-label='Instagram social link'
                     >
                       <svg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                         <path
@@ -86,7 +86,7 @@ export default function Homepage() {
                       href='https://www.linkedin.com/in/leonmichalak/'
                       target='_blank_'
                       rel='noreferrer'
-                      aria-labelledby='LinkedIn social link'
+                      aria-label='LinkedIn social link'
                     >
                       <svg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                         <path
@@ -101,7 +101,7 @@ export default function Homepage() {
                       href='https://twitter.com/TheFrontendGuyX'
                       target='_blank_'
                       rel='noreferrer'
-                      aria-labelledby='Twitter social link'
+                      aria-label='Twitter social link'
                     >
                       <svg width='25' height='18' viewBox='0 0 25 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                         <path
