@@ -93,7 +93,7 @@
 
 .header-social:hover a svg path {
   transition: all 0.2s ease-in-out;
-  fill: var(--primary-light);
+  fill: var(--secondary);
 }
 
 @-webkit-keyframes bounceRight {
