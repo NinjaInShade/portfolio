@@ -26,15 +26,10 @@ export default function Navbar() {
             </Link>
           </li>
           <li className='navbar-list-item'>
-            <Link to='/about' className='body-text navbar-link' activeClassName='navbar-link-active'>
+            <Link to='/#about' className='body-text navbar-link' activeClassName='navbar-link-active'>
               About
             </Link>
           </li>
-          {/* <li className='navbar-list-item'>
-            <Link to='/blog' className='body-text navbar-link' activeClassName='navbar-link-active'>
-              Blog
-            </Link>
-          </li> */}
           <li className='navbar-list-item'>
             <Link to='/#projects' className='body-text navbar-link' activeClassName='navbar-link-active'>
               Projects

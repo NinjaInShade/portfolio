@@ -7,20 +7,30 @@
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
 :root {
   scroll-behavior: smooth;
   font-size: 16px;
 
   /* Primary */
+  --primary-darkest: #051f38;
   --primary-dark: #093968;
   --primary: #03549a;
   --primary-light: #347cb9;
 
   --secondary: #5ed4fb;
 
+  --gradient: linear-gradient(135deg, rgba(5, 31, 56, 1) 0%, rgba(9, 57, 104, 1) 100%);
+
   /* Neutral */
   --black: #041a2f;
   --black-50: hsla(209, 84%, 10%, 0.5);
+
   --white: #f6fafe;
 
   /* Typography */
@@ -36,11 +46,14 @@
 
   /* Other */
   --max-width: 1250px;
+
+  --border-r: 8px;
 }
 
 h1 {
   font-size: var(--h1);
   line-height: var(--h1-line-height);
+  font-weight: 900;
 }
 
 .body-text {
