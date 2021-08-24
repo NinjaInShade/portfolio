@@ -20,6 +20,7 @@
 
   /* Neutral */
   --black: #041a2f;
+  --black-50: hsla(209, 84%, 10%, 0.5);
   --white: #f6fafe;
 
   /* Typography */

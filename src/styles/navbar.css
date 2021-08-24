@@ -1,5 +1,5 @@
 .navbar {
-  padding: 30px;
+  padding: 24px 30px;
 }
 
 .navbar-container {
@@ -21,8 +21,8 @@
 }
 
 .logo-img {
-  height: auto;
-  max-width: 27px;
+  width: auto;
+  max-height: 30px;
   margin-right: 8px;
 }
 
@@ -33,22 +33,31 @@
 }
 
 .navbar-list-item:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 30px;
 }
 
-.navbar-link {
-  color: var(--black);
+.navbar-link,
+.navbar-download-link {
+  color: var(--black-50);
+  font-weight: 500;
 }
 
 .navbar-link-active {
-  font-weight: 700;
+  color: var(--black);
+}
+
+.navbar-link:hover,
+.navbar-download-link:hover,
+.navbar-download-link:hover .navbar-download-icon path {
+  transition: all 0.2s ease-in-out;
+  color: var(--black);
+  fill: var(--black);
 }
 
 .navbar-download-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--black);
 }
 
 .navbar-download-icon {
