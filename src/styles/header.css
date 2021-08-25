@@ -73,6 +73,8 @@
 .header-img {
   object-fit: cover;
   border-radius: 0 0 var(--border-r) 0;
+  height: 550px;
+  width: 366px;
 }
 
 .header-socials-container {
@@ -175,7 +177,7 @@
   }
 
   .header-content-container {
-    padding: 68px 0;
+    padding: 65px 0;
   }
 
   .header-subtitle {
@@ -215,16 +217,21 @@
 
   .header-title,
   .header-subtitle {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 
+  .header-title {
+    max-width: 375px;
+  }
+
   .header-subtitle {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 315px;
   }
 
-  .header-subtitle br {
+  .header-subtitle br,
+  .header-title br {
     display: none;
   }
 

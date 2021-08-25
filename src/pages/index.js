@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import LogoOverlayPattern from '../assets/pattern-logo.svg';
 import LaptopImg from '../assets/image-header.png';
+import LaptopImgTablet from '../assets/image-header-tablet.png';
 import '../styles/header.css';
 
 export default function Homepage() {
@@ -113,6 +114,8 @@ export default function Homepage() {
                 </ul>
                 <img
                   src={LaptopImg}
+                  srcSet={`${LaptopImg} 366w, ${LaptopImgTablet} 188w`}
+                  sizes='(max-width: 1050px) 188px, 366px'
                   className='header-img'
                   alt='Laptop and coffee on a bed, with a code editor open.'
                 />
