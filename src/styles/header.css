@@ -212,6 +212,8 @@
   }
 
   .header-bg {
+    background: repeat url('../assets/logo-low-opacity.svg'),
+      linear-gradient(135deg, rgba(5, 31, 56, 1) 0%, rgba(9, 57, 104, 1) 100%);
     padding: 0 30px;
   }
 
