@@ -36,6 +36,8 @@
   justify-content: center;
   align-items: center;
   color: var(--white);
+  font-size: var(--btn);
+  line-height: var(--btn-line-height);
   font-weight: 500;
   margin-left: 30px;
 }
@@ -47,8 +49,11 @@
 }
 
 .header-projects-link:hover,
-.header-projects-link:hover path {
+.header-projects-link:hover path,
+.header-projects-link:focus,
+.header-projects-link:focus path {
   transition: all 0.2s ease-in-out;
+  outline: none;
   color: var(--secondary);
   fill: var(--secondary);
 }
@@ -66,6 +71,7 @@
 }
 
 .header-img {
+  object-fit: cover;
   border-radius: 0 0 var(--border-r) 0;
 }
 
@@ -91,8 +97,14 @@
   align-items: center;
 }
 
-.header-social:hover a svg path {
+.header-social a:focus {
+  outline: none;
+}
+
+.header-social:hover a svg path,
+.header-social a:focus svg path {
   transition: all 0.2s ease-in-out;
+  outline: none;
   fill: var(--secondary);
 }
 
@@ -147,5 +159,82 @@
   60% {
     -ms-transform: translateX(5px);
     transform: translateX(5px);
+  }
+}
+
+@media (max-width: 1310px) {
+  .header {
+    grid-template-columns: 1fr;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header-pattern {
+    display: none;
+  }
+
+  .header-content-container {
+    padding: 68px 0;
+  }
+
+  .header-subtitle {
+    margin-bottom: 40px;
+  }
+
+  .header-projects-link {
+    margin-left: 24px;
+  }
+
+  .header-img-outer-container {
+    height: calc(100% + 50px);
+  }
+
+  .header-img-inner-container {
+    height: 100%;
+  }
+
+  .header-img {
+    width: 192px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-img-outer-container {
+    display: none;
+  }
+
+  .header {
+    padding-right: 0;
+  }
+
+  .header-bg {
+    padding: 0 30px;
+  }
+
+  .header-title,
+  .header-subtitle {
+    text-align: center;
+  }
+
+  .header-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 315px;
+  }
+
+  .header-subtitle br {
+    display: none;
+  }
+
+  .header-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-projects-link {
+    margin: 16px 0 0 0;
   }
 }

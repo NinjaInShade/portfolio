@@ -40,9 +40,12 @@ body {
   --body: 1.125rem;
   --body-line-height: 25px;
 
-  --body-s: 1rem;
+  --btn: 1.125rem;
+  --btn-line-height: 18px;
 
-  --small: 0.875rem;
+  /* --body-s: 1rem; */
+
+  /* --small: 0.875rem; */
 
   /* Other */
   --max-width: 1250px;
@@ -74,15 +77,27 @@ h1 {
   max-width: var(--max-width);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1050px) {
+  :root {
+    --h1: 2.375rem;
+    --h1-line-height: 48px;
+
+    --body: 1rem;
+
+    --btn: 1rem;
+    --btn-line-height: 16px;
+
+    /* --small: 0.875rem; */
+  }
+}
+
+@media (max-width: 650px) {
   :root {
     --h1: 2rem;
     --h1-line-height: 38px;
 
-    --body: 1rem;
+    /* --body-s: 0.875rem; */
 
-    --body-s: 0.875rem;
-
-    --small: 0.8rem;
+    /* --small: 0.8rem; */
   }
 }

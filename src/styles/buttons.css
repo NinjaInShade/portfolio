@@ -4,8 +4,10 @@
   outline: none;
   border: none;
   border-radius: var(--border-r);
+  font-size: var(--btn);
+  line-height: var(--btn-line-height);
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 11.5px 30px;
 }
 
 .btn-primary {

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
-import LogoOverlayPattern from '../assets/bg pattern.svg';
-import LaptopImg from '../assets/header image.png';
-import Filter from '../components/Filter';
+import LogoOverlayPattern from '../assets/pattern-logo.svg';
+import LaptopImg from '../assets/image-header.png';
 import '../styles/header.css';
 
 export default function Homepage() {
