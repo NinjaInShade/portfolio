@@ -13,12 +13,14 @@
 }
 
 .filter-tab-check {
-  display: none;
-  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  max-width: 0;
 }
 
 .filter-tab-active .filter-tab-check {
-  display: block;
+  margin-right: 10px;
+  max-width: 20px;
 }
 
 .filter-tab-active,
