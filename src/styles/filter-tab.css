@@ -24,12 +24,9 @@
 }
 
 .filter-tab-active,
-.filter-tab:hover {
+.filter-tab:hover,
+.filter-tab:focus {
   transition: all 0.2s ease-in-out;
   border: 1px solid var(--primary-light);
   color: var(--primary-light);
-}
-
-.filter-tab:focus {
-  outline: black solid 2px;
 }

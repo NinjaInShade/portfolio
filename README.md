@@ -13,9 +13,9 @@
 
 ## Features
 
-- Routing
 - Project filtering system with tabs
 - Responsive design
+- Routing
 
 ## Screenshots
 

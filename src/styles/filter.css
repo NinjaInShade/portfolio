@@ -33,14 +33,19 @@
   font-weight: 500;
 }
 
-.filter-control:hover,
-.filter-control-active {
+.filter-control:focus {
   transition: all 0.2s ease-in-out;
   color: var(--black);
 }
 
-.filter-control:focus {
+.filter-control-active:focus {
   outline: black solid 2px;
+}
+
+.filter-control:hover,
+.filter-control-active {
+  transition: all 0.2s ease-in-out;
+  color: var(--black);
 }
 
 .filter-control-seperator {
