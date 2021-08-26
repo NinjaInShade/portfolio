@@ -14,5 +14,6 @@
 
 .project-card-img {
   height: auto;
+  cursor: pointer;
   max-width: 100%;
 }
