@@ -1,0 +1,18 @@
+.project-card {
+  overflow: hidden;
+  border-radius: var(--border-r);
+}
+
+.project-card-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-darkest);
+  border-radius: var(--border-r);
+  padding: 32px 40px;
+}
+
+.project-card-img {
+  height: auto;
+  max-width: 100%;
+}

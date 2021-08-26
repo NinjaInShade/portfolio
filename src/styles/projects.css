@@ -1,0 +1,16 @@
+.projects {
+  margin: 75px 0;
+  padding: 0 30px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 420px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}

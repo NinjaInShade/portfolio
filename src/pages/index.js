@@ -5,6 +5,9 @@ import LogoOverlayPattern from '../assets/pattern-logo.svg';
 import LaptopImg from '../assets/image-header.png';
 import LaptopImgTablet from '../assets/image-header-tablet.png';
 import Filter from '../components/Filter';
+import ProjectCard from '../components/ProjectCard';
+import { projects } from '../projects-data';
+import '../styles/projects.css';
 import '../styles/header.css';
 
 export default function Homepage() {
@@ -128,6 +131,20 @@ export default function Homepage() {
       </header>
 
       <Filter />
+
+      <section className='projects' id='projects'>
+        <ul className='container projects-container'>
+          {projects.map((project, index) => {
+            return (
+              <>
+                <li key={index}>
+                  <ProjectCard imgSrc={project.imgSrc} imgAlt={project.imgAlt} gradient={project.gradient} />
+                </li>
+              </>
+            );
+          })}
+        </ul>
+      </section>
     </Layout>
   );
 }
