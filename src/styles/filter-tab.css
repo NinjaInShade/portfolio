@@ -29,3 +29,7 @@
   border: 1px solid var(--primary-light);
   color: var(--primary-light);
 }
+
+.filter-tab:focus {
+  outline: black solid 2px;
+}

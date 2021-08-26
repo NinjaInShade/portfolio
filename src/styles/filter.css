@@ -39,6 +39,10 @@
   color: var(--black);
 }
 
+.filter-control:focus {
+  outline: black solid 2px;
+}
+
 .filter-control-seperator {
   color: var(--black);
   font-weight: 900;
