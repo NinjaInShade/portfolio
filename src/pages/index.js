@@ -11,6 +11,10 @@ import '../styles/projects.css';
 import '../styles/header.css';
 
 export default function Homepage() {
+  function loadMoreProjectsHandler() {
+    console.log('load more projects...');
+  }
+
   return (
     <Layout
       pageTitle='Leon Michalak | Home'
@@ -133,17 +137,20 @@ export default function Homepage() {
       <Filter />
 
       <section className='projects' id='projects'>
-        <ul className='container projects-container'>
-          {projects.map((project, index) => {
-            return (
-              <>
+        <div className='container'>
+          <ul className='projects-container'>
+            {projects.map((project, index) => {
+              return (
                 <li key={index}>
                   <ProjectCard imgSrc={project.imgSrc} imgAlt={project.imgAlt} gradient={project.gradient} />
                 </li>
-              </>
-            );
-          })}
-        </ul>
+              );
+            })}
+          </ul>
+          <button className='body-text projects-load-more' onClick={() => loadMoreProjectsHandler()}>
+            Load more...
+          </button>
+        </div>
       </section>
     </Layout>
   );
