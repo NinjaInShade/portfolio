@@ -1,9 +1,9 @@
-import PodLandingPage from './assets/image-pod-landing-page.png';
-import MeetLandingPage from './assets/image-meet-landing-page.png';
-import StatsCard from './assets/image-stats-card.png';
-import DataStorageComponent from './assets/image-data-storage-component.png';
-import TypemasterLandingPage from './assets/image-typemaster-landing-page.png';
-import ProjectTrackingPage from './assets/image-project-tracking-page.png';
+import PodLandingPage from './assets/projects/image-pod-landing-page.png';
+import MeetLandingPage from './assets/projects/image-meet-landing-page.png';
+import StatsCard from './assets/projects/image-stats-card.png';
+import DataStorageComponent from './assets/projects/image-data-storage-component.png';
+import TypemasterLandingPage from './assets/projects/image-typemaster-landing-page.png';
+import ProjectTrackingPage from './assets/projects/image-project-tracking-page.png';
 
 export const projects = [
   {
