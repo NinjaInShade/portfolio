@@ -18,6 +18,14 @@ export default function Filter() {
     setFilterMode(mode);
   }
 
+  function clearTabsHandler() {
+    const updatedTabs = tabs.map((tab) => {
+      return { name: tab.name, active: false };
+    });
+
+    setTabs(updatedTabs);
+  }
+
   function setTabActiveHandler(name) {
     const tabIndex = tabs.findIndex((tab) => tab.name === name);
 
@@ -50,7 +58,9 @@ export default function Filter() {
               Exclusive
             </button>
           </div>
-          <button className='filter-control body-s-text'>Clear all</button>
+          <button className='filter-control body-s-text' onClick={() => clearTabsHandler()}>
+            Clear all
+          </button>
         </div>
         <div className='filter-seperator'></div>
         <ul className='filter-tabs'>
