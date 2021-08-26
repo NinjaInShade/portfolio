@@ -31,6 +31,9 @@ body {
   --black: #041a2f;
   --black-50: hsla(209, 84%, 10%, 0.5);
 
+  --gray-darkest: #737373;
+  --gray-dark: #bdbdbd;
+  --gray: #e0e0e0;
   --white: #f6fafe;
 
   /* Typography */
@@ -43,9 +46,10 @@ body {
   --btn: 1.125rem;
   --btn-line-height: 18px;
 
-  /* --body-s: 1rem; */
+  --body-s: 1rem;
 
-  /* --small: 0.875rem; */
+  --small: 0.875rem;
+  --small-line-height: 16px;
 
   /* Other */
   --max-width: 1250px;
@@ -70,6 +74,7 @@ h1 {
 
 .small-text {
   font-size: var(--small);
+  line-height: var(--small-line-height);
 }
 
 .container {
@@ -87,7 +92,7 @@ h1 {
     --btn: 1rem;
     --btn-line-height: 16px;
 
-    /* --small: 0.875rem; */
+    --body-s: 0.875rem;
   }
 }
 
@@ -95,9 +100,5 @@ h1 {
   :root {
     --h1: 2rem;
     --h1-line-height: 38px;
-
-    /* --body-s: 0.875rem; */
-
-    /* --small: 0.8rem; */
   }
 }

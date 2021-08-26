@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import LogoOverlayPattern from '../assets/pattern-logo.svg';
 import LaptopImg from '../assets/image-header.png';
 import LaptopImgTablet from '../assets/image-header-tablet.png';
+import Filter from '../components/Filter';
 import '../styles/header.css';
 
 export default function Homepage() {
@@ -125,7 +126,8 @@ export default function Homepage() {
         </div>
         <div></div>
       </header>
-      {/* <Filter /> */}
+
+      <Filter />
     </Layout>
   );
 }

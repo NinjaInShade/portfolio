@@ -1,0 +1,29 @@
+.filter-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: 1px solid var(--gray-dark);
+  color: var(--gray-darkest);
+  border-radius: 12px;
+  padding: 8px 10px;
+  font-weight: 700;
+}
+
+.filter-tab-check {
+  display: none;
+  margin-right: 10px;
+}
+
+.filter-tab-active .filter-tab-check {
+  display: block;
+}
+
+.filter-tab-active,
+.filter-tab:hover {
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--primary-light);
+  color: var(--primary-light);
+}
