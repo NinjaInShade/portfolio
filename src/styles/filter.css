@@ -52,3 +52,24 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+
+@media (max-width: 1050px) {
+  .filter {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 650px) {
+  .filter {
+    padding-top: 50px;
+  }
+
+  .filter-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-mode-controls {
+    margin: 32px 0 10px 0;
+  }
+}

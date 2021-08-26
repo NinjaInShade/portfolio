@@ -43,7 +43,7 @@ export default function Filter() {
       <div className='container filter-container'>
         <div className='filter-top'>
           <strong className='body-text filter-title'>Filter projects</strong>
-          <div>
+          <div className='filter-mode-controls'>
             <button
               className={`filter-control body-s-text ${filterMode === 'inclusive' && 'filter-control-active'}`}
               onClick={() => setFilterModeHandler('inclusive')}
