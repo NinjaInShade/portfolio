@@ -36,4 +36,9 @@ export const projects = [
     imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
     gradient: 'linear-gradient(135deg, hsl(360,47%,22%) 0%, hsl(360,47%,32%) 100%)',
   },
+  {
+    imgSrc: ProjectTrackingPage,
+    imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
+    gradient: 'linear-gradient(135deg, hsl(360,47%,22%) 0%, hsl(360,47%,32%) 100%)',
+  },
 ];

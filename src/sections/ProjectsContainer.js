@@ -8,6 +8,10 @@ export default function ProjectsContainer() {
   const [projectsShown, setProjectsShown] = useState(6);
 
   function loadMoreProjectsHandler() {
+    if (projects.length <= projectsShown) {
+      return;
+    }
+
     setProjectsShown((prevState) => prevState + 3);
   }
 
