@@ -1,6 +1,7 @@
 .project-card {
   overflow: hidden;
   border-radius: var(--border-r);
+  height: 100%;
 }
 
 .project-card-img-container {
@@ -10,6 +11,8 @@
   background-color: var(--gray-darkest);
   border-radius: var(--border-r);
   padding: 32px 40px;
+  min-height: 160px;
+  height: 100%;
 }
 
 .project-card-img-btn {

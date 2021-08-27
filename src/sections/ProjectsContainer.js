@@ -25,7 +25,12 @@ export default function ProjectsContainer() {
             {projects.slice(0, projectsShown).map((project, index) => {
               return (
                 <li key={index}>
-                  <ProjectCard imgSrc={project.imgSrc} imgAlt={project.imgAlt} gradient={project.gradient} />
+                  <ProjectCard
+                    imgSrc={project.imgSrc}
+                    imgAlt={project.imgAlt}
+                    gradientHue={project.gradientHue}
+                    gradientSaturation={project.gradientSaturation}
+                  />
                 </li>
               );
             })}

@@ -1,5 +1,5 @@
 .filter {
-  padding: 130px 30px 0 30px;
+  padding: 170px 30px 0 30px;
 }
 
 .filter-container {
@@ -61,13 +61,13 @@
 
 @media (max-width: 1050px) {
   .filter {
-    padding-top: 100px;
+    padding-top: 130px;
   }
 }
 
 @media (max-width: 650px) {
   .filter {
-    padding-top: 50px;
+    padding-top: 65px;
   }
 
   .filter-top {
