@@ -13,6 +13,9 @@ export default function Filter() {
     { name: 'Component', active: false },
     { name: 'Animation', active: false },
     { name: 'ReactJS', active: false },
+    { name: 'Full Stack', active: false },
+    { name: 'API', active: false },
+    { name: 'Database', active: false },
   ]);
 
   function setFilterModeHandler(mode) {

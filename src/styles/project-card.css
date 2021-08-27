@@ -40,6 +40,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.2s;
   padding: 30px;
 }
 
@@ -75,4 +76,14 @@
 
 .projects-modal-close:hover {
   --d: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
