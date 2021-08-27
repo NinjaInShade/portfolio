@@ -1,25 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import FilterTab from './FilterTab';
 import '../styles/filter.css';
 
-export default function Filter() {
-  const [filterMode, setFilterMode] = useState('inclusive');
-  const [tabs, setTabs] = useState([
-    { name: 'HTML', active: false },
-    { name: 'CSS', active: false },
-    { name: 'Javascript', active: false },
-    { name: 'Landing Page', active: false },
-    { name: 'Full Page', active: false },
-    { name: 'Multi Page', active: false },
-    { name: 'Component', active: false },
-    { name: 'Animation', active: false },
-    { name: 'ReactJS', active: false },
-    { name: 'NodeJS', active: false },
-    { name: 'Full Stack', active: false },
-    { name: 'API', active: false },
-    { name: 'Database', active: false },
-  ]);
-
+export default function Filter({ filterMode, setFilterMode, tabs, setTabs }) {
   function setFilterModeHandler(mode) {
     setFilterMode(mode);
   }
@@ -38,8 +21,6 @@ export default function Filter() {
     let updatedTabs = [...tabs];
 
     updatedTabs[tabIndex].active = !updatedTabs[tabIndex].active;
-
-    console.log(updatedTabs);
 
     setTabs(updatedTabs);
   }

@@ -3,7 +3,7 @@ import '../styles/project-card.css';
 
 const gradientSaturation = 50;
 
-export default function ProjectCard({ imgSrc, imgAlt, gradientHue }) {
+export default function ProjectCard({ imgSrc, imgAlt, gradientHue, title, description, github, liveSite, tabs }) {
   const [showModal, setShowModal] = useState(false);
 
   function imgModalHandler() {
