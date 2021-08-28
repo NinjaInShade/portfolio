@@ -41,7 +41,7 @@ export const projects = [
     description: 'FAQ Accordion card with javascript.',
     liveSite: 'https://lm-faq-accordion-card.netlify.app/',
     github: 'https://github.com/NinjaInShade/faq-accordion-card',
-    tabs: ['HTML', 'CSS', 'Javascript'],
+    tabs: ['HTML', 'CSS', 'Javascript', 'Component'],
     imgSrc: FAQAccordion,
     imgAlt: 'Mockup of a FAQ (Frequently Asked Questions) card component.',
     gradientHue: 273,

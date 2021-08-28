@@ -1,8 +1,57 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FilterTab from './FilterTab';
 import '../styles/filter.css';
 
-export default function Filter({ tabs, setTabs, filterMode, setFilterMode, setActiveTabs }) {
+export default function Filter({ tabs, setTabs, filterMode, setFilterMode, projects, setActiveProjects }) {
+  useEffect(() => {
+    // Array of tabs that are active, transformed to lower case to avoid capitalization errors
+    const activeTabs = tabs.filter((tab) => tab.active === true).map((filteredTab) => filteredTab.name.toLowerCase());
+    const updatedActiveProjects = [];
+
+    projects.map((project) => {
+      // The projects tabs, transformed to lower case to avoid capitalization errors
+      const projectTabs = project.tabs.map((tab) => tab.toLowerCase());
+
+      if (activeTabs.length > 0) {
+        if (filterMode === 'inclusive') {
+          // Does the project include all active tabs (for inclusive)
+          const doesIncludeTabs = activeTabs.every((tab) => projectTabs.includes(tab));
+
+          if (doesIncludeTabs) {
+            updatedActiveProjects.push(project);
+          }
+        } else {
+          // Else filter mode is exclusive (exact match)
+
+          // Does the project include exactly the active tabs? (for exclusive)
+          const haveSameLengths = activeTabs.length === projectTabs.length;
+          let doesExactIncludeTabs;
+
+          if (haveSameLengths === false) {
+            doesExactIncludeTabs = false;
+          } else {
+            if (activeTabs.sort().join(',') === projectTabs.sort().join(',')) {
+              doesExactIncludeTabs = true;
+            } else {
+              doesExactIncludeTabs = false;
+            }
+          }
+
+          if (doesExactIncludeTabs) {
+            updatedActiveProjects.push(project);
+          }
+        }
+
+        return true;
+      }
+
+      // Map needs a return value
+      return updatedActiveProjects.push(project);
+    });
+
+    setActiveProjects(updatedActiveProjects);
+  }, [tabs, projects, setActiveProjects, filterMode]);
+
   function setFilterModeHandler(mode) {
     setFilterMode(mode);
   }
@@ -12,8 +61,8 @@ export default function Filter({ tabs, setTabs, filterMode, setFilterMode, setAc
       return { name: tab.name, active: false };
     });
 
+    setActiveProjects(projects);
     setTabs(updatedTabs);
-    setActiveTabs([]);
   }
 
   function setTabActiveHandler(name) {
@@ -24,7 +73,6 @@ export default function Filter({ tabs, setTabs, filterMode, setFilterMode, setAc
     updatedTabs[tabIndex].active = !updatedTabs[tabIndex].active;
 
     setTabs(updatedTabs);
-    setActiveTabs(tabs.filter((tab) => tab.active === true).map((filteredTab) => filteredTab.name.toLowerCase()));
   }
 
   return (
