@@ -2,27 +2,14 @@ import React, { useState } from 'react';
 import Filter from '../components/Filter';
 import ProjectCard from '../components/ProjectCard';
 import { projects as projectsData } from '../projects-data';
+import { tabs as tabsData } from '../tabs-data.js';
 import '../styles/projects.css';
 
 export default function ProjectsContainer() {
   const [projects, setProjects] = useState(projectsData);
   const [projectsShown, setProjectsShown] = useState(6);
   const [filterMode, setFilterMode] = useState('inclusive');
-  const [tabs, setTabs] = useState([
-    { name: 'HTML', active: false },
-    { name: 'CSS', active: false },
-    { name: 'Javascript', active: false },
-    { name: 'Landing Page', active: false },
-    { name: 'Full Page', active: false },
-    { name: 'Multi Page', active: false },
-    { name: 'Component', active: false },
-    { name: 'Animation', active: false },
-    { name: 'ReactJS', active: false },
-    { name: 'NodeJS', active: false },
-    { name: 'Full Stack', active: false },
-    { name: 'API', active: false },
-    { name: 'Database', active: false },
-  ]);
+  const [tabs, setTabs] = useState(tabsData);
 
   function loadMoreProjectsHandler() {
     if (projects.length <= projectsShown) {
@@ -75,6 +62,7 @@ export default function ProjectsContainer() {
                 );
               }
 
+              // Mode is inclusive, so just any projects that contain all active tabs
               if (filterMode === 'inclusive') {
                 return (
                   doesIncludeTabs && (
