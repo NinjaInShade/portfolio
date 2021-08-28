@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background: none;
+  background: #fff;
   outline: none;
   border: 1px solid var(--gray-dark);
   color: var(--gray-darkest);

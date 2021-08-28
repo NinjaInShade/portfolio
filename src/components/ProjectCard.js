@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FilterTab from '../components/FilterTab';
 import '../styles/project-card.css';
 
 const gradientSaturation = 50;
@@ -10,16 +11,19 @@ export default function ProjectCard({ imgSrc, imgAlt, gradientHue, title, descri
     setShowModal(!showModal);
   }
 
-  function showTabs() {
-    console.log('enable tabs modal');
-  }
-
   return (
     <>
       <div aria-hidden='true' className={`project-card-modal-container ${showModal && 'active'}`}>
         <div aria-hidden='true' className='project-card-modal-overlay' onClick={() => imgModalHandler()}></div>
         <div className='project-card-modal-content'>
           <img aria-hidden='true' src={imgSrc} className='project-card-img-big' alt={imgAlt} />
+          <ul className='project-card-modal-tabs'>
+            {tabs.map((tab, index) => (
+              <li key={index}>
+                <FilterTab name={tab} active={false} onClick={() => {}} />
+              </li>
+            ))}
+          </ul>
           <button className='body-text underline projects-modal-close' onClick={() => imgModalHandler()}>
             Close
           </button>
@@ -62,7 +66,7 @@ export default function ProjectCard({ imgSrc, imgAlt, gradientHue, title, descri
                 </svg>
               </a>
             </div>
-            <button className='small-text project-card-tabs-btn' onClick={() => showTabs()}>
+            <button className='small-text project-card-tabs-btn' onClick={() => imgModalHandler()}>
               Tags
             </button>
           </footer>

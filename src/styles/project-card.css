@@ -24,6 +24,11 @@
   max-width: 250px;
 }
 
+.project-card-img-btn:focus {
+  /* Red for visibility against backgrounds */
+  outline: #ff0000 solid 2px;
+}
+
 .project-card-img {
   /* HACK */
   height: 160px;
@@ -66,6 +71,21 @@
 
 .project-card-modal-container.active {
   display: flex;
+}
+
+.project-card-modal-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.project-card-modal-tabs .filter-tab {
+  color: var(--black);
+  cursor: unset;
+  border: none;
 }
 
 .projects-modal-close {
@@ -125,7 +145,6 @@
 
 .project-card-tabs-btn {
   cursor: pointer;
-  outline: none;
   border: none;
   display: block;
   background: linear-gradient(var(--primary-light) 0 0) bottom / 100% 2px no-repeat;
