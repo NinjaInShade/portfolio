@@ -79,7 +79,7 @@ export default function Filter({ tabs, setTabs, filterMode, setFilterMode, proje
     <article className='filter'>
       <div className='container filter-container'>
         <div className='filter-top'>
-          <strong className='body-text filter-title'>Filter projects</strong>
+          <h2 className='body-text filter-title'>Filter projects</h2>
           <div className='filter-mode-controls'>
             <button
               className={`filter-control body-s-text ${filterMode === 'inclusive' && 'filter-control-active'}`}
