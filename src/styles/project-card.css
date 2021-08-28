@@ -30,10 +30,7 @@
 }
 
 .project-card-img {
-  /* HACK */
   height: 160px;
-  /* height: 100%; */
-  /* HACK */
   width: 100%;
 }
 
@@ -164,7 +161,6 @@
   }
 }
 
-/* HACK */
 @media (max-width: 400px) {
   .project-card-img {
     height: 100%;
