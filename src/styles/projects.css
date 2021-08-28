@@ -11,18 +11,11 @@
 }
 
 .projects-load-more {
-  display: block;
   border: none;
   cursor: pointer;
-  background: linear-gradient(var(--primary-light) 0 0) bottom / var(--d, 20%) 2px no-repeat;
-  transition: 0.2s ease-in-out;
   margin: 24px auto 0 auto;
   color: var(--black);
   font-weight: 700;
-}
-
-.projects-load-more:hover {
-  --d: 100%;
 }
 
 @media (max-width: 420px) {

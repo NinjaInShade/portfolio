@@ -55,7 +55,7 @@ export default function ProjectsContainer() {
             })}
           </ul>
           {activeProjects.length > projectsShown && (
-            <button className='body-text projects-load-more' onClick={() => loadMoreProjectsHandler()}>
+            <button className='body-text underline projects-load-more' onClick={() => loadMoreProjectsHandler()}>
               Load more...
             </button>
           )}

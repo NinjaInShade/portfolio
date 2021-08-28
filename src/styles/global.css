@@ -34,6 +34,7 @@ body {
   --gray-darkest: #737373;
   --gray-dark: #bdbdbd;
   --gray: #e0e0e0;
+  --gray-light: #f2f2f2;
   --white: #f6fafe;
 
   /* Typography */
@@ -45,6 +46,9 @@ body {
 
   --btn: 1.125rem;
   --btn-line-height: 18px;
+
+  --card: 1.125rem;
+  --card-line-height: 16px;
 
   --body-s: 1rem;
 
@@ -77,9 +81,24 @@ h1 {
   line-height: var(--small-line-height);
 }
 
+.card-text {
+  font-size: var(--card);
+  line-height: var(--card-line-height);
+}
+
 .container {
   margin: 0 auto;
   max-width: var(--max-width);
+}
+
+.underline {
+  display: block;
+  background: linear-gradient(var(--primary-light) 0 0) bottom / var(--d, 20%) 2px no-repeat;
+  transition: 0.2s ease-in-out;
+}
+
+.underline:hover {
+  --d: 100%;
 }
 
 @media (max-width: 1050px) {

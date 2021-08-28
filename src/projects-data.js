@@ -26,8 +26,7 @@ import ArticlePreview from './assets/projects/image-article-preview.png';
 export const projects = [
   {
     title: 'Online shop project',
-    description:
-      'Online shop (e-commerce) project with all major functionalities. Full-stack, built with React and Node.js',
+    description: 'Online shop (e-commerce) project with all major functionalities.',
     liveSite: 'https://onlineshop-430be.web.app/',
     github: 'https://github.com/NinjaInShade/online-shop',
     tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'NodeJS', 'Full Stack', 'API', 'Database', 'Multi Page'],
@@ -140,7 +139,7 @@ export const projects = [
     gradientHue: 219,
   },
   {
-    title: 'Interactive price coomponent',
+    title: 'Interactive price component',
     description: 'Interactive pricing component (Traffic based pricing calculator)',
     liveSite: 'https://lm-interactive-price-component.netlify.app/',
     github: 'https://github.com/NinjaInShade/interactive-price-component',
@@ -205,8 +204,7 @@ export const projects = [
   },
   {
     title: 'Site build',
-    description:
-      'Full stack website that helps with making a polished site covering topics like UI/UX, SEO, Security, Clean, Reusable Code and much more.',
+    description: 'Helps with topics like UI/UX, SEO, Security, Clean, Reusable Code and much more.',
     liveSite: 'https://sitebuilder-66d12.web.app/',
     github: 'https://github.com/NinjaInShade/4card-feature-section',
     tabs: [

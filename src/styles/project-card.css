@@ -1,6 +1,6 @@
 .project-card {
   overflow: hidden;
-  border-radius: var(--border-r);
+  border-radius: var(--border-r) var(--border-r) 0 0;
   height: 100%;
 }
 
@@ -9,10 +9,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--gray-darkest);
-  border-radius: var(--border-r);
   padding: 32px 40px;
-  min-height: 160px;
-  height: 100%;
 }
 
 .project-card-img-btn {
@@ -23,11 +20,16 @@
   outline: none;
   border: none;
   background: none;
+  max-height: 160px;
+  max-width: 250px;
 }
 
 .project-card-img {
-  max-width: 250px;
-  height: auto;
+  /* HACK */
+  height: 160px;
+  /* height: 100%; */
+  /* HACK */
+  width: 100%;
 }
 
 .project-card-modal-container,
@@ -67,18 +69,70 @@
 }
 
 .projects-modal-close {
-  display: block;
   border: none;
   cursor: pointer;
-  background: linear-gradient(var(--primary-light) 0 0) bottom / var(--d, 20%) 2px no-repeat;
-  transition: 0.2s ease-in-out;
   margin: 24px auto 0 auto;
   color: var(--white);
   font-weight: 700;
 }
 
-.projects-modal-close:hover {
-  --d: 100%;
+.project-card-content-container {
+  background: #fff;
+  border: 1px solid var(--gray-light);
+  padding: 24px 24px 16px 24px;
+}
+
+.project-card-header {
+  margin-bottom: 40px;
+}
+
+.project-card-title,
+.project-card-description {
+  color: var(--black);
+}
+
+.project-card-title {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.project-card-description {
+  min-height: 42px;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card-link:not(:last-child) {
+  margin-right: 16px;
+}
+
+.project-card-tabs-btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: block;
+  background: linear-gradient(var(--primary-light) 0 0) bottom / 100% 2px no-repeat;
+  transition: 0.2s ease-in-out;
+  color: var(--black);
+  font-weight: 500;
+  line-height: 18px;
 }
 
 @keyframes fadeIn {
@@ -88,5 +142,12 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+/* HACK */
+@media (max-width: 400px) {
+  .project-card-img {
+    height: 100%;
   }
 }
