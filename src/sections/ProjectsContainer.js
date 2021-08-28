@@ -44,6 +44,20 @@ export default function ProjectsContainer() {
               // Does the project include all active tabs (for inclusive)
               const doesIncludeTabs = activeTabs.every((tab) => projectTabs.includes(tab));
 
+              // Does the project include exactly the active tabs? (for exclusive)
+              const haveSameLengths = activeTabs.length === projectTabs.length;
+              let doesExactIncludeTabs;
+
+              if (haveSameLengths === false) {
+                doesExactIncludeTabs = false;
+              } else {
+                if (activeTabs.sort().join(',') === projectTabs.sort().join(',')) {
+                  doesExactIncludeTabs = true;
+                } else {
+                  doesExactIncludeTabs = false;
+                }
+              }
+
               if (activeTabs.length === 0) {
                 return (
                   <li key={index}>
@@ -85,19 +99,21 @@ export default function ProjectsContainer() {
 
               // Mode is exclusive then (exact match)
               return (
-                <li key={index}>
-                  <ProjectCard
-                    imgSrc={project.imgSrc}
-                    imgAlt={project.imgAlt}
-                    gradientHue={project.gradientHue}
-                    gradientSaturation={project.gradientSaturation}
-                    title={project.title}
-                    description={project.description}
-                    github={project.github}
-                    liveSite={project.liveSite}
-                    tabs={project.tabs}
-                  />
-                </li>
+                doesExactIncludeTabs && (
+                  <li key={index}>
+                    <ProjectCard
+                      imgSrc={project.imgSrc}
+                      imgAlt={project.imgAlt}
+                      gradientHue={project.gradientHue}
+                      gradientSaturation={project.gradientSaturation}
+                      title={project.title}
+                      description={project.description}
+                      github={project.github}
+                      liveSite={project.liveSite}
+                      tabs={project.tabs}
+                    />
+                  </li>
+                )
               );
             })}
           </ul>
