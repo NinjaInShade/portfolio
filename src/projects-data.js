@@ -229,7 +229,7 @@ export const projects = [
     description: '3-column preview card component',
     liveSite: 'https://lm-3col-preview-card.netlify.app/',
     github: 'https://github.com/NinjaInShade/3col-preview-card',
-    tabs: ['HTML', 'CSS'],
+    tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: ColPreviewCard,
     imgAlt: 'Mockup of a 3 columns of cards.',
     gradientHue: 172,

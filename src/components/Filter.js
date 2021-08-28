@@ -2,7 +2,7 @@ import React from 'react';
 import FilterTab from './FilterTab';
 import '../styles/filter.css';
 
-export default function Filter({ tabs, setTabs, filterMode, setFilterMode }) {
+export default function Filter({ tabs, setTabs, filterMode, setFilterMode, setActiveTabs }) {
   function setFilterModeHandler(mode) {
     setFilterMode(mode);
   }
@@ -13,6 +13,7 @@ export default function Filter({ tabs, setTabs, filterMode, setFilterMode }) {
     });
 
     setTabs(updatedTabs);
+    setActiveTabs([]);
   }
 
   function setTabActiveHandler(name) {
@@ -23,6 +24,7 @@ export default function Filter({ tabs, setTabs, filterMode, setFilterMode }) {
     updatedTabs[tabIndex].active = !updatedTabs[tabIndex].active;
 
     setTabs(updatedTabs);
+    setActiveTabs(tabs.filter((tab) => tab.active === true).map((filteredTab) => filteredTab.name.toLowerCase()));
   }
 
   return (
