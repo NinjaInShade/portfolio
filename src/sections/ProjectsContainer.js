@@ -25,6 +25,7 @@ export default function ProjectsContainer() {
   // TODO: When filtering, we need to re-arrange the filtered items to the start of the projects array.
   // This is due to if we are only showing max 6 projects, but a filtered item was the 7th or above in the array, it wouldnt be shown.
   // This might not be clear if there was only one filtered project before that though, as only that one would show, leading you to believe nothing else is filtered.
+  // Rn as a fix, if there are active tabs(so we are filtering), we remove the projectsShown and display all projects.
 
   return (
     <>
@@ -121,9 +122,11 @@ export default function ProjectsContainer() {
                 );
               })}
           </ul>
-          <button className='body-text projects-load-more' onClick={() => loadMoreProjectsHandler()}>
-            Load more...
-          </button>
+          {projects.length > projectsShown && activeTabs.length === 0 && (
+            <button className='body-text projects-load-more' onClick={() => loadMoreProjectsHandler()}>
+              Load more...
+            </button>
+          )}
         </div>
       </section>
     </>
