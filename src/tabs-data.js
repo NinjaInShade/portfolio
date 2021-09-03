@@ -10,5 +10,4 @@ export const tabs = [
   { name: 'NodeJS', active: false },
   { name: 'Full Stack', active: false },
   { name: 'API', active: false },
-  { name: 'Database', active: false },
 ];

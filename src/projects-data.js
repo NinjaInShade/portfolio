@@ -32,7 +32,7 @@ export const projects = [
     description: 'Online shop (e-commerce) project with all major functionalities.',
     liveSite: 'https://onlineshop-430be.web.app/',
     github: 'https://github.com/NinjaInShade/online-shop',
-    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'NodeJS', 'Full Stack', 'API', 'Database', 'Multi Page'],
+    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'NodeJS', 'Full Stack', 'API', 'Multi Page'],
     imgSrc: OnlineShop,
     imgAlt:
       'Mockup of online shop project. Has a navigation for admin products, product, add products, cart, profile. Shows product cards for main content with "Add to cart" and "Detail" buttons.',
@@ -79,23 +79,23 @@ export const projects = [
     gradientHue: hues.blue,
   },
   {
-    title: 'Order summary card',
-    description: 'Order summary card component',
-    liveSite: 'https://lm-order-summary-component.netlify.app/',
-    github: 'https://github.com/NinjaInShade/order-summary-component',
-    tabs: ['HTML', 'CSS', 'Component'],
-    imgSrc: OrderSummaryCard,
-    imgAlt:
-      'Mockup of a order summary card card. Can proceed to payment or cancel order. Shows the current plan and a button to change it.',
-    gradientHue: hues.green,
-  },
-  {
     title: 'Bootcamp testimonials',
     description: 'Coding bootcamp testimonials page with sliders.',
     liveSite: 'https://lm-bootcamp-testimonials.netlify.app/',
     github: 'https://github.com/NinjaInShade/bootcamp-testimonials',
     tabs: ['HTML', 'CSS', 'Javascript', 'Animation'],
     imgSrc: BootcampTestimonials,
+    imgAlt:
+      'Mockup of a order summary card card. Can proceed to payment or cancel order. Shows the current plan and a button to change it.',
+    gradientHue: hues.green,
+  },
+  {
+    title: 'Order summary card',
+    description: 'Order summary card component',
+    liveSite: 'https://lm-order-summary-component.netlify.app/',
+    github: 'https://github.com/NinjaInShade/order-summary-component',
+    tabs: ['HTML', 'CSS', 'Component'],
+    imgSrc: OrderSummaryCard,
     imgAlt:
       'Mockup of a order summary card card. Can proceed to payment or cancel order. Shows the current plan and a button to change it.',
     gradientHue: hues.blue,
@@ -220,7 +220,7 @@ export const projects = [
     description: 'Helps with topics like UI/UX, SEO, Security, Clean, Reusable Code and much more.',
     liveSite: 'https://sitebuilder-66d12.web.app/',
     github: 'https://github.com/NinjaInShade/4card-feature-section',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Multi Page', 'ReactJS', 'NodeJS', 'Full Stack', 'API', 'Database'],
+    tabs: ['HTML', 'CSS', 'Javascript', 'Multi Page', 'ReactJS', 'NodeJS', 'Full Stack', 'API'],
     imgSrc: SiteBuild,
     imgAlt: 'Mockup of site build home page.',
     gradientHue: hues.blue,
