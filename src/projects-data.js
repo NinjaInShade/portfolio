@@ -22,6 +22,9 @@ import ColPreviewCard from './assets/projects/image-3col-card.png';
 import ProfileCard from './assets/projects/image-profile-card.png';
 import SocialProofSection from './assets/projects/image-social-proof.png';
 import ArticlePreview from './assets/projects/image-article-preview.png';
+import FyloDark from './assets/projects/image-fylo-dark-landing-page.png';
+
+const hues = { blue: 220, green: 190 };
 
 export const projects = [
   {
@@ -33,7 +36,7 @@ export const projects = [
     imgSrc: OnlineShop,
     imgAlt:
       'Mockup of online shop project. Has a navigation for admin products, product, add products, cart, profile. Shows product cards for main content with "Add to cart" and "Detail" buttons.',
-    gradientHue: 219,
+    gradientHue: hues.blue,
   },
   {
     title: 'FAQ Accordion card',
@@ -43,7 +46,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'Component', 'Animation'],
     imgSrc: FAQAccordion,
     imgAlt: 'Mockup of a FAQ (Frequently Asked Questions) card component.',
-    gradientHue: 273,
+    gradientHue: hues.green,
   },
   {
     title: 'Pod landing page',
@@ -53,7 +56,27 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'Landing Page'],
     imgSrc: PodLandingPage,
     imgAlt: 'Mockup of pod landing page. Pod is an imaginary business for streaming podcasts. ',
-    gradientHue: 219,
+    gradientHue: hues.blue,
+  },
+  {
+    title: 'Fylo dark landing page',
+    description: 'Dark theme landing page for imaginary business "Fylo"',
+    liveSite: 'https://lm-fylo-dark-landing-page.netlify.app/',
+    github: 'https://github.com/NinjaInShade/fylo-dark-landing-page',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page'],
+    imgSrc: FyloDark,
+    imgAlt: 'Mockup of a dark themed landing page for imaginary business "Fylo"',
+    gradientHue: hues.green,
+  },
+  {
+    title: 'Meet landing page',
+    description: 'Landing page for imaginary business "Meet"',
+    liveSite: 'https://lm-meet-landing-page.netlify.app/',
+    github: 'https://github.com/NinjaInShade/meet-landing-page',
+    tabs: ['HTML', 'CSS', 'Landing Page'],
+    imgSrc: MeetLandingPage,
+    imgAlt: 'Mockup of meet landing page. Meet is an imaginary business for collaborative group and video chat. ',
+    gradientHue: hues.blue,
   },
   {
     title: 'Order summary card',
@@ -64,17 +87,7 @@ export const projects = [
     imgSrc: OrderSummaryCard,
     imgAlt:
       'Mockup of a order summary card card. Can proceed to payment or cancel order. Shows the current plan and a button to change it.',
-    gradientHue: 219,
-  },
-  {
-    title: 'Meet landing page',
-    description: 'Landing page for imaginary business "Meet"',
-    liveSite: 'https://lm-meet-landing-page.netlify.app/',
-    github: 'https://github.com/NinjaInShade/meet-landing-page',
-    tabs: ['HTML', 'CSS', 'Landing Page'],
-    imgSrc: MeetLandingPage,
-    imgAlt: 'Mockup of meet landing page. Meet is an imaginary business for collaborative group and video chat. ',
-    gradientHue: 172,
+    gradientHue: hues.green,
   },
   {
     title: 'Bootcamp testimonials',
@@ -85,7 +98,7 @@ export const projects = [
     imgSrc: BootcampTestimonials,
     imgAlt:
       'Mockup of a order summary card card. Can proceed to payment or cancel order. Shows the current plan and a button to change it.',
-    gradientHue: 219,
+    gradientHue: hues.blue,
   },
   {
     title: 'Tip calculator',
@@ -96,17 +109,17 @@ export const projects = [
     imgSrc: TipCalculator,
     imgAlt:
       'Mockup of tip calculator project. Can input overall bill, tip % and how many people are paying, and shows the calculated values.',
-    gradientHue: 172,
+    gradientHue: hues.green,
   },
   {
-    title: 'Data storage component',
+    title: 'Fylo Data storage component',
     description: 'Data storage component for imaginary business "Fylo"',
     liveSite: 'https://lm-data-storage-component.netlify.app/',
     github: 'https://github.com/NinjaInShade/data-storage-component',
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: DataStorageComponent,
     imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
-    gradientHue: 219,
+    gradientHue: hues.blue,
   },
   {
     title: 'Typemaster landing page',
@@ -116,7 +129,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Landing Page'],
     imgSrc: TypemasterLandingPage,
     imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
-    gradientHue: 9,
+    gradientHue: hues.green,
   },
   {
     title: 'Stats card',
@@ -126,7 +139,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: StatsCard,
     imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
-    gradientHue: 273,
+    gradientHue: hues.blue,
   },
   {
     title: 'Testimonials grid',
@@ -136,7 +149,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: TestimonialsGrid,
     imgAlt: 'Mockup of a bunch of testimonials, in a grid layout.',
-    gradientHue: 219,
+    gradientHue: hues.green,
   },
   {
     title: 'Interactive price component',
@@ -147,7 +160,7 @@ export const projects = [
     imgSrc: InteractivePricingCard,
     imgAlt:
       'Mockup of an interactive pricing component. Choose between monthly/yearly billing and use a slider to calculate how much you have to pay.',
-    gradientHue: 219,
+    gradientHue: hues.blue,
   },
   {
     title: 'Ping coming soon page',
@@ -158,7 +171,7 @@ export const projects = [
     imgSrc: PingComingSoonPage,
     imgAlt:
       'Mockup of a coming soon page for imaginary business "Ping". Has a form where you can be notified for when it releases and an illustration with placeholder elements of the websites UI.',
-    gradientHue: 219,
+    gradientHue: hues.green,
   },
   {
     title: 'Project tracking page',
@@ -168,7 +181,7 @@ export const projects = [
     tabs: ['HTML', 'CSS'],
     imgSrc: ProjectTrackingPage,
     imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
-    gradientHue: 9,
+    gradientHue: hues.blue,
   },
   {
     title: 'Huddle landing page',
@@ -179,7 +192,7 @@ export const projects = [
     imgSrc: HuddleLandingPage,
     imgAlt:
       'Mockup of a landing page for Huddle. Has a big illustration of placeholder elements representing the websites UI, and some text and a register button, with some social links in the bottom.',
-    gradientHue: 273,
+    gradientHue: hues.green,
   },
   {
     title: 'Price grid card',
@@ -190,7 +203,7 @@ export const projects = [
     imgSrc: PriceGridComponent,
     imgAlt:
       'Mockup of a price card. Shows the monthly subscription price, why you should join and a little bit of background information',
-    gradientHue: 172,
+    gradientHue: hues.blue,
   },
   {
     title: '4 Card feature section',
@@ -200,7 +213,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: FourCardFeatureSection,
     imgAlt: 'Mockup of a 4 card feature section component. 4 Cards in a grid layout.',
-    gradientHue: 219,
+    gradientHue: hues.green,
   },
   {
     title: 'Site build',
@@ -210,7 +223,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'Multi Page', 'ReactJS', 'NodeJS', 'Full Stack', 'API', 'Database'],
     imgSrc: SiteBuild,
     imgAlt: 'Mockup of site build home page.',
-    gradientHue: 172,
+    gradientHue: hues.blue,
   },
   {
     title: 'Intro signup page',
@@ -220,7 +233,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript'],
     imgSrc: IntroSignup,
     imgAlt: 'Mockup of a signup form for an introduction page.',
-    gradientHue: 219,
+    gradientHue: hues.green,
   },
   {
     title: '3 Column preview card section',
@@ -230,7 +243,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: ColPreviewCard,
     imgAlt: 'Mockup of a 3 columns of cards.',
-    gradientHue: 172,
+    gradientHue: hues.blue,
   },
   {
     title: 'Base Apparel coming soon page',
@@ -240,7 +253,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript'],
     imgSrc: BAComingSoonPage,
     imgAlt: 'Mockup of base apparel coming soon page, with a form to be notified of the release.',
-    gradientHue: 9,
+    gradientHue: hues.green,
   },
   {
     title: 'Social proof section',
@@ -250,7 +263,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: SocialProofSection,
     imgAlt: 'Mockup of a social proof section, with testimonials from customers.',
-    gradientHue: 273,
+    gradientHue: hues.blue,
   },
   {
     title: 'Profile card',
@@ -260,7 +273,7 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: ProfileCard,
     imgAlt: 'Mockup of a profile card component with information about a person.',
-    gradientHue: 219,
+    gradientHue: hues.green,
   },
   {
     title: 'Article preview card',
@@ -270,6 +283,6 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'Component'],
     imgSrc: ArticlePreview,
     imgAlt: 'Mockup of an article preview (blog preview) with social links to author.',
-    gradientHue: 219,
+    gradientHue: hues.blue,
   },
 ];

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/logo.svg';
-import CV from '../assets/CV.pdf';
+import CV from '../assets/Leon Michalak Frontend Developer CV.pdf';
 import { Link } from 'gatsby';
 import '../styles/navbar.css';
 import '../styles/hamburger.css';
@@ -38,6 +38,7 @@ export default function Navbar() {
           <li className='navbar-list-item'>
             <a className='body-text navbar-download-link' href={CV} download>
               <svg
+                aria-label='Download'
                 className='navbar-download-icon'
                 width='16'
                 height='16'
@@ -50,7 +51,7 @@ export default function Navbar() {
                   fill='hsla(209, 84%, 10%, 0.5)'
                 />
               </svg>
-              Download CV
+              CV
             </a>
           </li>
         </ul>

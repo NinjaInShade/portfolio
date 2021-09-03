@@ -12,7 +12,7 @@ export default function Homepage() {
       {/* Header */}
       <Header />
 
-      {/* Projects filter & Project cards */}
+      {/* Projects filter & Project cards  */}
       <ProjectsContainer />
     </Layout>
   );
