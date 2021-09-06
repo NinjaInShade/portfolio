@@ -23,6 +23,7 @@ import ProfileCard from './assets/projects/image-profile-card.png';
 import SocialProofSection from './assets/projects/image-social-proof.png';
 import ArticlePreview from './assets/projects/image-article-preview.png';
 import FyloDark from './assets/projects/image-fylo-dark-landing-page.png';
+import GithubSearch from './assets/projects/image-github-search.png';
 
 const hues = { blue: 220, green: 190 };
 
@@ -59,13 +60,13 @@ export const projects = [
     gradientHue: hues.blue,
   },
   {
-    title: 'Fylo dark landing page',
-    description: 'Dark theme landing page for imaginary business "Fylo"',
-    liveSite: 'https://lm-fylo-dark-landing-page.netlify.app/',
-    github: 'https://github.com/NinjaInShade/fylo-dark-landing-page',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page'],
-    imgSrc: FyloDark,
-    imgAlt: 'Mockup of a dark themed landing page for imaginary business "Fylo"',
+    title: 'Github API Search app',
+    description: 'Github user search app using GitHub API + dark/light theme switcher',
+    liveSite: 'https://lm-github-user-search.netlify.app/',
+    github: 'https://github.com/NinjaInShade/github-user-search',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page', 'Animation', 'API'],
+    imgSrc: GithubSearch,
+    imgAlt: 'Mockup of github API search app.',
     gradientHue: hues.green,
   },
   {
@@ -284,5 +285,15 @@ export const projects = [
     imgSrc: ArticlePreview,
     imgAlt: 'Mockup of an article preview (blog preview) with social links to author.',
     gradientHue: hues.blue,
+  },
+  {
+    title: 'Fylo dark landing page',
+    description: 'Dark theme landing page for imaginary business "Fylo"',
+    liveSite: 'https://lm-fylo-dark-landing-page.netlify.app/',
+    github: 'https://github.com/NinjaInShade/fylo-dark-landing-page',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page'],
+    imgSrc: FyloDark,
+    imgAlt: 'Mockup of a dark themed landing page for imaginary business "Fylo"',
+    gradientHue: hues.green,
   },
 ];
