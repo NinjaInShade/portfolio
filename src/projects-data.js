@@ -60,16 +60,6 @@ export const projects = [
     gradientHue: hues.blue,
   },
   {
-    title: 'Github API Search app',
-    description: 'Github user search app using GitHub API + dark/light theme switcher',
-    liveSite: 'https://lm-github-user-search.netlify.app/',
-    github: 'https://github.com/NinjaInShade/github-user-search',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page', 'Animation', 'API'],
-    imgSrc: GithubSearch,
-    imgAlt: 'Mockup of github API search app.',
-    gradientHue: hues.green,
-  },
-  {
     title: 'Meet landing page',
     description: 'Landing page for imaginary business "Meet"',
     liveSite: 'https://lm-meet-landing-page.netlify.app/',
@@ -77,6 +67,16 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Landing Page'],
     imgSrc: MeetLandingPage,
     imgAlt: 'Mockup of meet landing page. Meet is an imaginary business for collaborative group and video chat. ',
+    gradientHue: hues.green,
+  },
+  {
+    title: 'Github API Search app',
+    description: 'Github user search app using GitHub API + dark/light theme switcher',
+    liveSite: 'https://lm-github-user-search.netlify.app/',
+    github: 'https://github.com/NinjaInShade/github-user-search',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page', 'Animation', 'API'],
+    imgSrc: GithubSearch,
+    imgAlt: 'Mockup of github API search app.',
     gradientHue: hues.blue,
   },
   {
