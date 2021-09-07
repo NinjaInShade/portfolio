@@ -42,8 +42,7 @@ export default function ProjectsContainer() {
                   <ProjectCard
                     imgSrc={project.imgSrc}
                     imgAlt={project.imgAlt}
-                    gradientHue={project.gradientHue}
-                    gradientSaturation={project.gradientSaturation}
+                    index={index}
                     title={project.title}
                     description={project.description}
                     github={project.github}

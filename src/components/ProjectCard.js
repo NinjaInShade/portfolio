@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import FilterTab from '../components/FilterTab';
 import '../styles/project-card.css';
 
-const gradientSaturation = 50;
-
-export default function ProjectCard({ imgSrc, imgAlt, gradientHue, title, description, github, liveSite, tabs }) {
+export default function ProjectCard({ imgSrc, imgAlt, index, title, description, github, liveSite, tabs }) {
   const [showModal, setShowModal] = useState(false);
 
   function imgModalHandler() {
@@ -31,12 +29,7 @@ export default function ProjectCard({ imgSrc, imgAlt, gradientHue, title, descri
       </div>
 
       <article className='project-card'>
-        <div
-          className='project-card-img-container'
-          style={{
-            background: `linear-gradient(135deg, hsl(${gradientHue},${gradientSaturation}%,22%) 0%, hsl(${gradientHue},${gradientSaturation}%,32%) 100%)`,
-          }}
-        >
+        <div className={`project-card-img-container ${index % 2 !== 0 && 'project-card-img-container-odd'}`}>
           <button className='project-card-img-btn' onClick={() => imgModalHandler()}>
             <img src={imgSrc} className='project-card-img' alt={imgAlt} />
           </button>
