@@ -24,6 +24,7 @@ import SocialProofSection from './assets/projects/image-social-proof.png';
 import ArticlePreview from './assets/projects/image-article-preview.png';
 import FyloDark from './assets/projects/image-fylo-dark-landing-page.png';
 import GithubSearch from './assets/projects/image-github-search.png';
+import Fylo2col from './assets/projects/image-fylo-2col-landing-page.png';
 
 export const projects = [
   {
@@ -103,6 +104,15 @@ export const projects = [
       'Mockup of tip calculator project. Can input overall bill, tip % and how many people are paying, and shows the calculated values.',
   },
   {
+    title: 'Typemaster landing page',
+    description: 'Pre-launch landing page for imaginary business "Typemaster"',
+    liveSite: 'https://lm-typemaster-landing-page.netlify.app/',
+    github: 'https://github.com/NinjaInShade/typemaster-landing-page',
+    tabs: ['HTML', 'CSS', 'Landing Page'],
+    imgSrc: TypemasterLandingPage,
+    imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
+  },
+  {
     title: 'Fylo Data storage component',
     description: 'Data storage component for imaginary business "Fylo"',
     liveSite: 'https://lm-data-storage-component.netlify.app/',
@@ -112,13 +122,22 @@ export const projects = [
     imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
   },
   {
-    title: 'Typemaster landing page',
-    description: 'Pre-launch landing page for imaginary business "Typemaster"',
-    liveSite: 'https://lm-typemaster-landing-page.netlify.app/',
-    github: 'https://github.com/NinjaInShade/typemaster-landing-page',
-    tabs: ['HTML', 'CSS', 'Landing Page'],
-    imgSrc: TypemasterLandingPage,
-    imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
+    title: 'Fylo 2 column landing page',
+    description: '2 column landing page for imaginary business "Fylo"',
+    liveSite: 'https://lm-fylo-2col-landing-page.netlify.app/',
+    github: 'https://github.com/NinjaInShade/fylo-2col-landing-page',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page'],
+    imgSrc: Fylo2col,
+    imgAlt: 'Mockup of a 2 column layed out landing page for imaginary business "Fylo"',
+  },
+  {
+    title: 'Fylo dark landing page',
+    description: 'Dark theme landing page for imaginary business "Fylo"',
+    liveSite: 'https://lm-fylo-dark-landing-page.netlify.app/',
+    github: 'https://github.com/NinjaInShade/fylo-dark-landing-page',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page'],
+    imgSrc: FyloDark,
+    imgAlt: 'Mockup of a dark themed landing page for imaginary business "Fylo"',
   },
   {
     title: 'Stats card',
@@ -258,14 +277,5 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'Component'],
     imgSrc: ArticlePreview,
     imgAlt: 'Mockup of an article preview (blog preview) with social links to author.',
-  },
-  {
-    title: 'Fylo dark landing page',
-    description: 'Dark theme landing page for imaginary business "Fylo"',
-    liveSite: 'https://lm-fylo-dark-landing-page.netlify.app/',
-    github: 'https://github.com/NinjaInShade/fylo-dark-landing-page',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page'],
-    imgSrc: FyloDark,
-    imgAlt: 'Mockup of a dark themed landing page for imaginary business "Fylo"',
   },
 ];
