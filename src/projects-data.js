@@ -58,13 +58,12 @@ export const projects = [
   },
   {
     title: 'Social media dashboard',
-    description:
-      'Social media dashboard showing my social media stats with dark/light theme switcher using various APIs',
+    description: 'Social media dashboard showing some social media stats with dark/light theme switcher',
     liveSite: 'https://lm-social-media-dashboard.netlify.app/',
     github: 'https://github.com/NinjaInShade/social-media-dashboard',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API'],
+    tabs: ['HTML', 'CSS', 'Javascript', 'Animation'],
     imgSrc: SocialMediaDashboard,
-    imgAlt: 'Mockup of social media dashboard showcasing my social media stats in card format.',
+    imgAlt: 'Mockup of social media dashboard showcasing some social media stats in card format.',
   },
   {
     title: 'Github API Search app',
