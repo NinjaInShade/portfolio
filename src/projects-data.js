@@ -67,6 +67,15 @@ export const projects = [
     imgAlt: 'Mockup of social media dashboard showcasing some social media stats in card format.',
   },
   {
+    title: 'Todo app',
+    description: 'Full stack todo app with dark/light theme + Drag n Drop!',
+    liveSite: 'https://todoapp-48ccc.web.app/',
+    github: 'https://github.com/NinjaInShade/todo',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API', 'Theme switch', 'ReactJS', 'NodeJS', 'Full stack'],
+    imgSrc: TodoApp,
+    imgAlt: 'Mockup of todo app with dark/light theme switch and drag n drop',
+  },
+  {
     title: 'Github API Search app',
     description: 'Github user search app using GitHub API + dark/light theme switcher',
     liveSite: 'https://lm-github-user-search.netlify.app/',
@@ -74,15 +83,6 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API', 'Theme switch'],
     imgSrc: GithubSearch,
     imgAlt: 'Mockup of github API search app.',
-  },
-  {
-    title: 'Todo',
-    description: 'Full stack todo app with dark/light theme + Drag n Drop!',
-    liveSite: 'https://todoapp-48ccc.web.app/',
-    github: 'https://github.com/NinjaInShade/todo',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API', 'Theme switch', 'ReactJS', 'NodeJS', 'Full stack'],
-    imgSrc: TodoApp,
-    imgAlt: 'Mockup of todo app with dark/light theme switch and drag n drop',
   },
   {
     title: 'Bootcamp testimonials',
