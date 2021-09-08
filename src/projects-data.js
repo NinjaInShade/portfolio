@@ -25,6 +25,7 @@ import ArticlePreview from './assets/projects/image-article-preview.png';
 import FyloDark from './assets/projects/image-fylo-dark-landing-page.png';
 import GithubSearch from './assets/projects/image-github-search.png';
 import Fylo2col from './assets/projects/image-fylo-2col-landing-page.png';
+import SocialMediaDashboard from './assets/projects/image-social-media-dashboard.png';
 
 export const projects = [
   {
@@ -56,20 +57,21 @@ export const projects = [
     imgAlt: 'Mockup of pod landing page. Pod is an imaginary business for streaming podcasts. ',
   },
   {
-    title: 'Meet landing page',
-    description: 'Landing page for imaginary business "Meet"',
-    liveSite: 'https://lm-meet-landing-page.netlify.app/',
-    github: 'https://github.com/NinjaInShade/meet-landing-page',
-    tabs: ['HTML', 'CSS', 'Landing Page'],
-    imgSrc: MeetLandingPage,
-    imgAlt: 'Mockup of meet landing page. Meet is an imaginary business for collaborative group and video chat. ',
+    title: 'Social media dashboard',
+    description:
+      'Social media dashboard showing my social media stats with dark/light theme switcher using various APIs',
+    liveSite: 'https://lm-social-media-dashboard.netlify.app/',
+    github: 'https://github.com/NinjaInShade/social-media-dashboard',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API'],
+    imgSrc: SocialMediaDashboard,
+    imgAlt: 'Mockup of social media dashboard showcasing my social media stats in card format.',
   },
   {
     title: 'Github API Search app',
     description: 'Github user search app using GitHub API + dark/light theme switcher',
     liveSite: 'https://lm-github-user-search.netlify.app/',
     github: 'https://github.com/NinjaInShade/github-user-search',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Landing page', 'Animation', 'API'],
+    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API'],
     imgSrc: GithubSearch,
     imgAlt: 'Mockup of github API search app.',
   },
@@ -82,6 +84,15 @@ export const projects = [
     imgSrc: BootcampTestimonials,
     imgAlt:
       'Mockup of a order summary card card. Can proceed to payment or cancel order. Shows the current plan and a button to change it.',
+  },
+  {
+    title: 'Meet landing page',
+    description: 'Landing page for imaginary business "Meet"',
+    liveSite: 'https://lm-meet-landing-page.netlify.app/',
+    github: 'https://github.com/NinjaInShade/meet-landing-page',
+    tabs: ['HTML', 'CSS', 'Landing Page'],
+    imgSrc: MeetLandingPage,
+    imgAlt: 'Mockup of meet landing page. Meet is an imaginary business for collaborative group and video chat. ',
   },
   {
     title: 'Order summary card',
