@@ -26,6 +26,7 @@ import FyloDark from './assets/projects/image-fylo-dark-landing-page.png';
 import GithubSearch from './assets/projects/image-github-search.png';
 import Fylo2col from './assets/projects/image-fylo-2col-landing-page.png';
 import SocialMediaDashboard from './assets/projects/image-social-media-dashboard.png';
+import TodoApp from './assets/projects/image-todo-app.png';
 
 export const projects = [
   {
@@ -61,7 +62,7 @@ export const projects = [
     description: 'Social media dashboard showing some social media stats with dark/light theme switcher',
     liveSite: 'https://lm-social-media-dashboard.netlify.app/',
     github: 'https://github.com/NinjaInShade/social-media-dashboard',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Animation'],
+    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'Theme switch'],
     imgSrc: SocialMediaDashboard,
     imgAlt: 'Mockup of social media dashboard showcasing some social media stats in card format.',
   },
@@ -70,9 +71,18 @@ export const projects = [
     description: 'Github user search app using GitHub API + dark/light theme switcher',
     liveSite: 'https://lm-github-user-search.netlify.app/',
     github: 'https://github.com/NinjaInShade/github-user-search',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API'],
+    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API', 'Theme switch'],
     imgSrc: GithubSearch,
     imgAlt: 'Mockup of github API search app.',
+  },
+  {
+    title: 'Todo',
+    description: 'Full stack todo app with dark/light theme + Drag n Drop!',
+    liveSite: 'https://todoapp-48ccc.web.app/',
+    github: 'https://github.com/NinjaInShade/todo',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API', 'Theme switch', 'ReactJS', 'NodeJS', 'Full stack'],
+    imgSrc: TodoApp,
+    imgAlt: 'Mockup of todo app with dark/light theme switch and drag n drop',
   },
   {
     title: 'Bootcamp testimonials',

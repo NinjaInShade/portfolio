@@ -10,4 +10,5 @@ export const tabs = [
   { name: 'NodeJS', active: false },
   { name: 'Full Stack', active: false },
   { name: 'API', active: false },
+  { name: 'Theme switch', active: false },
 ];
