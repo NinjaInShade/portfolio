@@ -27,6 +27,7 @@ import GithubSearch from './assets/projects/image-github-search.png';
 import Fylo2col from './assets/projects/image-fylo-2col-landing-page.png';
 import SocialMediaDashboard from './assets/projects/image-social-media-dashboard.png';
 import TodoApp from './assets/projects/image-todo-app.png';
+import PlanetFactSite from './assets/projects/image-planet-fact-site.png';
 
 export const projects = [
   {
@@ -40,13 +41,13 @@ export const projects = [
       'Mockup of online shop project. Has a navigation for admin products, product, add products, cart, profile. Shows product cards for main content with "Add to cart" and "Detail" buttons.',
   },
   {
-    title: 'FAQ Accordion card',
-    description: 'FAQ Accordion card with javascript.',
-    liveSite: 'https://lm-faq-accordion-card.netlify.app/',
-    github: 'https://github.com/NinjaInShade/faq-accordion-card',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Component', 'Animation'],
-    imgSrc: FAQAccordion,
-    imgAlt: 'Mockup of a FAQ (Frequently Asked Questions) card component.',
+    title: 'Planet fact site',
+    description: 'Planet fact site where you can view 8 planets and their compositions and facts.',
+    liveSite: 'https://lm-planet-fact-site.netlify.app/',
+    github: 'https://lm-planet-fact-site.netlify.app/',
+    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'API', 'Animation'],
+    imgSrc: PlanetFactSite,
+    imgAlt: 'Mockup of the planet fact site, showing facts and information about planets.',
   },
   {
     title: 'Pod landing page',
@@ -83,6 +84,15 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'Animation', 'API', 'Theme switch'],
     imgSrc: GithubSearch,
     imgAlt: 'Mockup of github API search app.',
+  },
+  {
+    title: 'FAQ Accordion card',
+    description: 'FAQ Accordion card with javascript.',
+    liveSite: 'https://lm-faq-accordion-card.netlify.app/',
+    github: 'https://github.com/NinjaInShade/faq-accordion-card',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Component', 'Animation'],
+    imgSrc: FAQAccordion,
+    imgAlt: 'Mockup of a FAQ (Frequently Asked Questions) card component.',
   },
   {
     title: 'Bootcamp testimonials',
