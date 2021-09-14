@@ -60,7 +60,7 @@
 }
 
 .header-projects-link:focus {
-  outline: var(--secondary) dotted 2px;
+  outline: var(--secondary) dotted 1.5px;
 }
 
 .header-img-outer-container {
@@ -105,7 +105,7 @@
 }
 
 .header-social a:focus {
-  outline: var(--secondary) dotted 2px;
+  outline: var(--secondary) dotted 1.5px;
 }
 
 .header-social:hover a svg path,
