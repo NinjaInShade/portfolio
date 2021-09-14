@@ -39,7 +39,8 @@
   font-size: var(--btn);
   line-height: var(--btn-line-height);
   font-weight: 500;
-  margin-left: 30px;
+  margin-left: 28px;
+  padding: 2px;
 }
 
 .header-projects-link-icon {
@@ -56,6 +57,10 @@
   outline: none;
   color: var(--secondary);
   fill: var(--secondary);
+}
+
+.header-projects-link:focus {
+  outline: var(--secondary) dotted 2px;
 }
 
 .header-img-outer-container {
@@ -100,7 +105,7 @@
 }
 
 .header-social a:focus {
-  outline: none;
+  outline: var(--secondary) dotted 2px;
 }
 
 .header-social:hover a svg path,
