@@ -54,13 +54,8 @@
 .header-projects-link:focus,
 .header-projects-link:focus path {
   transition: all 0.2s ease-in-out;
-  outline: none;
   color: var(--secondary);
   fill: var(--secondary);
-}
-
-.header-projects-link:focus {
-  outline: var(--secondary) dotted 1.5px;
 }
 
 .header-img-outer-container {
@@ -104,14 +99,9 @@
   align-items: center;
 }
 
-.header-social a:focus {
-  outline: var(--secondary) dotted 1.5px;
-}
-
 .header-social:hover a svg path,
 .header-social a:focus svg path {
   transition: all 0.2s ease-in-out;
-  outline: none;
   fill: var(--secondary);
 }
 
