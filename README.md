@@ -14,6 +14,7 @@
 ## Features
 
 - Project filtering system with tabs
+- Accessible
 - Responsive design
 - Routing
 
