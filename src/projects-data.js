@@ -45,7 +45,7 @@ export const projects = [
     description: 'Planet fact site where you can view 8 planets and their compositions and facts.',
     liveSite: 'https://lm-planet-fact-site.netlify.app/',
     github: 'https://lm-planet-fact-site.netlify.app/',
-    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'API', 'Animation'],
+    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'API', 'Animation', 'Multi Page'],
     imgSrc: PlanetFactSite,
     imgAlt: 'Mockup of the planet fact site, showing facts and information about planets.',
   },
