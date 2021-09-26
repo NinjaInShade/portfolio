@@ -28,6 +28,7 @@ import Fylo2col from './assets/projects/image-fylo-2col-landing-page.png';
 import SocialMediaDashboard from './assets/projects/image-social-media-dashboard.png';
 import TodoApp from './assets/projects/image-todo-app.png';
 import PlanetFactSite from './assets/projects/image-planet-fact-site.png';
+import OfficeliteComingSoon from './assets/projects/image-officelite-coming-soon.png';
 
 export const projects = [
   {
@@ -50,13 +51,14 @@ export const projects = [
     imgAlt: 'Mockup of the planet fact site, showing facts and information about planets.',
   },
   {
-    title: 'Pod landing page',
-    description: 'Landing page for imaginary business "Pod"',
-    liveSite: 'https://lm-pod-landing-page.netlify.app/',
-    github: 'https://github.com/NinjaInShade/pod-landing-page',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Landing Page'],
-    imgSrc: PodLandingPage,
-    imgAlt: 'Mockup of pod landing page. Pod is an imaginary business for streaming podcasts. ',
+    title: 'Officelite coming soon site',
+    description: 'Coming soon page for imaginary business "Officelite" with signup form + countdown timer',
+    liveSite: 'https://lm-officelite-coming-soon.netlify.app/',
+    github: 'https://github.com/NinjaInShade/officelite-coming-soon',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Multi Page', 'ReactJS'],
+    imgSrc: OfficeliteComingSoon,
+    imgAlt:
+      'Mockup of Officelite coming soon home page. Hero section is shown. Title, subheading, CTA and some graph illustrations to illustrate the sites purpose.',
   },
   {
     title: 'Social media dashboard',
@@ -84,6 +86,15 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'API', 'Theme switch'],
     imgSrc: GithubSearch,
     imgAlt: 'Mockup of github API search app.',
+  },
+  {
+    title: 'Pod landing page',
+    description: 'Landing page for imaginary business "Pod"',
+    liveSite: 'https://lm-pod-landing-page.netlify.app/',
+    github: 'https://github.com/NinjaInShade/pod-landing-page',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Landing Page'],
+    imgSrc: PodLandingPage,
+    imgAlt: 'Mockup of pod landing page. Pod is an imaginary business for streaming podcasts. ',
   },
   {
     title: 'FAQ Accordion card',
