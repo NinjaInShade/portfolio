@@ -29,6 +29,7 @@ import SocialMediaDashboard from './assets/projects/image-social-media-dashboard
 import TodoApp from './assets/projects/image-todo-app.png';
 import PlanetFactSite from './assets/projects/image-planet-fact-site.png';
 import OfficeliteComingSoon from './assets/projects/image-officelite-coming-soon.png';
+import IPTracker from './assets/projects/image-ip-tracker.png';
 
 export const projects = [
   {
@@ -51,18 +52,18 @@ export const projects = [
     imgAlt: 'Mockup of the planet fact site, showing facts and information about planets.',
   },
   {
-    title: 'Officelite coming soon site',
-    description: 'Coming soon page for imaginary business "Officelite" with signup form + countdown timer',
-    liveSite: 'https://lm-officelite-coming-soon.netlify.app/',
-    github: 'https://github.com/NinjaInShade/officelite-coming-soon',
-    tabs: ['HTML', 'CSS', 'Javascript', 'Multi Page', 'ReactJS'],
-    imgSrc: OfficeliteComingSoon,
+    title: 'IP Address Tracker',
+    description: 'Search for ip addresses/domain and get details using IPify API and leafletJS maps API.',
+    liveSite: 'https://lm-ip-address-tracker.netlify.app/',
+    github: 'https://github.com/NinjaInShade/ip-address-tracker',
+    tabs: ['HTML', 'CSS', 'Javascript', 'API'],
+    imgSrc: IPTracker,
     imgAlt:
-      'Mockup of Officelite coming soon home page. Hero section is shown. Title, subheading, CTA and some graph illustrations to illustrate the sites purpose.',
+      'Mockup of IP Address Tracker app. Has form to search for IP/Domain and displays information like ip address, location, timezone, isp and a map of the location.',
   },
   {
     title: 'Social media dashboard',
-    description: 'Social media dashboard showing some social media stats with dark/light theme switcher',
+    description: 'Social media dashboard showing some social media stats with dark/light theme switche.r',
     liveSite: 'https://lm-social-media-dashboard.netlify.app/',
     github: 'https://github.com/NinjaInShade/social-media-dashboard',
     tabs: ['HTML', 'CSS', 'Javascript', 'Theme switch'],
@@ -80,12 +81,22 @@ export const projects = [
   },
   {
     title: 'Github API Search app',
-    description: 'Github user search app using GitHub API + dark/light theme switcher',
+    description: 'Github user search app using GitHub API + dark/light theme switcher.',
     liveSite: 'https://lm-github-user-search.netlify.app/',
     github: 'https://github.com/NinjaInShade/github-user-search',
     tabs: ['HTML', 'CSS', 'Javascript', 'API', 'Theme switch'],
     imgSrc: GithubSearch,
     imgAlt: 'Mockup of github API search app.',
+  },
+  {
+    title: 'Officelite coming soon site',
+    description: 'Coming soon page for imaginary business "Officelite" with signup form + countdown timer',
+    liveSite: 'https://lm-officelite-coming-soon.netlify.app/',
+    github: 'https://github.com/NinjaInShade/officelite-coming-soon',
+    tabs: ['HTML', 'CSS', 'Javascript', 'Multi Page', 'ReactJS'],
+    imgSrc: OfficeliteComingSoon,
+    imgAlt:
+      'Mockup of Officelite coming soon home page. Hero section is shown. Title, subheading, CTA and some graph illustrations to illustrate the sites purpose.',
   },
   {
     title: 'Pod landing page',

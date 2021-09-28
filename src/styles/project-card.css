@@ -1,4 +1,7 @@
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
   overflow: hidden;
   border-radius: var(--border-r) var(--border-r) 0 0;
   height: 100%;
@@ -101,6 +104,7 @@
   background: #fff;
   border: 1px solid var(--gray-light);
   padding: 24px 24px 16px 24px;
+  flex-grow: 1;
 }
 
 .project-card-header {
