@@ -119,6 +119,9 @@ h2 {
     --h1: 2.375rem;
     --h1-line-height: 48px;
 
+    --h2: 1.85rem;
+    --h2-line-height: 32px;
+
     --body: 1rem;
 
     --btn: 1rem;
@@ -132,5 +135,8 @@ h2 {
   :root {
     --h1: 2rem;
     --h1-line-height: 38px;
+
+    --h2: 1.6rem;
+    --h2-line-height: 30px;
   }
 }

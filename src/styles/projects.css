@@ -18,6 +18,12 @@
   font-weight: 700;
 }
 
+@media (max-width: 1050px) {
+  .projects {
+    margin-bottom: 85px;
+  }
+}
+
 @media (max-width: 420px) {
   .projects-container {
     grid-template-columns: 1fr;
