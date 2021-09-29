@@ -14,8 +14,10 @@ export default function About() {
             alt='Photograph of Leon Michalak on his macbook with a cup of coffee besides him.'
           />
           <div>
-            <h2 className='about-title'>My Background</h2>
-            <p className='about-text about-description'>
+            <h2 className='about-title' id='about'>
+              My Background
+            </h2>
+            <p className='body-text about-description'>
               A <span>frontend developer</span> originally from Poland, but lived most of my life in the UK. I have a
               passion for coding out clean, intuitive user interfaces from designs. Over the years I’ve been
               self-teaching myself web development, I’ve found I’m a very technical person with high attention to small

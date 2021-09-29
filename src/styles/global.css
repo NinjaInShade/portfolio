@@ -135,8 +135,5 @@ h2 {
   :root {
     --h1: 2rem;
     --h1-line-height: 38px;
-
-    --h2: 1.6rem;
-    --h2-line-height: 30px;
   }
 }

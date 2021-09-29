@@ -14,7 +14,7 @@
 .about-main {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   max-width: var(--max-width);
   margin-right: auto;
   width: 100%;
@@ -73,12 +73,6 @@
   .about {
     grid-template-columns: 1fr;
     padding-left: 30px;
-  }
-}
-
-@media (max-width: 1050px) {
-  .about-main {
-    align-items: stretch;
   }
 }
 
