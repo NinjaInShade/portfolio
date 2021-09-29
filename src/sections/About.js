@@ -24,8 +24,8 @@ export default function About() {
               details others might not see or think about.
               <br />
               <br />
-              In my spare time, I find myself often building websites, designing mockups, watching films/series,
-              watching videos on random topics (space, engineering, cars etc) or spending time with family.
+              In my spare time, I'm either building websites, designing mockups, watching films/series, watching videos
+              on random topics (space, engineering, cars etc), going out or spending time with family.
             </p>
             <div className='about-ctas'>
               <button className='btn btn-secondary'>Get in touch</button>
