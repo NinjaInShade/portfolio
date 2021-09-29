@@ -1,0 +1,70 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr var(--max-width) 1fr;
+  /* TEMP */
+  margin-bottom: 50px;
+}
+
+.about-bg {
+  background: linear-gradient(135deg, rgba(5, 31, 56, 1) 0%, rgba(9, 57, 104, 1) 100%);
+  grid-column: span 2;
+  padding: 64px 30px 64px 32px;
+}
+
+.about-main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: var(--max-width);
+  margin-right: auto;
+  width: 100%;
+}
+
+.about-img {
+  object-fit: cover;
+  margin-right: 32px;
+  max-width: 215px;
+}
+
+.about-title {
+  color: var(--white);
+}
+
+.about-description {
+  margin: 24px 0 32px 0;
+  color: var(--white);
+}
+
+.about-description span {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.about-ctas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.about-social:not(:last-child) {
+  margin-right: 20px;
+}
+
+.about-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-social:hover a svg path,
+.about-social a:focus svg path {
+  transition: all 0.2s ease-in-out;
+  fill: var(--secondary);
+}

@@ -23,10 +23,6 @@
 <!-- ![](./screenshots/Desktop_solution.png) -->
 <!-- ![](./screenshots/Mobile_solution.png) -->
 
-## Lessons Learned
-
-Not finished yet :)
-
 ## Colours used
 
 | Color           | Hex                                                              |

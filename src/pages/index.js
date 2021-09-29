@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Header from '../sections/Header';
 import ProjectsContainer from '../sections/ProjectsContainer';
+import About from '../sections/About';
 
 export default function Homepage() {
   return (
@@ -14,6 +15,9 @@ export default function Homepage() {
 
       {/* Projects filter & Project cards  */}
       <ProjectsContainer />
+
+      {/* My background/about section */}
+      <About />
     </Layout>
   );
 }
