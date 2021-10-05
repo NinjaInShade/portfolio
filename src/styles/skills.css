@@ -37,3 +37,19 @@
 #p-skill-card-3 {
   top: calc(35px * 2);
 }
+
+@media (max-width: 950px) {
+  .skills-cards {
+    gap: 32px;
+  }
+
+  .skills-cards > * {
+    max-width: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .skills-cards {
+    flex-direction: column;
+  }
+}
