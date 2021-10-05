@@ -10,10 +10,10 @@ export default function Skills() {
     <section className='skills'>
       <div className='container'>
         <h2 className='skills-title'>
-          My <span>main</span> skills
+          My <span>primary</span> skills
         </h2>
         <p className='body-text skills-lead'>
-          Here are my main skills that make me stand out, with other secondary skills, underneath.
+          Here are my primary skills that make me stand out, with other secondary skills, underneath.
         </p>
         <div className='skills-cards'>
           <PrimarySkillCard
