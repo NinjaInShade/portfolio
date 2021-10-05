@@ -18,6 +18,7 @@
 - Accessible
 - Routing
 - Downloadable CV
+- Blog (To do)
 
 ## Screenshots
 
