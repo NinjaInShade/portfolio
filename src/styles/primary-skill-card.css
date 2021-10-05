@@ -1,0 +1,35 @@
+.p-skill-card {
+  position: relative;
+  background: var(--gradient);
+  border-radius: var(--border-r);
+  padding: 0 24px 48px 24px;
+  max-width: 275px;
+  width: 100%;
+}
+
+.p-skill-card-circle {
+  background: #fff;
+  position: relative;
+  margin: -50px auto 0 auto;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.p-skill-card-icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.p-skill-card-title,
+.p-skill-card-description {
+  text-align: center;
+  color: var(--white);
+}
+
+.p-skill-card-title {
+  margin: 24px 0;
+}

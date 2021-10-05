@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Header from '../sections/Header';
 import ProjectsContainer from '../sections/ProjectsContainer';
 import About from '../sections/About';
+import Skills from '../sections/Skills';
 
 export default function Homepage() {
   return (
@@ -18,6 +19,9 @@ export default function Homepage() {
 
       {/* My background/about section */}
       <About />
+
+      {/* My main/secondary skillsets */}
+      <Skills />
     </Layout>
   );
 }

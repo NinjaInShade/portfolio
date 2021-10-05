@@ -1,12 +1,11 @@
 .about {
   display: grid;
   grid-template-columns: 1fr var(--max-width) 1fr;
-  /* TEMP */
-  margin-bottom: 50px;
+  margin-bottom: 124px;
 }
 
 .about-bg {
-  background: linear-gradient(135deg, rgba(5, 31, 56, 1) 0%, rgba(9, 57, 104, 1) 100%);
+  background: var(--gradient);
   padding: 64px 30px 64px 64px;
   grid-column: span 2;
   border-bottom-left-radius: var(--border-r);
@@ -74,6 +73,12 @@
   .about {
     grid-template-columns: 1fr;
     padding-left: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .about {
+    margin-bottom: 85px;
   }
 }
 

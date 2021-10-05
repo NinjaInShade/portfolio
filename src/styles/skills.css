@@ -1,0 +1,39 @@
+.skills {
+  padding: 0 30px;
+  /* TEMP */
+  margin-bottom: 120px;
+}
+
+.skills-title,
+.skills-lead {
+  text-align: center;
+}
+
+.skills-title {
+  color: var(--black);
+}
+
+.skills-title span {
+  color: var(--primary-light);
+}
+
+.skills-lead {
+  color: var(--black);
+  font-weight: 500;
+  margin: 24px 0 100px 0;
+}
+
+.skills-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 100px;
+}
+
+#p-skill-card-2 {
+  top: calc(35px * 1);
+}
+
+#p-skill-card-3 {
+  top: calc(35px * 2);
+}
