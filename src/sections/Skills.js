@@ -28,14 +28,14 @@ export default function Skills() {
             iconAlt='Dedication (light bulb) icon.'
             title='Dedication'
             description='I’m very driven and this is my main hobby.'
-            descriptionMain='I haven’t quit coding for over 3 years now, with no large breaks, and I’m constantly learning new tech or improving myself.'
+            descriptionMain='I’ve consistently kept at it for years now, with no large breaks, and I’m constantly learning new tech or improving myself.'
             id='p-skill-card-2'
           />
           <PrimarySkillCard
             icon={PerfectionIcon}
             iconAlt='Perfectionismn icon.'
             title='Perfection'
-            description='I don’t mean this in an arrogant way, just I’m a perfectionist.'
+            description='I’m a perfectionist and building things as good as I can.'
             descriptionMain='I love getting site metrics like speed, accessibility etc to as high as possible, pixel perfect design to code etc...'
             id='p-skill-card-3'
           />
