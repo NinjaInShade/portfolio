@@ -33,7 +33,7 @@ export default function ProjectsContainer() {
         setFilterMode={setFilterMode}
       />
 
-      <section className='projects' id='projects'>
+      <section className='projects'>
         <div className='container'>
           <ul className='projects-container'>
             {activeProjects.slice(0, projectsShown).map((project, index) => {

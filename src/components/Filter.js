@@ -76,7 +76,7 @@ export default function Filter({ tabs, setTabs, filterMode, setFilterMode, proje
   }
 
   return (
-    <article className='filter'>
+    <article className='filter' id='projects'>
       <div className='container filter-container'>
         <div className='filter-top'>
           <h2 className='body-text filter-title'>Filter projects</h2>

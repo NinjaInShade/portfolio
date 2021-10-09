@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../styles/secondary-skill-tab.css';
 
 export default function SecondarySkillTab({ title }) {
