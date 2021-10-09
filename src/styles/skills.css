@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
+  margin-bottom: 150px;
   gap: 100px;
 }
 
@@ -36,6 +37,15 @@
 
 #p-skill-card-3 {
   top: calc(35px * 2);
+}
+
+.skills-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 24px;
 }
 
 @media (max-width: 950px) {
@@ -51,5 +61,15 @@
 @media (max-width: 750px) {
   .skills-cards {
     flex-direction: column;
+    margin-bottom: 75px;
+    gap: 75px;
+  }
+
+  #p-skill-card-2 {
+    top: 0;
+  }
+
+  #p-skill-card-3 {
+    top: 0;
   }
 }

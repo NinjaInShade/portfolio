@@ -3,6 +3,8 @@ import PrimarySkillCard from '../components/PrimarySkillCard';
 import ReactIcon from '../assets/icon-react.svg';
 import DedicationIcon from '../assets/icon-dedication.svg';
 import PerfectionIcon from '../assets/icon-perfection.svg';
+import SecondarySkillTab from '../components/SecondarySkillTab';
+import { skills } from '../skills-data';
 import '../styles/skills.css';
 
 export default function Skills() {
@@ -40,6 +42,12 @@ export default function Skills() {
             id='p-skill-card-3'
           />
         </div>
+        <h2 className='skills-title'>Other skills</h2>
+        <ul className='skills-tags'>
+          {skills.map((skill, index) => {
+            return <SecondarySkillTab key={index} title={skill} />;
+          })}
+        </ul>
       </div>
     </section>
   );
