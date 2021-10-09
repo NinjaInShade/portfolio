@@ -63,7 +63,7 @@ export const projects = [
   },
   {
     title: 'Social media dashboard',
-    description: 'Social media dashboard showing some social media stats with dark/light theme switche.r',
+    description: 'Social media dashboard showing some social media stats with dark/light theme switcher.',
     liveSite: 'https://lm-social-media-dashboard.netlify.app/',
     github: 'https://github.com/NinjaInShade/social-media-dashboard',
     tabs: ['HTML', 'CSS', 'Javascript', 'Theme switch'],
