@@ -57,6 +57,12 @@
   }
 }
 
+@media (max-width: 850px) {
+  .skills {
+    margin-bottom: 124px;
+  }
+}
+
 @media (max-width: 750px) {
   .skills-cards {
     flex-direction: column;
@@ -70,9 +76,5 @@
 
   #p-skill-card-3 {
     top: 0;
-  }
-
-  .skills {
-    margin-bottom: 124px;
   }
 }

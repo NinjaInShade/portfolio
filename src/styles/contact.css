@@ -3,8 +3,6 @@
   background-color: #0e2239;
   padding: 0 30px;
   height: 500px;
-  /* TEMP */
-  margin-bottom: 150px;
 }
 
 .contact .container {
@@ -60,4 +58,22 @@
 
 .contact-social-container:not(:last-child) {
   margin-right: 16px;
+}
+
+@media (max-width: 850px) {
+  .contact .container {
+    flex-direction: column;
+  }
+
+  .contact-text {
+    align-self: flex-start;
+    margin: 50px 0 75px 0;
+  }
+
+  .contact {
+    background: no-repeat url('../assets/Map\ of\ Dorset\ -\ Weymouth.png') top;
+    background-color: #0e2239;
+    height: auto;
+    padding: 0 30px 50px 30px;
+  }
 }
