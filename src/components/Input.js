@@ -27,7 +27,7 @@ export default function Input({ type, value, onChange, error, label, placeholder
           name={id}
         />
       )}
-      <small className='error small-text'>{error}</small>
+      <small className={`error small-text ${!error && 'error-valid'}`}>{error ? error : 'Field is valid.'}</small>
     </div>
   );
 }

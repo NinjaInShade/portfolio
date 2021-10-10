@@ -16,27 +16,51 @@ export default function ContactForm() {
   };
 
   const validateName = (e) => {
-    setName((prevState) => {
-      return { ...prevState, value: e.target.value };
-    });
+    const value = e.target.value;
+
+    if (!value || value.length < 1) {
+      return setName({ value, error: '* Field must not be empty' });
+    }
+
+    setName({ value, error: undefined });
   };
 
   const validateEmail = (e) => {
-    setEmail((prevState) => {
-      return { ...prevState, value: e.target.value };
-    });
+    const value = e.target.value;
+
+    const email_re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (!value || value.length < 1) {
+      return setEmail({ value, error: '* Field must not be empty' });
+    }
+
+    if (!email_re.test(String(value).toLowerCase())) {
+      return setEmail({ value, error: '* Must be a valid email address' });
+    }
+
+    setEmail({ value, error: undefined });
   };
 
   const validateMessage = (e) => {
-    setMessage((prevState) => {
-      return { ...prevState, value: e.target.value };
-    });
+    const value = e.target.value;
+
+    if (!value || value.length < 1) {
+      return setMessage({ value, error: '* Field must not be empty' });
+    }
+
+    setMessage({ value, error: undefined });
   };
 
   const submitForm = (e) => {
     e.preventDefault();
 
     if (name.error || email.error || message.error) {
+      return;
+    }
+
+    // When form is first loaded, no fields have been validated because typing hasnt occurred, so we need to check to prevent empty form fields
+    if (!name.value || !email.value || !message.value) {
       return;
     }
 

@@ -1,5 +1,5 @@
 .input {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   width: 100%;
 }
 
@@ -25,6 +25,11 @@
 }
 
 .input .error {
-  margin-left: 4px;
+  visibility: visible;
   color: #cc0000;
+  margin-left: 4px;
+}
+
+.input .error-valid {
+  visibility: hidden;
 }
