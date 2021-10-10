@@ -81,4 +81,12 @@
   .c-form {
     max-width: none;
   }
+
+  .c-form-details svg {
+    max-width: 24px;
+  }
+
+  .c-form-contact {
+    margin-left: 8px;
+  }
 }
