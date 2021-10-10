@@ -1,5 +1,6 @@
 .contact {
-  background: no-repeat url('../assets/Map\ of\ Dorset\ -\ Weymouth.png') center / cover;
+  background: no-repeat url('../assets/Map\ of\ Dorset\ -\ Weymouth.png') center;
+  background-color: #0e2239;
   padding: 0 30px;
   height: 500px;
   /* TEMP */
@@ -46,6 +47,10 @@
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
+}
+
+.contact-social-container a:focus {
+  outline: var(--black) dotted 2px;
 }
 
 .contact-social-container a svg {

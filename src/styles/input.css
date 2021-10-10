@@ -1,0 +1,30 @@
+.input {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.input label {
+  display: block;
+  font-weight: 700;
+}
+
+.input input,
+.input textarea {
+  border-radius: var(--border-r);
+  color: var(--black);
+  border: 1px solid #cacaca;
+  padding: 6px 15px;
+  margin: 8px 0 4px 0;
+  width: 100%;
+  min-width: 0;
+}
+
+.input input::placeholder,
+.input textarea::placeholder {
+  color: #cacaca;
+}
+
+.input .error {
+  margin-left: 4px;
+  color: #cc0000;
+}

@@ -15,7 +15,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  max-width: var(--max-width);
+  max-width: calc(var(--max-width) - 64px);
   margin-right: auto;
   width: 100%;
 }
@@ -74,6 +74,10 @@
     grid-template-columns: 1fr;
     padding-left: 30px;
   }
+
+  .about-main {
+    max-width: calc(var(--max-width) - 30px);
+  }
 }
 
 @media (max-width: 1050px) {
@@ -85,6 +89,7 @@
 @media (max-width: 750px) {
   .about-main {
     flex-direction: column;
+    max-width: var(--max-width);
   }
 
   .about-img {

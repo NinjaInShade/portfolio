@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from '../components/ContactForm';
 import '../styles/contact.css';
 
 export default function Contact() {
@@ -76,6 +77,8 @@ export default function Contact() {
             </div>
           </address>
         </div>
+
+        <ContactForm />
       </div>
     </section>
   );
