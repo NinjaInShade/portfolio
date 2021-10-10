@@ -4,6 +4,7 @@ import Header from '../sections/Header';
 import ProjectsContainer from '../sections/ProjectsContainer';
 import About from '../sections/About';
 import Skills from '../sections/Skills';
+import Contact from '../sections/Contact';
 
 export default function Homepage() {
   return (
@@ -22,6 +23,9 @@ export default function Homepage() {
 
       {/* My main/secondary skillsets */}
       <Skills />
+
+      {/* Contact details and form */}
+      <Contact />
     </Layout>
   );
 }

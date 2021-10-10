@@ -1,0 +1,13 @@
+.contact {
+  background: no-repeat url('../assets/Map\ of\ Dorset\ -\ Weymouth.png') center / cover;
+  padding: 0 30px;
+  height: 500px;
+  /* TEMP */
+  /* margin-bottom: 150px; */
+}
+
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
