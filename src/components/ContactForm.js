@@ -7,6 +7,8 @@ export default function ContactForm() {
   const [email, setEmail] = useState({ value: '', error: undefined });
   const [message, setMessage] = useState({ value: '', error: undefined });
 
+  const [formSending, setFormSending] = useState(undefined);
+
   const encode = (data) => {
     return Object.keys(data)
       .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -34,13 +36,23 @@ export default function ContactForm() {
   const submitForm = (e) => {
     e.preventDefault();
 
+    if (name.error || email.error || message.error) {
+      return;
+    }
+
+    setFormSending('sending');
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', name: name.value, email: email.value, message: message.value }),
     })
-      .then(() => alert('Success!'))
-      .catch((error) => alert(error));
+      .then(() => console.log('Form submission successful.'))
+      .catch((error) => console.log('There was an error submitting form.'));
+
+    setTimeout(() => {
+      setFormSending('sent');
+    }, 3000);
   };
 
   return (
@@ -74,7 +86,11 @@ export default function ContactForm() {
           placeholder="Hi, i'd like to talk about..."
           id='message'
         />
-        <button className='btn btn-primary' type='submit' onClick={(e) => submitForm(e)}>
+        <button
+          className={`btn btn-primary ${formSending === 'sending' && 'btn-loading'}`}
+          type='submit'
+          onClick={(e) => submitForm(e)}
+        >
           <svg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
             <path
               d='M25 5H7.5C6.12125 5 5 6.12125 5 7.5V13.75H7.5V10L15.5 16C15.7165 16.1621 15.9796 16.2497 16.25 16.2497C16.5204 16.2497 16.7836 16.1621 17 16L25 10V21.25H15V23.75H25C26.3788 23.75 27.5 22.6287 27.5 21.25V7.5C27.5 6.12125 26.3788 5 25 5ZM16.25 13.4375L8.3325 7.5H24.1675L16.25 13.4375Z'
@@ -85,7 +101,9 @@ export default function ContactForm() {
               fill='#F6FAFE'
             />
           </svg>
-          Send Mail
+          {!formSending && 'Send Mail'}
+          {formSending === 'sending' && 'Sending Mail'}
+          {formSending === 'sent' && 'Sent Mail!'}
         </button>
       </form>
       <div className='c-form-seperator'></div>
