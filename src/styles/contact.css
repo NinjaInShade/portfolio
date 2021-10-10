@@ -3,11 +3,56 @@
   padding: 0 30px;
   height: 500px;
   /* TEMP */
-  /* margin-bottom: 150px; */
+  margin-bottom: 150px;
 }
 
 .contact .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+}
+
+.contact-text {
+  align-self: flex-end;
+  margin-bottom: 64px;
+}
+
+.contact-title {
+  color: var(--white);
+}
+
+.contact-lead {
+  color: var(--white);
+  margin: 16px 0 32px 0;
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-social-container {
+  position: relative;
+  background-color: #09c2ff;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+}
+
+.contact-social-container a {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.contact-social-container a svg {
+  display: block;
+  max-width: 18px;
+}
+
+.contact-social-container:not(:last-child) {
+  margin-right: 16px;
 }

@@ -18,6 +18,7 @@
 - Accessible
 - Routing
 - Downloadable CV
+- Functional contact form
 - Blog (To do)
 
 ## Screenshots
