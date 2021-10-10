@@ -45,7 +45,8 @@ export default function ContactForm() {
 
   return (
     <div className='c-form'>
-      <form name='contact'>
+      <form name='contact' method='POST' data-netlify='true'>
+        <input type='hidden' name='contact' value='Contact Form' />
         <Input
           type='text'
           value={name.value}
@@ -53,7 +54,7 @@ export default function ContactForm() {
           error={name.error}
           label='Name'
           placeholder='John doe...'
-          id='Name'
+          id='name'
         />
         <Input
           type='text'
@@ -62,7 +63,7 @@ export default function ContactForm() {
           error={email.error}
           label='Email'
           placeholder='example@email.com...'
-          id='Email'
+          id='email'
         />
         <Input
           type='textarea'
@@ -71,7 +72,7 @@ export default function ContactForm() {
           error={message.error}
           label='Message'
           placeholder="Hi, i'd like to talk about..."
-          id='Message'
+          id='message'
         />
         <button className='btn btn-primary' type='submit' onClick={(e) => submitForm(e)}>
           <svg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
