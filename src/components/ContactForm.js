@@ -45,8 +45,7 @@ export default function ContactForm() {
 
   return (
     <div className='c-form'>
-      <form name='contact' method='post' data-netlify='true' data-netlify-honeypot='bot-field'>
-        <input type='hidden' name='contact' value='contact' />
+      <form name='contact'>
         <Input
           type='text'
           value={name.value}
