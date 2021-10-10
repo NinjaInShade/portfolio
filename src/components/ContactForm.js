@@ -7,6 +7,12 @@ export default function ContactForm() {
   const [email, setEmail] = useState({ value: '', error: undefined });
   const [message, setMessage] = useState({ value: '', error: undefined });
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
+
   const validateName = (e) => {
     setName((prevState) => {
       return { ...prevState, value: e.target.value };
@@ -28,12 +34,19 @@ export default function ContactForm() {
   const submitForm = (e) => {
     e.preventDefault();
 
-    console.log('Form submitted');
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', name: name.value, email: email.value, message: message.value }),
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
   };
 
   return (
     <div className='c-form'>
-      <form>
+      <form name='contact' method='post' data-netlify='true' data-netlify-honeypot='bot-field'>
+        <input type='hidden' name='contact' value='contact' />
         <Input
           type='text'
           value={name.value}
