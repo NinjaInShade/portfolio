@@ -5,6 +5,7 @@ import ProjectsContainer from '../sections/ProjectsContainer';
 import About from '../sections/About';
 import Skills from '../sections/Skills';
 import Contact from '../sections/Contact';
+import Footer from '../sections/Footer';
 
 export default function Homepage() {
   return (
@@ -26,6 +27,9 @@ export default function Homepage() {
 
       {/* Contact details and form */}
       <Contact />
+
+      {/* Footer */}
+      <Footer />
     </Layout>
   );
 }
