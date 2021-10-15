@@ -1,6 +1,6 @@
 # What is this project?
 
-- My portfolio site. Contains my projects, my CV, ways to contact me & about me.
+- My portfolio site. Contains my projects, skills, CV, ways to contact me & about me.
 - Live Site URL: (https://leonmichalak.dev/)
 
 ## Built with
