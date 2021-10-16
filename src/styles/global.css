@@ -54,6 +54,9 @@ body {
   --h3: 1.75rem;
   --h3-line-height: 32px;
 
+  --h4: 1.125rem;
+  --h4-line-height: 25px;
+
   --body: 1.125rem;
   --body-line-height: 25px;
 
@@ -90,6 +93,12 @@ h3 {
   font-size: var(--h3);
   line-height: var(--h3-line-height);
   font-weight: 900;
+}
+
+h4 {
+  font-size: var(--h4);
+  line-height: var(--h4-line-height);
+  font-weight: 700;
 }
 
 .h2-l {
@@ -145,6 +154,8 @@ h3 {
 
     --h3: 1.5rem;
     --h3-line-height: 30px;
+
+    --h4: 1rem;
 
     --body: 1rem;
 

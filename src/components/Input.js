@@ -4,7 +4,7 @@ import '../styles/input.css';
 export default function Input({ type, value, onChange, error, label, placeholder, id }) {
   return (
     <div className='input'>
-      <label for={id} className='body-s-text'>
+      <label htmlFor={id} className='body-s-text'>
         {label}
       </label>
       {type === 'text' ? (
