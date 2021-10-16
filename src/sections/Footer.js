@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Logo from '../assets/logo.svg';
 import CV from '../assets/Leon Michalak Frontend Developer CV.pdf';
 import '../styles/footer.css';
 
@@ -168,6 +169,14 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+        <div className='footer-seperator'>
+          <div className='footer-seperator-logo-container'>
+            <img src={Logo} alt='Leon Michalak logo' className='footer-seperator-logo' />
+          </div>
+        </div>
+
+        <small className='footer-copyright'>© Copyright 2021 | Leon Michalak | All rights reserved</small>
       </div>
     </footer>
   );
