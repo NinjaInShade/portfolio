@@ -176,7 +176,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <small className='footer-copyright'>© Copyright 2021 | Leon Michalak | All rights reserved</small>
+        <small className='small-text footer-copyright'>© Copyright 2021 | Leon Michalak | All rights reserved</small>
       </div>
     </footer>
   );
