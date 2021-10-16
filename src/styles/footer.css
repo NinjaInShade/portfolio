@@ -93,3 +93,17 @@
     padding: 50px 30px;
   }
 }
+
+@media (max-width: 575px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-seperator {
+    margin-top: 60px;
+  }
+
+  .footer-top > *:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
