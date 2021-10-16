@@ -64,7 +64,7 @@
 .footer-seperator {
   position: relative;
   background-color: var(--white);
-  margin: 30px 0 50px 0;
+  margin: 50px 0;
   height: 1px;
   width: 100%;
 }
