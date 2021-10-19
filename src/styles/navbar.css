@@ -71,6 +71,7 @@
   display: none;
   height: 44px;
   width: 44px;
+  z-index: 6;
 }
 
 .hamburger-btn:focus {

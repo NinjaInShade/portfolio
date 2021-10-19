@@ -1,0 +1,42 @@
+.sidebar {
+  position: absolute;
+  background-color: #fff;
+  transform: translateX(300px);
+  padding: 85px 58px 30px 30px;
+  height: 100%;
+  width: 300px;
+  z-index: 5;
+  right: 0;
+  top: 0;
+}
+
+.sidebar-overlay {
+  position: absolute;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-active {
+  transition: all 0.2s ease-in-out;
+  pointer-events: all;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.sidebar-list-item {
+  text-align: right;
+}
+
+.sidebar-list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+#sidebar-download-link {
+  justify-content: flex-end;
+}
