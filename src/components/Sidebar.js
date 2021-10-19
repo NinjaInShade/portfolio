@@ -9,22 +9,38 @@ export default function Sidebar({ active, setActive }) {
       <nav className={`sidebar ${active && 'sidebar-active'}`}>
         <ul>
           <li className='sidebar-list-item'>
-            <Link to='/' className='body-text navbar-link' activeClassName='navbar-link-active'>
+            <Link to='/' className='body-text navbar-link' activeClassName='navbar-link-active' onClick={setActive}>
               Home
             </Link>
           </li>
           <li className='sidebar-list-item'>
-            <Link to='/#about' className='body-text navbar-link' activeClassName='navbar-link-active'>
+            <Link
+              to='/#about'
+              className='body-text navbar-link'
+              activeClassName='navbar-link-active'
+              onClick={setActive}
+            >
               About
             </Link>
           </li>
           <li className='sidebar-list-item'>
-            <Link to='/#projects' className='body-text navbar-link' activeClassName='navbar-link-active'>
+            <Link
+              to='/#projects'
+              className='body-text navbar-link'
+              activeClassName='navbar-link-active'
+              onClick={setActive}
+            >
               Projects
             </Link>
           </li>
           <li className='sidebar-list-item'>
-            <a className='body-text navbar-download-link' id='sidebar-download-link' href={CV} download>
+            <a
+              className='body-text navbar-download-link'
+              id='sidebar-download-link'
+              href={CV}
+              download
+              onClick={setActive}
+            >
               <svg
                 aria-label='Download'
                 className='navbar-download-icon'
@@ -43,13 +59,20 @@ export default function Sidebar({ active, setActive }) {
             </a>
           </li>
           <li className='sidebar-list-item'>
-            <Link to='/#contact' className='body-text navbar-link' activeClassName='navbar-link-active'>
+            <Link
+              to='/#contact'
+              className='body-text navbar-link'
+              activeClassName='navbar-link-active'
+              onClick={setActive}
+            >
               Contact
             </Link>
           </li>
         </ul>
       </nav>
-      <div className={`sidebar-overlay ${active && 'sidebar-active'}`}></div>
+      <button className={`sidebar-overlay ${active && 'sidebar-active'}`} onClick={setActive}>
+        Close sidebar
+      </button>
     </>
   );
 }

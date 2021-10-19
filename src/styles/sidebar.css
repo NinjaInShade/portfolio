@@ -13,6 +13,8 @@
 .sidebar-overlay {
   position: absolute;
   pointer-events: none;
+  outline: none;
+  border: none;
   background-color: rgba(0, 0, 0, 0.75);
   height: 100%;
   width: 100%;
