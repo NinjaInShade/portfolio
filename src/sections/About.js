@@ -18,14 +18,14 @@ export default function About() {
               My Background
             </h2>
             <p className='body-text about-description'>
-              A <span>frontend developer</span> originally from Poland, but lived most of my life in the UK. I have a
-              passion for coding out clean, intuitive user interfaces from designs. Over the years I’ve been
-              self-teaching myself web development, I’ve found I’m a very technical person with high attention to small
-              details others might not see or think about.
+              A <span>frontend developer</span> originally from Poland, but lived most of my life in the UK. I like to
+              code out clean, intuitive user interfaces from designs. Over the years I’ve been self-teaching myself web
+              development, I’ve found I’m a very technical person with high attention to small details others might not
+              see or think about.
               <br />
               <br />
-              In my spare time, I'm either building websites, designing mockups, watching films/series, watching videos
-              on random topics (space, engineering, cars etc), going out or spending time with family.
+              In my spare time, I'm either practicing/learning web development/design, watching films/series, watching
+              videos on random topics (space, engineering, cars etc), going out or spending time with family.
             </p>
             <div className='about-ctas'>
               <button className='btn btn-secondary'>Get in touch</button>
