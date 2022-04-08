@@ -30,17 +30,19 @@ import TodoApp from './assets/projects/image-todo-app.png';
 import PlanetFactSite from './assets/projects/image-planet-fact-site.png';
 import OfficeliteComingSoon from './assets/projects/image-officelite-coming-soon.png';
 import IPTracker from './assets/projects/image-ip-tracker.png';
+import ProductFeedback from './assets/projects/image-product-feedback.png';
 
 export const projects = [
   {
-    title: 'Online shop project',
-    description: 'Online shop (e-commerce) project with all major functionalities.',
-    liveSite: 'https://onlineshop-430be.web.app/',
-    github: 'https://github.com/NinjaInShade/online-shop',
-    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'NodeJS', 'Full Stack', 'API', 'Multi Page'],
-    imgSrc: OnlineShop,
+    title: 'Product Feedback App',
+    description:
+      'Product feedback app allowing suggestions/tracking of features/enhancements/bugs and more.',
+    liveSite: 'https://lm-product-feedback-app.netlify.app/',
+    github: 'https://github.com/NinjaInShade/product-feedback-app',
+    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'Multi Page'],
+    imgSrc: ProductFeedback,
     imgAlt:
-      'Mockup of online shop project. Has a navigation for admin products, product, add products, cart, profile. Shows product cards for main content with "Add to cart" and "Detail" buttons.',
+      'Mockup of the product feedback suggestions page. App allows you to add suggestions for features, track bugs, suggest enhancements etc. Can create,read,update and delete these. Also can sort into "planned/in-progress/live" categories.',
   },
   {
     title: 'Planet fact site',
@@ -52,18 +54,19 @@ export const projects = [
     imgAlt: 'Mockup of the planet fact site, showing facts and information about planets.',
   },
   {
-    title: 'IP Address Tracker',
-    description: 'Search for ip addresses/domain and get details using IPify API and leafletJS maps API.',
-    liveSite: 'https://lm-ip-address-tracker.netlify.app/',
-    github: 'https://github.com/NinjaInShade/ip-address-tracker',
-    tabs: ['HTML', 'CSS', 'Javascript', 'API'],
-    imgSrc: IPTracker,
+    title: 'Online shop project',
+    description: 'Online shop (e-commerce) project with all major functionalities.',
+    liveSite: 'https://onlineshop-430be.web.app/',
+    github: 'https://github.com/NinjaInShade/online-shop',
+    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'NodeJS', 'Full Stack', 'API', 'Multi Page'],
+    imgSrc: OnlineShop,
     imgAlt:
-      'Mockup of IP Address Tracker app. Has form to search for IP/Domain and displays information like ip address, location, timezone, isp and a map of the location.',
+      'Mockup of online shop project. Has a navigation for admin products, product, add products, cart, profile. Shows product cards for main content with "Add to cart" and "Detail" buttons.',
   },
   {
     title: 'Social media dashboard',
-    description: 'Social media dashboard showing some social media stats with dark/light theme switcher.',
+    description:
+      'Social media dashboard showing some social media stats with dark/light theme switcher.',
     liveSite: 'https://lm-social-media-dashboard.netlify.app/',
     github: 'https://github.com/NinjaInShade/social-media-dashboard',
     tabs: ['HTML', 'CSS', 'Javascript', 'Theme switch'],
@@ -89,8 +92,20 @@ export const projects = [
     imgAlt: 'Mockup of github API search app.',
   },
   {
+    title: 'IP Address Tracker',
+    description:
+      'Search for ip addresses/domain and get details using IPify API and leafletJS maps API.',
+    liveSite: 'https://lm-ip-address-tracker.netlify.app/',
+    github: 'https://github.com/NinjaInShade/ip-address-tracker',
+    tabs: ['HTML', 'CSS', 'Javascript', 'API'],
+    imgSrc: IPTracker,
+    imgAlt:
+      'Mockup of IP Address Tracker app. Has form to search for IP/Domain and displays information like ip address, location, timezone, isp and a map of the location.',
+  },
+  {
     title: 'Officelite coming soon site',
-    description: 'Coming soon page for imaginary business "Officelite" with signup form + countdown timer',
+    description:
+      'Coming soon page for imaginary business "Officelite" with signup form + countdown timer',
     liveSite: 'https://lm-officelite-coming-soon.netlify.app/',
     github: 'https://github.com/NinjaInShade/officelite-coming-soon',
     tabs: ['HTML', 'CSS', 'Javascript', 'Multi Page', 'ReactJS'],
@@ -133,7 +148,8 @@ export const projects = [
     github: 'https://github.com/NinjaInShade/meet-landing-page',
     tabs: ['HTML', 'CSS', 'Landing Page'],
     imgSrc: MeetLandingPage,
-    imgAlt: 'Mockup of meet landing page. Meet is an imaginary business for collaborative group and video chat. ',
+    imgAlt:
+      'Mockup of meet landing page. Meet is an imaginary business for collaborative group and video chat. ',
   },
   {
     title: 'Order summary card',
@@ -162,7 +178,8 @@ export const projects = [
     github: 'https://github.com/NinjaInShade/typemaster-landing-page',
     tabs: ['HTML', 'CSS', 'Landing Page'],
     imgSrc: TypemasterLandingPage,
-    imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
+    imgAlt:
+      'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
   },
   {
     title: 'Fylo Data storage component',
@@ -171,7 +188,8 @@ export const projects = [
     github: 'https://github.com/NinjaInShade/data-storage-component',
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: DataStorageComponent,
-    imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
+    imgAlt:
+      'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
   },
   {
     title: 'Fylo 2 column landing page',
@@ -198,7 +216,8 @@ export const projects = [
     github: 'https://github.com/NinjaInShade/stats-preview-card',
     tabs: ['HTML', 'CSS', 'Component'],
     imgSrc: StatsCard,
-    imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
+    imgAlt:
+      'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
   },
   {
     title: 'Testimonials grid',
@@ -236,7 +255,8 @@ export const projects = [
     github: 'https://github.com/NinjaInShade/project-tracking-intro',
     tabs: ['HTML', 'CSS'],
     imgSrc: ProjectTrackingPage,
-    imgAlt: 'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
+    imgAlt:
+      'Mockup of a stats card. Includes a title, a short description, image and some statistics.',
   },
   {
     title: 'Huddle landing page',
