@@ -35,8 +35,7 @@ import ProductFeedback from './assets/projects/image-product-feedback.png';
 export const projects = [
   {
     title: 'Product Feedback App',
-    description:
-      'Product feedback app allowing suggestions/tracking of features/enhancements/bugs and more.',
+    description: 'App allowing suggestions/tracking of features/enhancements/bugs and more.',
     liveSite: 'https://lm-product-feedback-app.netlify.app/',
     github: 'https://github.com/NinjaInShade/product-feedback-app',
     tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'Multi Page'],
