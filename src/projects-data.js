@@ -83,6 +83,15 @@ export const projects = [
     imgAlt: 'Mockup of todo app with dark/light theme switch and drag n drop',
   },
   {
+    title: 'Github API Search app',
+    description: 'Github user search app using GitHub API + dark/light theme switcher.',
+    liveSite: 'https://lm-github-user-search.netlify.app/',
+    github: 'https://github.com/NinjaInShade/github-user-search',
+    tabs: ['HTML', 'CSS', 'Javascript', 'API', 'Theme switch'],
+    imgSrc: GithubSearch,
+    imgAlt: 'Mockup of github API search app.',
+  },
+  {
     title: 'Entertainment App',
     description:
       'App showing different shows with interactivity such as bookmarking & search functionality.',
@@ -92,15 +101,6 @@ export const projects = [
     imgSrc: EntertainmentWebApp,
     imgAlt:
       'Mockup of the entertainment web app. Has a sidebar with trending and recommended films in grids in the main section. Also contains a search bar.',
-  },
-  {
-    title: 'Github API Search app',
-    description: 'Github user search app using GitHub API + dark/light theme switcher.',
-    liveSite: 'https://lm-github-user-search.netlify.app/',
-    github: 'https://github.com/NinjaInShade/github-user-search',
-    tabs: ['HTML', 'CSS', 'Javascript', 'API', 'Theme switch'],
-    imgSrc: GithubSearch,
-    imgAlt: 'Mockup of github API search app.',
   },
   {
     title: 'IP Address Tracker',
