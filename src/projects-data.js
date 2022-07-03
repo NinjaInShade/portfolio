@@ -31,6 +31,7 @@ import PlanetFactSite from './assets/projects/image-planet-fact-site.png';
 import OfficeliteComingSoon from './assets/projects/image-officelite-coming-soon.png';
 import IPTracker from './assets/projects/image-ip-tracker.png';
 import ProductFeedback from './assets/projects/image-product-feedback.png';
+import EntertainmentWebApp from './assets/projects/image-entertainment.png';
 
 export const projects = [
   {
@@ -80,6 +81,17 @@ export const projects = [
     tabs: ['HTML', 'CSS', 'Javascript', 'API', 'Theme switch', 'ReactJS', 'NodeJS', 'Full stack'],
     imgSrc: TodoApp,
     imgAlt: 'Mockup of todo app with dark/light theme switch and drag n drop',
+  },
+  {
+    title: 'Entertainment App',
+    description:
+      'App showing different shows with interactivity such as bookmarking & search functionality.',
+    liveSite: 'https://lm-entertainment-app.netlify.app/',
+    github: 'https://github.com/NinjaInShade/entertainment-app',
+    tabs: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'Multi Page'],
+    imgSrc: EntertainmentWebApp,
+    imgAlt:
+      'Mockup of the entertainment web app. Has a sidebar with trending and recommended films in grids in the main section. Also contains a search bar.',
   },
   {
     title: 'Github API Search app',
